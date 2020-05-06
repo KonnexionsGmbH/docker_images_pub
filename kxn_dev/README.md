@@ -120,15 +120,15 @@ To access private repositories in GitHub, you must first create a new personal a
 
 - With the following URL you can create the access token: https://github.com/settings/tokens
 
-![](.README_images/Personal_Access_token_01.png)
+![](.README_images/Personal_Access_Token_01.png)
 
 - Press the button `Generate new token`
 
-![](.README_images/Personal_Access_token_02.png)
+![](.README_images/Personal_Access_Token_02.png)
 
 - Name the new token, select the scopes and press the button `Generate token` 
 
-![](.README_images/Personal_Access_token_03.png)
+![](.README_images/Personal_Access_Token_03.png)
 
 - Write down the secret code and keep it in a safe place
 
