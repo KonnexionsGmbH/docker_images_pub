@@ -150,39 +150,29 @@ Status: Downloaded newer image for konnexionsgmbh/kxn_dev:latest
 #### 3. Initial configuration of git in the container
 
 ```
-root@332206c300f1:/# export HOME=/projects
-root@332206c300f1:/# git config --global credential.helper 'store --file="/projects/.git-credentials"'
-root@332206c300f1:/# git config --global user.name "John Doe"
-root@332206c300f1:/# git config --global user.email "john.doe@company.com"
+root@332206c300f1:/# export XDG_CONFIG_HOME=/projects
+root@332206c300f1:/# mkdir -p $XDG_CONFIG_HOME/git/
+root@332206c300f1:/# touch $XDG_CONFIG_HOME/git/config
+root@332206c300f1:/# touch $XDG_CONFIG_HOME/git/credentials
+root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config credential.helper 'store --file=/projects/git/credentials'
+root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config user.name "John Doe"
+root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config user.email "john.doe@company.com"
 root@332206c300f1:/# git config --list --show-origin
-file:/projects/.gitconfig       filter.lfs.clean=git-lfs clean -- %fns.ch"
-file:/projects/.gitconfig       filter.lfs.smudge=git-lfs smudge -- %f
-file:/projects/.gitconfig       filter.lfs.process=git-lfs filter-process
-file:/projects/.gitconfig       filter.lfs.required=true
-file:/projects/.gitconfig       user.name=John Doe
-file:/projects/.gitconfig       user.email=john.doe@company.com
-file:/projects/.gitconfig       credential.helper=store --file="/projects/.git-credentials"
-file:/projects/.gitconfig       push.default=simple
+file:/projects/git/config       user.name=John Doe
+file:/projects/git/config       user.email=john.doe@company.com
+file:/projects/git/config       credential.helper=store --file="/projects/.git-credentials"
 ```
 
 #### 4. Verification of the settings
 
 ```
-root@332206c300f1:/# cat /projects/.gitconfig
-[filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
+root@332206c300f1:/# cat /projects/git/config
+[credential]
+        helper = store --file=/projects/git/credentials
 [user]
         name = John Doe
 [user]
         email = john.doe@company.com
-[credential]
-[credential]
-        helper = store --file=\"/projects/.git-credentials\"
-[push]
-        default = simple
 ```
 
 #### 5. Clone a repository for the first time
@@ -206,7 +196,7 @@ Resolving deltas: 100% (33/33), done.
 #### 6. Verify if the clone completed with success
 
 ```
-root@332206c300f1:~# cat /projects/.git-credentials
+root@332206c300f1:~# cat /projects/git/credentials
 https://John Doe:abc033c3d4d5220e66d63e60a0c5b2497a2dca9f@github.com
 ```
 
@@ -216,16 +206,11 @@ https://John Doe:abc033c3d4d5220e66d63e60a0c5b2497a2dca9f@github.com
 C:\Temp\my_projects\dderl>docker start kxn_dev
 kxn_dev
 C:\Temp\my_projects\dderl>docker exec -it kxn_dev bash
-root@332206c300f1:/# export HOME=/projects
+root@332206c300f1:/# export XDG_CONFIG_HOME=/projects
 root@332206c300f1:/# git config --list --show-origin
-file:/projects/.gitconfig       filter.lfs.clean=git-lfs clean -- %f
-file:/projects/.gitconfig       filter.lfs.smudge=git-lfs smudge -- %f
-file:/projects/.gitconfig       filter.lfs.process=git-lfs filter-process
-file:/projects/.gitconfig       filter.lfs.required=true
-file:/projects/.gitconfig       user.name=John Doe
-file:/projects/.gitconfig       user.email=john.doe@company.com
-file:/projects/.gitconfig       credential.helper=store --file="/projects/.git-credentials"
-file:/projects/.gitconfig       push.default=simple
+file:/projects/git/config       credential.helper=store --file=/projects/git/credentials
+file:/projects/git/config       user.name=John Doe
+file:/projects/git/config       user.email=john.doe@company.com
 ```
 
 #### 8. Verification after the removal of the Docker container 
@@ -262,7 +247,7 @@ d51af753c3d3: Pull complete
 a6bb30d1a5cf: Pull complete
 Digest: sha256:5f6d6afc566ef9142d2d85b85dd331c0558eafaaf286179fd0ae787988c1b89b
 Status: Downloaded newer image for konnexionsgmbh/kxn_dev:latest
-root@ad1f036bbc44:/# export HOME=/projects
+root@ad1f036bbc44:/# export XDG_CONFIG_HOME=/projects
 root@ad1f036bbc44:/# git clone https://github.com/KonnexionsGmbH/docker_images
 Cloning into 'docker_images'...
 remote: Enumerating objects: 78, done.
