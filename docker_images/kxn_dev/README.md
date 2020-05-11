@@ -315,6 +315,31 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.0.1
+
+| Component | Version | Remark | Status |
+|---|---|---|---|
+| Ubuntu | 20.04 LTS | focal | | 
+| | | | |
+| Elixir | 1.10.3 | compiled with Erlang/OTP 21 | |
+| Erlang/OTP | 22 [erts-10.7.1] | | |
+| gcc | 9.3.0 | | |
+| go | go1.14.2 | | | 
+| Java (openjdk) | "14" 2020-03-17 | build 14+36-1461 | |
+| Node | v12.16.3 | | |
+| Python | 3.8.2 | | |
+| | | | |
+| OpenSSL | 1.1.1f | | | 
+| Oracle Instant Client | 19.6.0.0.0 | | | 
+| | | | |
+| git | 2.26.2 | | | 
+| Gradle | 6.3 | | | 
+| LCOV | 1.14 | | new | 
+| nginx | nginx/1.17.10 | | |
+| rebar | 3.13.2 | | |
+| VIM | 8.2 | | |
+| yarn | 1.22.4 | | | 
+
 ### Version 1.0.0
 
 | Component | Version | Remark |
@@ -324,7 +349,7 @@ With the following command you can check in detail which software versions are i
 | Elixir | 1.10.3 | compiled with Erlang/OTP 21 | 
 | Erlang/OTP | 22 [erts-10.7.1] | |
 | gcc | 9.3.0 | | 
-| Go | go1.14.2 | | 
+| go | go1.14.2 | | 
 | Java (openjdk) | "14" 2020-03-17 | build 14+36-1461 | 
 | Node | v12.16.3 | | 
 | Python | 3.8.2 | | 
@@ -332,9 +357,9 @@ With the following command you can check in detail which software versions are i
 | OpenSSL | 1.1.1f | | 
 | Oracle Instant Client | 19.6.0.0.0 | | 
 | | | |
-| Git | 2.26.2 | | 
+| git | 2.26.2 | | 
 | Gradle | 6.3 | | 
 | nginx | nginx/1.17.10 | | 
-| rebar3 | 3.13.2 | | 
-| Vim | 8.2 | | 
+| rebar | 3.13.2 | | 
+| VIM | 8.2 | | 
 | yarn | 1.22.4 | | 
