@@ -158,9 +158,9 @@ root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config credential.he
 root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config user.name "John Doe"
 root@332206c300f1:/# git config --file=$XDG_CONFIG_HOME/git/config user.email "john.doe@company.com"
 root@332206c300f1:/# git config --list --show-origin
+file:/projects/git/config       credential.helper=store --file=/projects/git/credentials
 file:/projects/git/config       user.name=John Doe
 file:/projects/git/config       user.email=john.doe@company.com
-file:/projects/git/config       credential.helper=store --file="/projects/.git-credentials"
 ```
 
 #### 4. Verification of the settings
@@ -258,7 +258,7 @@ Receiving objects: 100% (78/78), 167.83 KiB | 895.00 KiB/s, done.
 Resolving deltas: 100% (33/33), done.
 ```
 
-- If we use the same path - where `.gitconfig` and `.git-credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
+- If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
 ## 4 Working inside a running Konnexions development container
 
