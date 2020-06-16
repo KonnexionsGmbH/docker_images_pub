@@ -1,6 +1,6 @@
-# kxn_dev - Konnexions Development Image
+# kxn_dev - Konnexions' Development Image
 
-This image supports the use of a Docker container for the further development of Konnexions repositories in an Ubuntu environment. 
+This image supports the use of a Docker container for the further development of Konnexions' repositories in an Ubuntu environment. 
 
 ## 1. Creating a new Konnexions development container
 
