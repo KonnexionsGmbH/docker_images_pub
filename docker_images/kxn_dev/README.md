@@ -13,9 +13,9 @@ This image supports the use of a Docker container for the further development of
     > REM   - the directory name for this repository inside the container should be: my_repro_dir
     > REM   - you want to use the latest version of the Konnexions development image
     > docker run -it -p 443:8443 \
-            --name my_kxn_dev \
-            -v //C/projects/my_repro:/my_repro_dir \
-            konnexionsgmbh/kxn_dev:latest
+                 --name my_kxn_dev \
+                 -v //C/projects/my_repro:/my_repro_dir \
+                 konnexionsgmbh/kxn_dev:latest
             
     > REM Stopping the container
     > docker stop my_kxn_dev

@@ -12,9 +12,9 @@ These images support the operational use of Apache Derby Docker containers.
     > REM   - the path the host repository is: //C/projects/my_database
     > REM   - you want to use the latest version of the Apache Derby image
     > docker run -it -p 1627:1527 \
-            --name my_derby_db \
-            -v //C/projects/my_database:/dbs \
-            konnexionsgmbh/apache_derby:latest
+                 --name my_derby_db \
+                 -v //C/projects/my_database:/dbs \
+                 konnexionsgmbh/apache_derby:latest
             
     > REM Stopping the container
     > docker stop my_derby_db

@@ -12,9 +12,9 @@ These images support the operational use of H2 Database Engine Docker containers
     > REM   - the path the host repository is: //C/projects/my_database
     > REM   - you want to use the latest version of the H2 Database Engine image
     > docker run -it -p 1627:9092 \
-            --name my_h2_db \
-            -v //C/projects/my_database:/dbs \
-            konnexionsgmbh/apache_derby:latest
+                 --name my_h2_db \
+                 -v //C/projects/my_database:/dbs \
+                 konnexionsgmbh/apache_derby:latest
             
     > REM Stopping the container
     > docker stop my_h2_db
