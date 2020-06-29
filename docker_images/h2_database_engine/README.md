@@ -1,29 +1,29 @@
-# Apache Derby Image
+# H2 Database Engine Image
 
-These images support the operational use of Apache Derby Docker containers.
+These images support the operational use of H2 Database Engine Docker containers.
 
-## 1. Creating a new Apache Derby container
+## 1. Creating a new H2 Database Engine container
 
 ## 1.1 Getting started
 
     > REM Assumptions:
-    > REM   - you want to map the container port 1527 to the host port 1627
-    > REM   - the name of the Docker container should be: my_derby_db
+    > REM   - you want to map the container port 9092 to the host port 1627
+    > REM   - the name of the Docker container should be: my_h2_db
     > REM   - the path the host repository is: //C/projects/my_database
-    > REM   - you want to use the latest version of the Apache Derby image
-    > docker run -it -p 1627:1527 \
-            --name my_derby_db \
+    > REM   - you want to use the latest version of the H2 Database Engine image
+    > docker run -it -p 1627:9092 \
+            --name my_h2_db \
             -v //C/projects/my_database:/dbs \
             konnexionsgmbh/apache_derby:latest
             
     > REM Stopping the container
-    > docker stop my_derby_db
+    > docker stop my_h2_db
     
     > REM Restarting the container
-    > docker start my_derby_db
+    > docker start my_h2_db
 
     > REM Entering a running container
-    > docker exec -it my_derby_db bash
+    > docker exec -it my_h2_db bash
 
 ## 1.2 Detailed Syntax
 
@@ -32,7 +32,7 @@ A new container can be created with the `docker run` command.
 ##### Syntax:
 
     docker run -it 
-               [-p <port>:1527] \
+               [-p <port>:9092] \
                [--name <container_name>] \
                [-v <directory_repository>:/dbs] \
                konnexionsgmbh/apache_derby[:<version>] 
@@ -50,19 +50,19 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 ##### Examples:
 
-1. Creating a new Docker container named `my_derby_db` using a database inside the Docker container:  
+1. Creating a new Docker container named `my_h2_db` using a database inside the Docker container:  
 
-    `docker run -it --name my_derby_db konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_h2_db konnexionsgmbh/apache_derby:latest`
 
-2. Creating a new Docker container named `my_derby_db` using the database of a Windows directory `D:\projects\my_database`:  
+2. Creating a new Docker container named `my_h2_db` using the database of a Windows directory `D:\projects\my_database`:  
 
     `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
-3. Creating a new Docker container named `my_derby_db` using the host database of a Linux directory `/my_database` and mapping port `1627` to port `1527`:  
+3. Creating a new Docker container named `my_h2_db` using the host database of a Linux directory `/my_database` and mapping port `1627` to port `9092`:  
 
-    `docker run -it --name my_derby_db -p 1627:1527 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_h2_db -p 1627:9092 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
-## 2 Working with an existing Apache Derby container
+## 2 Working with an existing H2 Database Engine container
 
 ### 2.1 Starting a stopped container
 
