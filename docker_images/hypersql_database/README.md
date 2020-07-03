@@ -14,7 +14,7 @@ These images support the operational use of HyperSQL Database Docker containers.
     > docker run -it -p 8000:9001 \
                  --name my_hsqldb_db \
                  -v //C/projects/my_database:/dbs \
-                 konnexionsgmbh/apache_derby:latest
+                 konnexionsgmbh/hypersql_database:latest
             
     > REM Stopping the container
     > docker stop my_hsqldb_db
@@ -35,7 +35,7 @@ A new container can be created with the `docker run` command.
                [-p <port>:9001] \
                [--name <container_name>] \
                [-v <directory_repository>:/dbs] \
-               konnexionsgmbh/apache_derby[:<version>] 
+               konnexionsgmbh/hypersql_database[:<version>] 
                [<cmd>]
  
 ##### Parameters:
@@ -52,15 +52,15 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 1. Creating a new Docker container named `my_hsqldb_db` using a database inside the Docker container:  
 
-    `docker run -it --name my_hsqldb_db konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_hsqldb_db konnexionsgmbh/hypersql_database:latest`
 
 2. Creating a new Docker container named `my_hsqldb_db` using the database of a Windows directory `D:\projects\my_database`:  
 
-    `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/hypersql_database:latest`
 
 3. Creating a new Docker container named `my_hsqldb_db` using the host database of a Linux directory `/my_database` and mapping port `8000` to port `9001`:  
 
-    `docker run -it --name my_hsqldb_db -p 8000:9001 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_hsqldb_db -p 8000:9001 -v /my_database:/dbs konnexionsgmbh/hypersql_database:latest`
 
 ## 2 Working with an existing HyperSQL Database container
 

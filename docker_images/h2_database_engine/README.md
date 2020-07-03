@@ -14,7 +14,7 @@ These images support the operational use of H2 Database Engine Docker containers
     > docker run -it -p 8000:9092 \
                  --name my_h2_db \
                  -v //C/projects/my_database:/dbs \
-                 konnexionsgmbh/apache_derby:latest
+                 konnexionsgmbh/h2_database_engine:latest
             
     > REM Stopping the container
     > docker stop my_h2_db
@@ -35,7 +35,7 @@ A new container can be created with the `docker run` command.
                [-p <port>:9092] \
                [--name <container_name>] \
                [-v <directory_repository>:/dbs] \
-               konnexionsgmbh/apache_derby[:<version>] 
+               konnexionsgmbh/h2_database_engine[:<version>] 
                [<cmd>]
  
 ##### Parameters:
@@ -52,15 +52,15 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 1. Creating a new Docker container named `my_h2_db` using a database inside the Docker container:  
 
-    `docker run -it --name my_h2_db konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_h2_db konnexionsgmbh/h2_database_engine:latest`
 
 2. Creating a new Docker container named `my_h2_db` using the database of a Windows directory `D:\projects\my_database`:  
 
-    `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/h2_database_engine:latest`
 
 3. Creating a new Docker container named `my_h2_db` using the host database of a Linux directory `/my_database` and mapping port `8000` to port `9092`:  
 
-    `docker run -it --name my_h2_db -p 8000:9092 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_h2_db -p 8000:9092 -v /my_database:/dbs konnexionsgmbh/h2_database_engine:latest`
 
 ## 2 Working with an existing H2 Database Engine container
 
