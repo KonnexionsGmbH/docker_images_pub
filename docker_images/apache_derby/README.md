@@ -7,11 +7,11 @@ These images support the operational use of Apache Derby Docker containers.
 ## 1.1 Getting started
 
     > REM Assumptions:
-    > REM   - you want to map the container port 1527 to the host port 1627
+    > REM   - you want to map the container port 1527 to the host port 8000
     > REM   - the name of the Docker container should be: my_derby_db
     > REM   - the path the host repository is: //C/projects/my_database
     > REM   - you want to use the latest version of the Apache Derby image
-    > docker run -it -p 1627:1527 \
+    > docker run -it -p 8000:1527 \
                  --name my_derby_db \
                  -v //C/projects/my_database:/dbs \
                  konnexionsgmbh/apache_derby:latest
@@ -58,9 +58,9 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
     `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
-3. Creating a new Docker container named `my_derby_db` using the host database of a Linux directory `/my_database` and mapping port `1627` to port `1527`:  
+3. Creating a new Docker container named `my_derby_db` using the host database of a Linux directory `/my_database` and mapping port `8000` to port `1527`:  
 
-    `docker run -it --name my_derby_db -p 1627:1527 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_derby_db -p 8000:1527 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
 ## 2 Working with an existing Apache Derby container
 

@@ -1,29 +1,29 @@
-# H2 Database Engine Image
+# HyperSQL Database Image
 
-These images support the operational use of H2 Database Engine Docker containers.
+These images support the operational use of HyperSQL Database Docker containers.
 
-## 1. Creating a new H2 Database Engine container
+## 1. Creating a new HyperSQL Database container
 
 ## 1.1 Getting started
 
     > REM Assumptions:
-    > REM   - you want to map the container port 9092 to the host port 8000
-    > REM   - the name of the Docker container should be: my_h2_db
+    > REM   - you want to map the container port 9001 to the host port 8000
+    > REM   - the name of the Docker container should be: my_hsqldb_db
     > REM   - the path the host repository is: //C/projects/my_database
-    > REM   - you want to use the latest version of the H2 Database Engine image
-    > docker run -it -p 8000:9092 \
-                 --name my_h2_db \
+    > REM   - you want to use the latest version of the HyperSQL Database image
+    > docker run -it -p 8000:9001 \
+                 --name my_hsqldb_db \
                  -v //C/projects/my_database:/dbs \
                  konnexionsgmbh/apache_derby:latest
             
     > REM Stopping the container
-    > docker stop my_h2_db
+    > docker stop my_hsqldb_db
     
     > REM Restarting the container
-    > docker start my_h2_db
+    > docker start my_hsqldb_db
 
     > REM Entering a running container
-    > docker exec -it my_h2_db bash
+    > docker exec -it my_hsqldb_db bash
 
 ## 1.2 Detailed Syntax
 
@@ -32,7 +32,7 @@ A new container can be created with the `docker run` command.
 ##### Syntax:
 
     docker run -it 
-               [-p <port>:9092] \
+               [-p <port>:9001] \
                [--name <container_name>] \
                [-v <directory_repository>:/dbs] \
                konnexionsgmbh/apache_derby[:<version>] 
@@ -50,19 +50,19 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 ##### Examples:
 
-1. Creating a new Docker container named `my_h2_db` using a database inside the Docker container:  
+1. Creating a new Docker container named `my_hsqldb_db` using a database inside the Docker container:  
 
-    `docker run -it --name my_h2_db konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_hsqldb_db konnexionsgmbh/apache_derby:latest`
 
-2. Creating a new Docker container named `my_h2_db` using the database of a Windows directory `D:\projects\my_database`:  
+2. Creating a new Docker container named `my_hsqldb_db` using the database of a Windows directory `D:\projects\my_database`:  
 
     `docker run -it --name dderl_dev -v //D/projects/my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
-3. Creating a new Docker container named `my_h2_db` using the host database of a Linux directory `/my_database` and mapping port `8000` to port `9092`:  
+3. Creating a new Docker container named `my_hsqldb_db` using the host database of a Linux directory `/my_database` and mapping port `8000` to port `9001`:  
 
-    `docker run -it --name my_h2_db -p 8000:9092 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
+    `docker run -it --name my_hsqldb_db -p 8000:9001 -v /my_database:/dbs konnexionsgmbh/apache_derby:latest`
 
-## 2 Working with an existing H2 Database Engine container
+## 2 Working with an existing HyperSQL Database container
 
 ### 2.1 Starting a stopped container
 
