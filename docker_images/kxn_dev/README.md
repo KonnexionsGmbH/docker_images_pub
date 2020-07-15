@@ -300,6 +300,31 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.2.0
+
+| Component | Version | Remark | Status |
+|---|---|---|---|
+| Ubuntu | 20.04 LTS | focal | | 
+| | | | |
+| Elixir | 1.10.4 | compiled with Erlang/OTP 22 | upgrade |
+| Erlang/OTP | 23 [erts-11.0.2] | | upgrade |
+| gcc | 9.3.0 | | |
+| go | go1.14.5 | | upgrade | 
+| Java (openjdk) | 14.0.2 | build 14.0.2-46 | upgrade |
+| Node | v12.18.2 | | upgrade |
+| Python | 3.8.2 | | |
+| | | | |
+| OpenSSL | 1.1.1f | | | 
+| Oracle Instant Client | 19.6.0.0.0 | | | 
+| | | | |
+| git | 2.27.0 | | upgrade | 
+| Gradle | 6.5.1 | | upgrade | 
+| LCOV | 1.14 | | | 
+| nginx | nginx/1.18.10 | | upgrade |
+| rebar | 3.13.2 | | |
+| VIM | 8.2 | | |
+| yarn | 1.22.4 | | | 
+
 ### Version 1.1.0
 
 | Component | Version | Remark | Status |
