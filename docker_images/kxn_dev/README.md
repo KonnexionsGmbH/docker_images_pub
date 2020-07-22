@@ -294,11 +294,51 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 - `src_elixir/mix.lock`  
 - `src_erlang/_build` 
 
+### 4.3 `[presto](https://prestosql.io/)`
+
+For an introduction to presto it is best to use the book `[Presto - The Definitive Guide](https://prestosql.io/presto-the-definitive-guide.html)`.
+
+The installation in the `kxn_dev` image includes both the `presto`server and the `presto`command line interface (CLI). The configuration files have the same contents as described in the book.
+
+The `presto` server can be started with the command
+
+    `launcher run &`
+     
+Then the `presto` CLI is available with the command
+
+    `presto`
+
 ## 5 Installed core components
 
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 1.3.0
+
+| Component             | Version          | Remark                      | Status |
+|---                    |---               |---                          |---     |
+| Ubuntu                | 20.04 LTS        | focal                       |   | 
+|                       |                  |                             |   |
+| Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
+| Erlang/OTP            | 23 [erts-11.0.2] |                             |   |
+| gcc                   | 9.3.0            |                             |   |
+| go                    | go1.14.6         |                             | upgrade | 
+| Java (openjdk)        | 14.0.2           | build 14.0.2-46             |   |
+| Node                  | v12.18.3         |                             | upgrade |
+| Python                | 3.8.2            |                             |   |
+|                       |                  |                             |   |
+| OpenSSL               | 1.1.1f           |                             |   | 
+| Oracle Instant Client | 19.8.0.0.0       |                             | upgrade | 
+|                       |                  |                             |   |
+| git                   | 2.27.0           |                             |   | 
+| Gradle                | 6.5.1            |                             |   | 
+| LCOV                  | 1.14             |                             |   | 
+| nginx                 | nginx/1.18.0     |                             |   |
+| presto                | 339              |                             | new |
+| rebar                 | 3.13.2           |                             |   |
+| VIM                   | 8.2              |                             |   |
+| yarn                  | 1.22.4           |                             |   | 
 
 ### Version 1.2.0
 
