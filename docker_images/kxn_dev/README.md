@@ -294,9 +294,9 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 - `src_elixir/mix.lock`  
 - `src_erlang/_build` 
 
-### 4.3 `(presto)[https://prestosql.io]`
+### 4.3 `[presto](https://prestosql.io)`
 
-For an introduction to presto it is best to use the book `(Presto - The Definitive Guide)[https://prestosql.io/presto-the-definitive-guide.html]`.
+For an introduction to presto it is best to use the book `[Presto - The Definitive Guide](https://prestosql.io/presto-the-definitive-guide.html)`.
 
 The installation in the `kxn_dev` image includes both the `presto`server and the `presto`command line interface (CLI). The configuration files have the same contents as described in the book.
 
