@@ -298,15 +298,19 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 
 For an introduction to presto it is best to use the book [Presto - The Definitive Guide](https://prestosql.io/presto-the-definitive-guide.html).
 
-The installation in the `kxn_dev` image includes both the `presto`server and the `presto`command line interface (CLI). The configuration files have the same contents as described in the book.
+The installation in the `kxn_dev` image includes both the `presto`server and the `presto`command line interface (CLI).
+The installation directory is `/presto-server`, of which the `bin` directory is also included in the `path` variable.
+The configuration files have the same contents as described in the book.
 
 The `presto` server can be started with the command
 
-    launcher run &
+    launcher start
      
 Then the `presto` CLI is available with the command
 
     presto
+
+`presto`'s default port `8080`is exposed.
 
 ## 5 Installed core components
 
@@ -335,7 +339,7 @@ With the following command you can check in detail which software versions are i
 | Gradle                | 6.5.1            |                             |   | 
 | LCOV                  | 1.14             |                             |   | 
 | nginx                 | nginx/1.18.0     |                             |   |
-| presto                | 339              |                             | new |
+| presto                | CLI 339          |                             | new |
 | rebar                 | 3.13.2           |                             |   |
 | VIM                   | 8.2              |                             |   |
 | yarn                  | 1.22.4           |                             |   | 
