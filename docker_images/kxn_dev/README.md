@@ -325,17 +325,17 @@ With the following command you can check in detail which software versions are i
 | Ubuntu                | 20.04 LTS        | focal                       |   | 
 |                       |                  |                             |   |
 | Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
-| Erlang/OTP            | 23 [erts-11.0.2] |                             |   |
+| Erlang/OTP            | 23 [erts-11.0.3] |                             | upgrade |
 | gcc                   | 9.3.0            |                             |   |
 | go                    | go1.14.6         |                             | upgrade | 
-| Java (openjdk)        | 14.0.2           | build 14.0.2-46             |   |
+| Java (openjdk)        | 14.0.2           | build 14.0.2+12-46          |   |
 | Node                  | v12.18.3         |                             | upgrade |
 | Python                | 3.8.2            |                             |   |
 |                       |                  |                             |   |
 | OpenSSL               | 1.1.1f           |                             |   | 
 | Oracle Instant Client | 19.8.0.0.0       |                             | upgrade | 
 |                       |                  |                             |   |
-| git                   | 2.27.0           |                             |   | 
+| git                   | 2.28.0           |                             | upgrade | 
 | Gradle                | 6.5.1            |                             |   | 
 | LCOV                  | 1.14             |                             |   | 
 | nginx                 | nginx/1.18.0     |                             |   |
