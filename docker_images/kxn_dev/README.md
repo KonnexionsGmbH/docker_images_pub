@@ -294,29 +294,37 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 - `src_elixir/mix.lock`  
 - `src_erlang/_build` 
 
-### 4.3 [presto](https://prestosql.io)
-
-For an introduction to presto it is best to use the book [Presto - The Definitive Guide](https://prestosql.io/presto-the-definitive-guide.html).
-
-The installation in the `kxn_dev` image includes both the `presto`server and the `presto`command line interface (CLI).
-The installation directory is `/presto-server`, of which the `bin` directory is also included in the `path` variable.
-The configuration files have the same contents as described in the book.
-
-The `presto` server can be started with the command
-
-    launcher start
-     
-Then the `presto` CLI is available with the command
-
-    presto
-
-`presto`'s default port `8080`is exposed.
-
 ## 5 Installed core components
 
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 1.3.2
+
+| Component             | Version          | Remark                      | Status |
+|---                    |---               |---                          |---     |
+| Ubuntu                | 20.04 LTS        | focal                       |   | 
+|                       |                  |                             |   |
+| Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
+| Erlang/OTP            | 23 [erts-11.0.3] |                             |   |
+| gcc                   | 9.3.0            |                             |   |
+| go                    | go1.15.1         |                             | upgrade | 
+| Java (openjdk)        | 14.0.2           | build 14.0.2+12-46          |   |
+| Node                  | v12.18.3         |                             |   |
+| Python                | 3.8.2            |                             |   |
+|                       |                  |                             |   |
+| OpenSSL               | 1.1.1f           |                             |   | 
+| Oracle Instant Client | 19.8.0.0.0       |                             |   | 
+|                       |                  |                             |   |
+| git                   | 2.28.0           |                             |   | 
+| Gradle                | 6.6.1            |                             |   | 
+| LCOV                  | 1.14             |                             |   | 
+| nginx                 | nginx/1.18.0     |                             |   |
+| ~~presto~~            |                  |                             | removed |
+| rebar                 | 3.14.0           |                             | upgrade |
+| VIM                   | 8.2              |                             |   |
+| yarn                  | 1.22.5           |                             | upgrade | 
 
 ### Version 1.3.1
 
