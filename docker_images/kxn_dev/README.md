@@ -300,6 +300,32 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.3.3
+
+| Component             | Version           | Remark                      | Status |
+|---                    |---                |---                          |---     |
+| Ubuntu                | 20.04 LTS         | focal                       |   | 
+|                       |                   |                             |   |
+| Elixir                | 1.10.4            | compiled with Erlang/OTP 22 |   |
+| Erlang/OTP            | 23 [erts-11.0.3]  |                             |   |
+| GCC                   | 9.3.0             |                             |   |
+| Go                    | go1.15.1          |                             |   | 
+| Java (openjdk)        | 14.0.2            | build 14.0.2+12-46          |   |
+| Kotlin                | 1.4.0-release-329 |                             | new |
+| Node.js               | v12.18.3          |                             |   |
+| Python                | 3.8.2             |                             |   |
+|                       |                   |                             |   |
+| OpenSSL               | 1.1.1f            |                             |   | 
+| Oracle Instant Client | 19.8.0.0.0        |                             |   | 
+|                       |                   |                             |   |
+| Git                   | 2.28.0            |                             |   | 
+| Gradle                | 6.6.1             |                             |   | 
+| LCOV                  | 1.14              |                             |   | 
+| nginx                 | nginx/1.18.0      |                             |   |
+| rebar3                | 3.14.1            |                             | upgrade |
+| Vim                   | 8.2               |                             |   |
+| Yarn                  | 1.22.5            |                             |   | 
+
 ### Version 1.3.2
 
 | Component             | Version          | Remark                      | Status |
@@ -308,23 +334,23 @@ With the following command you can check in detail which software versions are i
 |                       |                  |                             |   |
 | Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
 | Erlang/OTP            | 23 [erts-11.0.3] |                             |   |
-| gcc                   | 9.3.0            |                             |   |
-| go                    | go1.15.1         |                             | upgrade | 
+| GCC                   | 9.3.0            |                             |   |
+| Go                    | go1.15.1         |                             | upgrade | 
 | Java (openjdk)        | 14.0.2           | build 14.0.2+12-46          |   |
-| Node                  | v12.18.3         |                             |   |
+| Node.js               | v12.18.3         |                             |   |
 | Python                | 3.8.2            |                             |   |
 |                       |                  |                             |   |
 | OpenSSL               | 1.1.1f           |                             |   | 
 | Oracle Instant Client | 19.8.0.0.0       |                             |   | 
 |                       |                  |                             |   |
-| git                   | 2.28.0           |                             |   | 
+| Git                   | 2.28.0           |                             |   | 
 | Gradle                | 6.6.1            |                             |   | 
 | LCOV                  | 1.14             |                             |   | 
 | nginx                 | nginx/1.18.0     |                             |   |
 | ~~presto~~            |                  |                             | removed |
-| rebar                 | 3.14.0           |                             | upgrade |
-| VIM                   | 8.2              |                             |   |
-| yarn                  | 1.22.5           |                             | upgrade | 
+| rebar3                | 3.14.0           |                             | upgrade |
+| Vim                   | 8.2              |                             |   |
+| Yarn                  | 1.22.5           |                             | upgrade | 
 
 ### Version 1.3.1
 
@@ -334,23 +360,23 @@ With the following command you can check in detail which software versions are i
 |                       |                  |                             |   |
 | Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
 | Erlang/OTP            | 23 [erts-11.0.3] |                             |   |
-| gcc                   | 9.3.0            |                             |   |
-| go                    | go1.15           |                             | upgrade | 
+| GCC                   | 9.3.0            |                             |   |
+| Go                    | go1.15           |                             | upgrade | 
 | Java (openjdk)        | 14.0.2           | build 14.0.2+12-46          |   |
-| Node                  | v12.18.3         |                             |   |
+| Node.js               | v12.18.3         |                             |   |
 | Python                | 3.8.2            |                             |   |
 |                       |                  |                             |   |
 | OpenSSL               | 1.1.1f           |                             |   | 
 | Oracle Instant Client | 19.8.0.0.0       |                             |   | 
 |                       |                  |                             |   |
-| git                   | 2.28.0           |                             |   | 
+| Git                   | 2.28.0           |                             |   | 
 | Gradle                | 6.6.1            |                             | upgrade | 
 | LCOV                  | 1.14             |                             |   | 
 | nginx                 | nginx/1.18.0     |                             |   |
 | presto                | CLI 340          |                             | upgrade |
-| rebar                 | 3.13.2           |                             |   |
-| VIM                   | 8.2              |                             |   |
-| yarn                  | 1.22.4           |                             |   | 
+| rebar3                | 3.13.2           |                             |   |
+| Vim                   | 8.2              |                             |   |
+| Yarn                  | 1.22.4           |                             |   | 
 
 ### Version 1.3.0
 
@@ -360,23 +386,23 @@ With the following command you can check in detail which software versions are i
 |                       |                  |                             |   |
 | Elixir                | 1.10.4           | compiled with Erlang/OTP 22 |   |
 | Erlang/OTP            | 23 [erts-11.0.3] |                             | upgrade |
-| gcc                   | 9.3.0            |                             |   |
-| go                    | go1.14.6         |                             | upgrade | 
+| GCC                   | 9.3.0            |                             |   |
+| Go                    | go1.14.6         |                             | upgrade | 
 | Java (openjdk)        | 14.0.2           | build 14.0.2+12-46          |   |
-| Node                  | v12.18.3         |                             | upgrade |
+| Node.js               | v12.18.3         |                             | upgrade |
 | Python                | 3.8.2            |                             |   |
 |                       |                  |                             |   |
 | OpenSSL               | 1.1.1f           |                             |   | 
 | Oracle Instant Client | 19.8.0.0.0       |                             | upgrade | 
 |                       |                  |                             |   |
-| git                   | 2.28.0           |                             | upgrade | 
+| Git                   | 2.28.0           |                             | upgrade | 
 | Gradle                | 6.5.1            |                             |   | 
 | LCOV                  | 1.14             |                             |   | 
 | nginx                 | nginx/1.18.0     |                             |   |
 | presto                | CLI 339          |                             | new |
-| rebar                 | 3.13.2           |                             |   |
-| VIM                   | 8.2              |                             |   |
-| yarn                  | 1.22.4           |                             |   | 
+| rebar3                | 3.13.2           |                             |   |
+| Vim                   | 8.2              |                             |   |
+| Yarn                  | 1.22.4           |                             |   | 
 
 ### Version 1.2.0
 
@@ -386,22 +412,22 @@ With the following command you can check in detail which software versions are i
 | | | | |
 | Elixir | 1.10.4 | compiled with Erlang/OTP 22 | upgrade |
 | Erlang/OTP | 23 [erts-11.0.2] | | upgrade |
-| gcc | 9.3.0 | | |
-| go | go1.14.5 | | upgrade | 
+| GCC | 9.3.0 | | |
+| Go | go1.14.5 | | upgrade | 
 | Java (openjdk) | 14.0.2 | build 14.0.2-46 | upgrade |
-| Node | v12.18.2 | | upgrade |
+| Node.js | v12.18.2 | | upgrade |
 | Python | 3.8.2 | | |
 | | | | |
 | OpenSSL | 1.1.1f | | | 
 | Oracle Instant Client | 19.6.0.0.0 | | | 
 | | | | |
-| git | 2.27.0 | | upgrade | 
+| Git | 2.27.0 | | upgrade | 
 | Gradle | 6.5.1 | | upgrade | 
 | LCOV | 1.14 | | | 
 | nginx | nginx/1.18.10 | | upgrade |
-| rebar | 3.13.2 | | |
-| VIM | 8.2 | | |
-| yarn | 1.22.4 | | | 
+| rebar3| 3.13.2 | | |
+| Vim | 8.2 | | |
+| Yarn | 1.22.4 | | | 
 
 ### Version 1.1.0
 
@@ -411,22 +437,22 @@ With the following command you can check in detail which software versions are i
 | | | | |
 | Elixir | 1.10.3 | compiled with Erlang/OTP 21 | |
 | Erlang/OTP | 22 [erts-10.7.1] | | |
-| gcc | 9.3.0 | | |
-| go | go1.14.3 | | upgrade | 
+| GCC | 9.3.0 | | |
+| Go | go1.14.3 | | upgrade | 
 | Java (openjdk) | 14.0.1 | build 14.0.1+7 | upgrade |
-| Node | v12.16.3 | | |
+| Node.js | v12.16.3 | | |
 | Python | 3.8.2 | | |
 | | | | |
 | OpenSSL | 1.1.1f | | | 
 | Oracle Instant Client | 19.6.0.0.0 | | | 
 | | | | |
-| git | 2.26.2 | | | 
+| Git | 2.26.2 | | | 
 | Gradle | 6.4.1 | | upgrade | 
 | LCOV | 1.14 | | | 
 | nginx | nginx/1.17.10 | | |
-| rebar | 3.13.2 | | |
-| VIM | 8.2 | | |
-| yarn | 1.22.4 | | | 
+| rebar3| 3.13.2 | | |
+| Vim | 8.2 | | |
+| Yarn | 1.22.4 | | | 
 
 ### Version 1.0.1
 
@@ -436,22 +462,22 @@ With the following command you can check in detail which software versions are i
 | | | | |
 | Elixir | 1.10.3 | compiled with Erlang/OTP 21 | |
 | Erlang/OTP | 22 [erts-10.7.1] | | |
-| gcc | 9.3.0 | | |
-| go | go1.14.2 | | | 
+| GCC | 9.3.0 | | |
+| Go | go1.14.2 | | | 
 | Java (openjdk) | "14" 2020-03-17 | build 14+36-1461 | |
-| Node | v12.16.3 | | |
+| Node.js | v12.16.3 | | |
 | Python | 3.8.2 | | |
 | | | | |
 | OpenSSL | 1.1.1f | | | 
 | Oracle Instant Client | 19.6.0.0.0 | | | 
 | | | | |
-| git | 2.26.2 | | | 
+| Git | 2.26.2 | | | 
 | Gradle | 6.3 | | | 
 | LCOV | 1.14 | | new | 
 | nginx | nginx/1.17.10 | | |
-| rebar | 3.13.2 | | |
-| VIM | 8.2 | | |
-| yarn | 1.22.4 | | | 
+| rebar3| 3.13.2 | | |
+| Vim | 8.2 | | |
+| Yarn | 1.22.4 | | | 
 
 ### Version 1.0.0
 
@@ -461,18 +487,18 @@ With the following command you can check in detail which software versions are i
 | | | |
 | Elixir | 1.10.3 | compiled with Erlang/OTP 21 | 
 | Erlang/OTP | 22 [erts-10.7.1] | |
-| gcc | 9.3.0 | | 
-| go | go1.14.2 | | 
+| GCC | 9.3.0 | | 
+| Go | go1.14.2 | | 
 | Java (openjdk) | "14" 2020-03-17 | build 14+36-1461 | 
-| Node | v12.16.3 | | 
+| Node.js | v12.16.3 | | 
 | Python | 3.8.2 | | 
 | | | |
 | OpenSSL | 1.1.1f | | 
 | Oracle Instant Client | 19.6.0.0.0 | | 
 | | | |
-| git | 2.26.2 | | 
+| Git | 2.26.2 | | 
 | Gradle | 6.3 | | 
 | nginx | nginx/1.17.10 | | 
-| rebar | 3.13.2 | | 
-| VIM | 8.2 | | 
-| yarn | 1.22.4 | | 
+| rebar3| 3.13.2 | | 
+| Vim | 8.2 | | 
+| Yarn | 1.22.4 | | 
