@@ -283,7 +283,12 @@ The following port numbers are exposed and can be mapped if necessary:
 ### 4.2 `ora_bench_dev` development
 
 Inside the Docker container you can either clone a `ora_bench` repository or switch to an existing `ora_bench` repository. 
-If a Docker container with an Oracle database is located on the host computer it can be accessed by using the IP address of the host computer.
+
+If there is a docker container with an Oracle database on the host computer, it can be accessed in two ways:
+
+1. via the IP address of the host computer,
+2. via the docker network `ora_bench_net` - the development container `kxn_dev` must be included in this network beforehand 
+
 Any `ora_bench` script can be executed inside the Docker container, for example:
 
     ./scripts/run_properties_standard.sh > run_properties_standard.log 2>&1
@@ -299,6 +304,34 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 1.3.4
+
+| Component             | Version           | Remark                      | Status |
+|---                    |---                |---                          |---     |
+| Ubuntu                | 20.04 LTS         | focal                       |   | 
+|                       |                   |                             |   |
+| Elixir                | 1.10.4            | compiled with Erlang/OTP 22 |   |
+| Erlang/OTP            | 23 [erts-11.0.3]  |                             |   |
+| GCC                   | 9.3.0             |                             |   |
+| Go                    | go1.15.1          |                             |   | 
+| Java (openjdk)        | 14.0.2            | build 14.0.2+12-46          |   |
+| Kotlin                | 1.4.0-release-329 |                             |   |
+| Node.js               | v12.18.3          |                             |   |
+| Python                | 3.8.2             |                             |   |
+| - cx_Oracle           | 8.0.1             |                             |   |
+| - pyyaml              | 5.3.1             |                             | new |
+|                       |                   |                             |   |
+| OpenSSL               | 1.1.1f            |                             |   | 
+| Oracle Instant Client | 19.8.0.0.0        |                             |   | 
+|                       |                   |                             |   |
+| Git                   | 2.28.0            |                             |   | 
+| Gradle                | 6.6.1             |                             |   | 
+| LCOV                  | 1.14              |                             |   | 
+| nginx                 | nginx/1.18.0      |                             |   |
+| rebar3                | 3.14.1            |                             |   |
+| Vim                   | 8.2               |                             |   |
+| Yarn                  | 1.22.5            |                             |   | 
 
 ### Version 1.3.3
 
