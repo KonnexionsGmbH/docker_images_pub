@@ -305,7 +305,7 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
-### Version 1.4.0
+### Version 1.4.0 & 1.4.1
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
