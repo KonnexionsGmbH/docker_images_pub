@@ -305,7 +305,41 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
-### Version 1.4.0 & 1.4.1
+### Version 1.4.1
+
+- DDErl Docker Compose ready
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Ubuntu                | 20.04              | focal                       |   | 
+|                       |                    |                             |   |
+| Elixir                | 1.10.4             | compiled with Erlang/OTP 22 |   |
+| Erlang/OTP            | 23                 | erts-11.0.3                 |   |
+| GCC                   | 9.3.0              |                             |   |
+| Go                    | go1.15.2           |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Kotlin                | 1.4.10-release-411 |                             |   |
+| Node.js               | v12.18.4           |                             |   |
+| Python                | 3.8.2              |                             |   |
+| - cx_Oracle           | v8.0.1             |                             |   |
+| - pip                 | 20.2.3             |                             |   |
+| - pyyaml              | 5.3.1              |                             |   |
+| Rust                  | 1.46.0             | 04488afe3 2020-08-24        |   |
+|                       |                    |                             |   |
+| OpenSSL               | 1.1.1f             |                             |   | 
+| Oracle Instant Client | 19.8.0.0.0         |                             |   | 
+|                       |                    |                             |   |
+| Docker                | 19.03.13           |                             | new | 
+| Docker Compose        | 1.27.1             |                             | new | 
+| Git                   | 2.28.0             |                             |   | 
+| Gradle                | 6.6.1              |                             |   | 
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | nginx/1.18.0       |                             |   |
+| rebar3                | v3.14.1            |                             |   |
+| Vim                   | 8.2                |                             |   |
+| Yarn                  | 1.22.5             |                             |   | 
+
+### Version 1.4.0
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
