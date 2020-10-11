@@ -301,7 +301,6 @@ With the following command you can check in detail which software versions are i
 |                       |                    |                             |   |
 | Anaconda              | 1.7.2              |                             |   |
 | Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Kotlin                | 1.4.10-release-411 |                             |   |
 | Python                | 3.8.3              |                             |   |
 | R                     | 4.0.2              |                             |   |
 |                       |                    |                             |   |
