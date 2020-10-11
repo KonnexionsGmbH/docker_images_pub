@@ -295,8 +295,6 @@ With the following command you can check in detail which software versions are i
 
 ### Version 1.0.0
 
-- Eclipse is started from a command window by typing `eclipse`
-
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | Ubuntu                | 20.04              | focal                       |   | 
