@@ -295,7 +295,7 @@ With the following command you can check in detail which software versions are i
 
 ### Version 1.0.0
 
-- db_seeder Docker Compose ready
+- Eclipse is started from a command window by typing `eclipse`
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
@@ -309,7 +309,8 @@ With the following command you can check in detail which software versions are i
 |                       |                    |                             |   |
 | Docker                | 19.03.13           |                             |   | 
 | Docker Compose        | 1.27.1             |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
 | Git                   | 2.28.0             |                             |   | 
 | Gradle                | 6.6.1              |                             |   | 
-| Vim                   | 8.2                |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
 
