@@ -302,12 +302,11 @@ With the following command you can check in detail which software versions are i
 | Anaconda              | 1.7.2              |                             |   |
 | Java (openjdk)        | 15                 | build 15+36-1562            |   |
 | Python                | 3.8.3              |                             |   |
-| R                     | 4.0.2              |                             |   |
+| R                     | 4.0.3              |                             |   |
 |                       |                    |                             |   |
 | Docker                | 19.03.13           |                             |   | 
 | Docker Compose        | 1.27.1             |                             |   | 
 | Eclipse               | 2020-09            | for virtual machine only    |   | 
 | Git                   | 2.28.0             |                             |   | 
 | Gradle                | 6.6.1              |                             |   | 
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
 
