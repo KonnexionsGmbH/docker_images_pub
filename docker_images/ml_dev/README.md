@@ -309,4 +309,5 @@ With the following command you can check in detail which software versions are i
 | Eclipse               | 2020-09            | for virtual machine only    |   | 
 | Git                   | 2.28.0             |                             |   | 
 | Gradle                | 6.6.1              |                             |   | 
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
 
