@@ -307,8 +307,6 @@ With the following command you can check in detail which software versions are i
 
 ### Version 1.4.3
 
-- db_seeder Docker Compose ready
-
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | Docker Compose        | 1.27.4             |                             | upgrade | 
