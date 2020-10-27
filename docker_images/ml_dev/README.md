@@ -297,20 +297,18 @@ With the following command you can check in detail which software versions are i
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
-| Ubuntu                | 20.04              | focal                       |   | 
-|                       |                    |                             |   |
 | Anaconda              | 1.7.2              | 2020.07                     |   |
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| R                     | 4.0.3              |                             |   |
-|                       |                    |                             |   |
-| Docker                | 19.03.13           |                             |   | 
-| Docker Compose        | 1.27.1             |                             |   | 
+| Docker Compose        | 1.27.4             |                             | upgrade | 
+| Docker Engine         | 19.03.13           |                             |   | 
 | Eclipse               | 2020-09            | for virtual machine only    |   | 
 | Git                   | 2.29.0             |                             | upgrade | 
 | Gradle                | 6.7                |                             | upgrade | 
 | ImageMagick           | 7.0.10-34          |                             | new | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| R                     | 4.0.3              |                             |   |
 | RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       | upgrade | 
 
 ### Version 1.0.0
 
