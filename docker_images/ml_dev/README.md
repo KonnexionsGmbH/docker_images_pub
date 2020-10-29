@@ -293,6 +293,48 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.0.2
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.0             |                             |   | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-34          |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - alpha_vantage       | 2.2.0              |                             | new |
+| - matplotlib          | 3.3.2              |                             | new |
+| - pandas              | 1.1.3              |                             | new |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             | new |
+| - knitr               | 1.30               |                             | new |
+| - rmarkdown           | 2.5                |                             | new |
+| - tidymodels          | 0.1.1              |                             | new |
+|   - rsample           | 0.0.8              |                             | new |
+|   - parsnip           | 0.1.4              |                             | new |
+|   - recipes           | 0.1.14             |                             | new |
+|   - workflows         | 0.2.1              |                             | new |
+|   - tune              | 0.1.1              |                             | new |
+|   - yardstick         | 0.0.7              |                             | new |
+|   - broom             | 0.7.2              |                             | new |
+|   - dials             | 0.0.9              |                             | new |
+| - tidyverse           |                    |                             | new |
+|   - ggplot2           | 3.3.2              |                             | new |
+|   - dplyr             | 1.0.2              |                             | new |
+|   - tidyr             | 1.1.2              |                             | new |
+|   - readr             | 1.4.0              |                             | new |
+|   - purrr             | 0.3.4              |                             | new |
+|   - tibble            | 3.0.4              |                             | new |
+|   - stringr           | 1.4.0              |                             | new |
+|   - forcats           | 0.5.0              |                             | new |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
 ### Version 1.0.1
 
 | Component             | Version            | Remark                      | Status |
@@ -309,22 +351,21 @@ With the following command you can check in detail which software versions are i
 | R                     | 4.0.3              |                             |   |
 | RStudio               | 1.3.1093           | for virtual machine only    |   | 
 | Ubuntu                | 20.04.1 LTS        | focal                       | upgrade | 
+| Vim                   | 8.1                |                             |   | 
 
 ### Version 1.0.0
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
-| Ubuntu                | 20.04              | focal                       |   | 
-|                       |                    |                             |   |
 | Anaconda              | 1.7.2              | 2020.07                     |   |
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| R                     | 4.0.3              |                             |   |
-|                       |                    |                             |   |
 | Docker                | 19.03.13           |                             |   | 
 | Docker Compose        | 1.27.1             |                             |   | 
 | Eclipse               | 2020-09            | for virtual machine only    |   | 
 | Git                   | 2.28.0             |                             |   | 
 | Gradle                | 6.6.1              |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| R                     | 4.0.3              |                             |   |
 | RStudio               | 1.3.1093           | for virtual machine only    |   | 
-
+| Ubuntu                | 20.04              | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
