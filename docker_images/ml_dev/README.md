@@ -32,7 +32,6 @@ A new container can be created with the `docker run` command.
 
     docker run -it 
                [--name <container_name>] \
-               [-v <directory_repository>:/dderl] \
                konnexionsgmbh/ml_dev[:<version>] 
                [<cmd>]
  
@@ -53,7 +52,7 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 2. Creating a new Docker container named `my_ml_dev` using the host repository of a Windows directory `D:\projects\my_repro`:  
 
-    `docker run -it --name dderl_dev -v //D/projects/my_repro:/my_repro konnexionsgmbh/ml_dev:latest`
+    `docker run -it --name my_ml_dev -v //D/projects/my_repro:/my_repro konnexionsgmbh/ml_dev:latest`
 
 3. Creating a new Docker container named `my_ml_dev` using the host repository of a Linux directory `/my_repro`:  
 
@@ -105,7 +104,6 @@ In the following example we assume that the host directory is named `C:\Temp\my_
 root@35b9310932f1:/# cd projects
 root@35b9310932f1:/projects# ls -ll
 total 0
-drwxrwxrwx 1 root root 4096 May  2 14:05 dderl
 ```
 
 ### 3.2 Use of private GitHub repositories inside the container
@@ -133,7 +131,7 @@ To access private repositories in GitHub, you must first create a new personal a
 In the following example we assume that the host directory is named `C:\Temp\my_projects` and should be mapped to the `projects` directory in the container.
 
 ```
-C:\Temp\my_projects\dderl>docker run -it --name ml_dev -v //C/Temp/my_projects:/projects konnexionsgmbh/ml_dev:latest
+C:\Temp\my_projects>docker run -it --name ml_dev -v //C/Temp/my_projects:/projects konnexionsgmbh/ml_dev:latest
 Unable to find image 'konnexionsgmbh/ml_dev:latest' locally
 latest: Pulling from konnexionsgmbh/ml_dev
 d51af753c3d3: Pull complete
@@ -199,9 +197,9 @@ https://John Doe:abc033c3d4d5220e66d63e60a0c5b2497a2dca9f@github.com
 #### 7. Verification after a restart of the Docker container 
 
 ```
-C:\Temp\my_projects\dderl>docker start ml_dev
+C:\Temp\my_projects>docker start ml_dev
 ml_dev
-C:\Temp\my_projects\dderl>docker exec -it ml_dev bash
+C:\Temp\my_projects>docker exec -it ml_dev bash
 root@332206c300f1:/# export XDG_CONFIG_HOME=/projects
 root@332206c300f1:/# git config --list --show-origin
 file:/projects/git/config       credential.helper=store --file=/projects/git/credentials
@@ -214,17 +212,17 @@ file:/projects/git/config       user.email=john.doe@company.com
 - Deleting the Docker container and image
  
 ```
-C:\Temp\my_projects\dderl>docker stop ml_dev
+C:\Temp\my_projects>docker stop ml_dev
 ml_dev
 
-C:\Temp\my_projects\dderl>docker rm ml_dev
+C:\Temp\my_projects>docker rm ml_dev
 ml_dev
 
-C:\Temp\my_projects\dderl>docker images
+C:\Temp\my_projects>docker images
 REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
 konnexionsgmbh/ml_dev      latest              51757b5e414e        6 hours ago         3.71GB
 
-C:\Temp\my_projects\dderl>docker rmi 51757b5e414e
+C:\Temp\my_projects>docker rmi 51757b5e414e
 Untagged: konnexionsgmbh/ml_dev:latest
 Untagged: konnexionsgmbh/ml_dev@sha256:5f6d6afc566ef9142d2d85b85dd331c0558eafaaf286179fd0ae787988c1b89b
 Deleted: sha256:51757b5e414e5333ace7b163484c06e4685c29312ad09d5d7d648c6936011a60
@@ -235,7 +233,7 @@ Deleted: sha256:7789f1a3d4e9258fbe5469a8d657deb6aba168d86967063e9b80ac3e1154333f
 - Recreating the Docker container (and image)
 
 ```
-C:\Temp\my_projects\dderl>docker run -it --name ml_dev -v //C/Temp/my_projects:/projects konnexionsgmbh/ml_dev:latest
+C:\Temp\my_projects>docker run -it --name ml_dev -v //C/Temp/my_projects:/projects konnexionsgmbh/ml_dev:latest
 Unable to find image 'konnexionsgmbh/ml_dev:latest' locally
 latest: Pulling from konnexionsgmbh/ml_dev
 d51af753c3d3: Pull complete
@@ -256,42 +254,59 @@ Resolving deltas: 100% (33/33), done.
 
 - If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
-## 4 Working inside a running Konnexions development container
-
-### 4.1 `dderl` development
-
-Inside the Docker container you can either clone a `dderl` repository or switch to an existing `dderl` repository. 
-If a Docker container with an Oracle database is located on the host computer it can be accessed by using the IP address of the host computer.
-Any `dderl` script can be executed inside the Docker container, for example:
-
-    rebar3 compile
-    rebar3 as prod release
-    ./start.sh 
-    
-### 4.2 `ora_bench_dev` development
-
-Inside the Docker container you can either clone a `ora_bench` repository or switch to an existing `ora_bench` repository. 
-
-If there is a docker container with an Oracle database on the host computer, it can be accessed in two ways:
-
-1. via the IP address of the host computer,
-2. via the docker network `ora_bench_net` - the development container `ml_dev` must be included in this network beforehand 
-
-Any `ora_bench` script can be executed inside the Docker container, for example:
-
-    ./scripts/run_properties_standard.sh > run_properties_standard.log 2>&1
-    
-**Important:** If the repository was previously used on Windows, then all files in the following directories must also be deleted from Windows first:
-
-- `src_elixir/deps`  
-- `src_elixir/mix.lock`  
-- `src_erlang/_build` 
-
-## 5 Installed core components
+## 4 Installed core components
 
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 1.0.3
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.0             |                             |   | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-34          |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - alpha_vantage       | 2.2.0              |                             |   |
+| - keras               | 2.4.0              |                             | new |
+| - pip                 | 20.2.4             |                             |   |
+| - scikit-learn        | 0.23               |                             | new |
+| - scipy               | 1.5.3              |                             | new |
+| - seaborn             | 0.11.0             |                             | new |
+| - statsmodels         | 0.12.0             |                             | new |
+| - tensorflow          | 2.3.1              |                             | new |
+| - theano              | 1.0.0              |                             | new |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             |   |
+| - knitr               | 1.30               |                             |   |
+| - rmarkdown           | 2.5                |                             |   |
+| - tidymodels          | 0.1.1              |                             |   |
+|   - rsample           | 0.0.8              |                             |   |
+|   - parsnip           | 0.1.4              |                             |   |
+|   - recipes           | 0.1.14             |                             |   |
+|   - workflows         | 0.2.1              |                             |   |
+|   - tune              | 0.1.1              |                             |   |
+|   - yardstick         | 0.0.7              |                             |   |
+|   - broom             | 0.7.2              |                             |   |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.2              |                             |   |
+|   - dplyr             | 1.0.2              |                             |   |
+|   - tidyr             | 1.1.2              |                             |   |
+|   - readr             | 1.4.0              |                             |   |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.0.4              |                             |   |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.0              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
 
 ### Version 1.0.2
 
