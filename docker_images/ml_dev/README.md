@@ -260,6 +260,60 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.0.4
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.2             |                             | upgrade | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-37          |                             | upgrade |
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - pip                 | 20.1.1             |                             |   |
+| - alpha_vantage       | 2.2.0              |                             |   |
+| - fire                | 0.3.1              |                             | new |
+| - Keras               | 2.4.3              |                             | upgrade |
+| - matplotlib          | n/a                |                             | new |
+| - numpy               | 1.18.5             |                             | new |
+| - pandas              | n/a                |                             | new |
+| - PyYAML              | 5.3.1              |                             | new |
+| - requests            | n/a                |                             | new |
+| - scikit-learn        | n/a                |                             |   |
+| - scipy               | n/a                |                             |   |
+| - seaborn             | 0.10.1             |                             |   |
+| - statsmodels         | 0.11.1             |                             |   |
+| - tensorflow          | 2.3.1              |                             |   |
+| - Theano              | 1.0.5              |                             |   |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             |   |
+| - knitr               | 1.30               |                             |   |
+| - rmarkdown           | 2.5                |                             |   |
+| - tidymodels          | 0.1.1              |                             |   |
+|   - rsample           | 0.0.8              |                             |   |
+|   - parsnip           | 0.1.4              |                             |   |
+|   - recipes           | 0.1.15             |                             | upgrade |
+|   - workflows         | 0.2.1              |                             |   |
+|   - tune              | 0.1.1              |                             |   |
+|   - yardstick         | 0.0.7              |                             |   |
+|   - broom             | 0.7.2              |                             |   |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.2              |                             |   |
+|   - dplyr             | 1.0.2              |                             |   |
+|   - tidyr             | 1.1.2              |                             |   |
+|   - readr             | 1.4.0              |                             |   |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.0.4              |                             |   |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.0              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
 ### Version 1.0.3
 
 | Component             | Version            | Remark                      | Status |
