@@ -273,21 +273,22 @@ With the following command you can check in detail which software versions are i
 | ImageMagick           | 7.0.10-37          |                             | upgrade |
 | Java (openjdk)        | 15                 | build 15+36-1562            |   |
 | Python                | 3.8.3              |                             |   |
-| - pip                 | 20.1.1             |                             |   |
+| - pip                 | 20.2.4             |                             |   |
 | - alpha_vantage       | 2.2.0              |                             |   |
+| - fbprophet           | 0.7.1              |                             | new |
 | - fire                | 0.3.1              |                             | new |
 | - Keras               | 2.4.3              |                             | upgrade |
-| - matplotlib          | n/a                |                             | new |
-| - numpy               | 1.18.5             |                             | new |
-| - pandas              | n/a                |                             | new |
+| - matplotlib          | 3.3.3              |                             | new |
+| - numpy               | 1.19.4             |                             | new |
+| - pandas              | 1.1.4              |                             | new |
 | - PyYAML              | 5.3.1              |                             | new |
 | - requests            | n/a                |                             | new |
-| - scikit-learn        | n/a                |                             |   |
-| - scipy               | n/a                |                             |   |
-| - seaborn             | 0.10.1             |                             |   |
-| - statsmodels         | 0.11.1             |                             |   |
+| - scikit-learn        | 0.23.2             |                             | upgrade |
+| - scipy               | 1.5.4              |                             | upgrade |
+| - seaborn             | 0.11.0             |                             |   |
+| - statsmodels         | 0.12.1             |                             | upgrade |
 | - tensorflow          | 2.3.1              |                             |   |
-| - Theano              | 1.0.5              |                             |   |
+| - Theano              | 1.0.5              |                             | upgrade |
 | R                     | 4.0.3              |                             |   |
 | - caret               | 6.0.86             |                             |   |
 | - knitr               | 1.30               |                             |   |
