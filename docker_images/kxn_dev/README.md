@@ -305,6 +305,36 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.4.4
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Elixir                | 1.11.2             | compiled with Erlang/OTP 23 | upgrade |
+| Erlang/OTP            | 23.1               | erts-11.1                   |   |
+| GCC                   | 9.3.0              |                             |   |
+| Git                   | 2.29.2             |                             | upgrade | 
+| Go                    | go1.15.5           |                             | upgrade | 
+| Gradle                | 6.7.1              |                             | upgrade | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Kotlin                | 1.4.10-release-411 |                             |   |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | nginx/1.18.0       |                             |   |
+| Node.js               | v14.15.1           |                             | upgrade |
+| OpenSSL               | 1.1.1f             |                             |   | 
+| Oracle Instant Client | 19.9.0.0.0         |                             |   | 
+| Python                | 3.8.5              |                             |   |
+| - cx_Oracle           | v8.0.1             |                             |   |
+| - pip                 | 20.2.4             |                             |   |
+| - pyyaml              | 5.3.1              |                             |   |
+| rebar3                | v3.14.2            |                             | upgrade |
+| Rust                  | 1.48.0             |                             | upgrade |
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   |
+| Yarn                  | 1.22.5             |                             |   | 
+
 ### Version 1.4.3
 
 | Component             | Version            | Remark                      | Status |
