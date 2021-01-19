@@ -322,14 +322,14 @@ With the following command you can check in detail which software versions are i
 | Kotlin                | 1.4.21             |                             |   |
 | LCOV                  | 1.14               |                             |   | 
 | nginx                 | nginx/1.18.0       |                             |   |
-| Node.js               | v14.15.2           |                             |   |
+| Node.js               | v14.15.4           |                             | upgrade |
 | OpenSSL               | 1.1.1f             |                             |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                             |   | 
 | Python                | 3.8.5              |                             |   |
 | - cx_Oracle           | v8.0.1             |                             |   |
 | - pip                 | 20.3.3             |                             |   |
 | - pyyaml              | 5.3.1              |                             |   |
-| rebar3                | v3.14.3            |                             |   |
+| rebar3                | 3.14.3             |                             |   |
 | Rust                  | 1.49.0             |                             | upgrade |
 | Ubuntu                | 20.04.1 LTS        | focal                       |   | 
 | Vim                   | 8.1                |                             |   |
@@ -359,7 +359,7 @@ With the following command you can check in detail which software versions are i
 | - cx_Oracle           | v8.0.1             |                             |   |
 | - pip                 | 20.3.3             |                             | upgrade |
 | - pyyaml              | 5.3.1              |                             |   |
-| rebar3                | v3.14.3            |                             | upgrade |
+| rebar3                | 3.14.3             |                             | upgrade |
 | Rust                  | 1.48.0             |                             |   |
 | Ubuntu                | 20.04.1 LTS        | focal                       |   | 
 | Vim                   | 8.1                |                             |   |
