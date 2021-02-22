@@ -305,6 +305,46 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 2.0.1
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.0-c6145d0     |                             |   | 
+| CMake                 | 3.19.5             |                             | upgrade | 
+| cURL                  | 7.75.0             |                             |   | 
+| Docker Compose        | 1.28.4             |                             | upgrade | 
+| Docker Engine         | 20.10.3            |                             |   | 
+| Eclipse               | 2020-12-R          |                             |   | 
+| Elixir                | 1.11.3-otp-23      |                             |   |
+| Erlang/OTP            | 23.2.5             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.30.0             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16               |                             | upgrade |
+| Gradle                | 6.8.2              |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 15.0.2             | openjdk                     |   |
+| Kotlin                | 1.4.30             | release-302                 | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.15.5 [6.14.11] |                             | upgrade |
+| OpenSSL               | 1.1.1j             |                             | upgrade | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.2              |                             | upgrade |
+| - cx_Oracle           | 8.1                |                             |   |
+| - pip                 | 21.0.1             |                             |   |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.14.3             |                             |   |
+| Rust                  | 1.50.0             |                             | upgrade |
+| tmux                  | 3.1c               |                             | new | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2541           |                             | upgrade |
+| wget                  | 1.21.1             |                             | new | 
+| Yarn                  | 1.22.10            |                             | upgrade | 
+
 ### Version 2.0.0
 
 | Component             | Version            | Remark                      | Status |
