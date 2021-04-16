@@ -290,6 +290,7 @@ With the following command you can check in detail which software versions are i
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.0-c6145d0     |                             |   | 
 | cURL                  | 7.76.1             |                             |   | 
 | Docker Compose        | 1.29.1             |                             |   | 
@@ -305,8 +306,9 @@ With the following command you can check in detail which software versions are i
 | LCOV                  | 1.14               |                             |   | 
 | Node.js [npm]         | v14.16.1 [6.14.12] |                             |   |
 | OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
 | rebar3                | 3.14.3             |                             |   |
-| tmux                  | 3.2               |                             |   | 
+| tmux                  | 3.2                |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
 | Vim                   | 8.2.2771           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
