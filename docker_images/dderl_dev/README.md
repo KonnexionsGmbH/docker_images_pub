@@ -291,25 +291,25 @@ With the following command you can check in detail which software versions are i
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | Alien                 | 8.95               |                             |   | 
-| asdf                  | v0.8.0-c6145d0     |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
 | cURL                  | 7.76.1             |                             |   | 
-| Docker Compose        | 1.29.1             |                             |   | 
+| Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.6            |                             |   | 
-| Erlang/OTP            | 23.3.1             |                             |   |
+| Erlang/OTP            | 24.0             |                             |   |
 | GCC & G++             | 10.2.0             |                             |   |
 | Git                   | 2.31.1             |                             |   | 
 | GNU Autoconf          | 2.71               |                             |   | 
 | GNU Automake          | 1.16.3             |                             |   | 
 | GNU make              | 4.3                |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
-| Java                  | 16                 | openjdk                     |   |
+| Java                  | 16.0.1             | openjdk                     |   |
 | LCOV                  | 1.14               |                             |   | 
-| Node.js [npm]         | v14.16.1 [6.14.12] |                             |   |
+| Node.js [npm]         | v14.17.0 [6.14.13] |                             |   |
 | OpenSSL               | 1.1.1k             |                             |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| rebar3                | 3.14.3             |                             |   |
+| rebar3                | 3.15.1             |                             |   |
 | tmux                  | 3.2                |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2771           |                             |   |
+| Vim                   | 8.2.2872           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
