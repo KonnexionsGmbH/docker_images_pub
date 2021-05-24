@@ -295,7 +295,7 @@ With the following command you can check in detail which software versions are i
 | cURL                  | 7.76.1             |                             |   | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.6            |                             |   | 
-| Erlang/OTP            | 24.0             |                             |   |
+| Erlang/OTP            | 24.0.1             |                             |   |
 | GCC & G++             | 10.2.0             |                             |   |
 | Git                   | 2.31.1             |                             |   | 
 | GNU Autoconf          | 2.71               |                             |   | 
@@ -310,6 +310,6 @@ With the following command you can check in detail which software versions are i
 | rebar3                | 3.15.1             |                             |   |
 | tmux                  | 3.2                |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2872           |                             |   |
+| Vim                   | 8.2.2876           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
