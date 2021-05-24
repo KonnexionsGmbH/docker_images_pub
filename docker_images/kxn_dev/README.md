@@ -305,6 +305,46 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 2.0.3
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             | upgrade | 
+| CMake                 | 3.20.2             |                             | upgrade | 
+| cURL                  | 7.76.1             |                             |   | 
+| Docker Compose        | 1.29.2             |                             | upgrade | 
+| Docker Engine         | 20.10.6            |                             |   | 
+| Eclipse               | 2021-03-R          |                             |   | 
+| Elixir                | 1.12.0-otp-23      |                             | upgrade |
+| Erlang/OTP            | 24.0.1             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.31.1             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.4             |                             | upgrade |
+| Gradle                | 7.0.2              |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16.0.1             | openjdk                     | upgrade |
+| Kotlin                | 1.5.0              |                             | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.17.0 [6.14.13] |                             | upgrade |
+| OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.10.0b1           |                             | upgrade |
+| - cx_Oracle           | 8.2.0              |                             | upgrade |
+| - pip                 | 21.1.1             |                             | upgrade |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.15.1             |                             | upgrade |
+| Rust                  | 1.52.1             |                             | upgrade |
+| tmux                  | 3.2                |                             | upgrade | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2876           |                             | upgrade |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
+
 ### Version 2.0.2
 
 | Component             | Version            | Remark                      | Status |
@@ -312,7 +352,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.0-c6145d0     |                             |   | 
 | CMake                 | 3.20.1             |                             | upgrade | 
-| cURL                  | 7.76.2             |                             | upgrade | 
+| cURL                  | 7.76.1             |                             | upgrade | 
 | Docker Compose        | 1.29.1             |                             | upgrade | 
 | Docker Engine         | 20.10.6            |                             | upgrade | 
 | Eclipse               | 2021-03-R          |                             | upgrade | 
