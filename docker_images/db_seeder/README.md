@@ -11,7 +11,7 @@ This image supports the use of a Docker container for the further development an
 
 ----
 
-## <a name="installed"></a> 1 Installed core components
+## <a name="installed"></a> 1. Installed core components
 
 With the following command you can check in detail which software versions are included in the Docker image:
 
