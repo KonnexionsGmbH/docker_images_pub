@@ -20,7 +20,6 @@ With the following command you can check in detail which software components in 
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
-| Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
 | Eclipse               | 2021-03-R          |                             |   | 
 | Git                   | 2.31.1             |                             |   | 
