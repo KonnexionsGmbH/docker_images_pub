@@ -24,7 +24,7 @@ With the following command you can check in detail which software components in 
 | Eclipse               | 2021-03-R          |                             |   | 
 | Git                   | 2.31.1             |                             |   | 
 | Gradle                | 7.0.2              |                             |   | 
-| Java                  | 16.0.1             | openjdk                     |   |
+| Java                  | 15.0.2             | openjdk                     |   |
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
 | Vim                   | 8.2.2949           |                             |   |
 
