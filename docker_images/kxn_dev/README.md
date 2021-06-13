@@ -1,10 +1,224 @@
-# kxn_dev - Konnexions' Development Image
+# kxn_dev: Konnexions' Development Image
 
-This image supports the use of a Docker container for the further development of Konnexions' repositories in an Ubuntu environment. 
+This image supports the use of a Docker container for the further development of the Konnexions' projects in an Ubuntu environment. 
 
-## 1. Creating a new Konnexions development container
+### Table of Contents
 
-## 1.1 Getting started
+**[1. Installed core components](#installed)**<br>
+**[2. Creating a new Konnexions development container](#creating)**<br>
+**[3. Working with an existing Konnexions development container](#working)**<br>
+**[4. Best practices](#best)**<br>
+**[5. Working inside a running Konnexions development container](#inside)**<br>
+
+----
+
+## <a name="installed"></a> 1. Installed core components
+
+With the following command you can check in detail which software versions are included in the Docker image:
+
+    apt list --installed
+
+### Version 2.0.4
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| CMake                 | 3.20.3             |                             | upgrade | 
+| cURL                  | 7.77.0             |                             | upgrade | 
+| Docker Compose        | 1.29.2             |                             |   | 
+| Docker Engine         | 20.10.7            |                             | upgrade | 
+| Eclipse               | 2021-03-R          |                             |   | 
+| Elixir                | 1.12.1-otp-24      |                             | upgrade |
+| Erlang/OTP            | 24.0.2             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.32.0             |                             | upgrade | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.5             |                             | upgrade |
+| Gradle                | 7.0.2              |                             |   | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16.0.1             | openjdk                     |   |
+| Kotlin                | 1.5.10             |                             | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.17.0 [6.14.13] |                             |   |
+| OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.10.0b2           |                             | upgrade |
+| - cx_Oracle           | 8.2.1              |                             | upgrade |
+| - pip                 | 21.1.2             |                             | upgrade |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.16.1             |                             | upgrade |
+| Rust                  | 1.52.1             |                             |   |
+| tmux                  | 3.2a               |                             | upgrade | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2984           |                             | upgrade |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
+
+### Version 2.0.3
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             | upgrade | 
+| CMake                 | 3.20.2             |                             | upgrade | 
+| cURL                  | 7.76.1             |                             |   | 
+| Docker Compose        | 1.29.2             |                             | upgrade | 
+| Docker Engine         | 20.10.6            |                             |   | 
+| Eclipse               | 2021-03-R          |                             |   | 
+| Elixir                | 1.12.0-otp-24      |                             | upgrade |
+| Erlang/OTP            | 24.0.1             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.31.1             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.4             |                             | upgrade |
+| Gradle                | 7.0.2              |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16.0.1             | openjdk                     | upgrade |
+| Kotlin                | 1.5.0              |                             | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.17.0 [6.14.13] |                             | upgrade |
+| OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.10.0b1           |                             | upgrade |
+| - cx_Oracle           | 8.2.0              |                             | upgrade |
+| - pip                 | 21.1.1             |                             | upgrade |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.15.1             |                             | upgrade |
+| Rust                  | 1.52.1             |                             | upgrade |
+| tmux                  | 3.2                |                             | upgrade | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2876           |                             | upgrade |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
+
+### Version 2.0.2
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.0-c6145d0     |                             |   | 
+| CMake                 | 3.20.1             |                             | upgrade | 
+| cURL                  | 7.76.1             |                             | upgrade | 
+| Docker Compose        | 1.29.1             |                             | upgrade | 
+| Docker Engine         | 20.10.6            |                             | upgrade | 
+| Eclipse               | 2021-03-R          |                             | upgrade | 
+| Elixir                | 1.11.4-otp-23      |                             | upgrade |
+| Erlang/OTP            | 23.3.1             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.31.1             |                             | upgrade | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.3             |                             | upgrade |
+| Gradle                | 7.0                |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16                 | openjdk                     | upgrade |
+| Kotlin                | 1.4.32             |                             | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.16.1 [6.14.12] |                             | upgrade |
+| OpenSSL               | 1.1.1k             |                             | upgrade | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.4              |                             | upgrade |
+| - cx_Oracle           | 8.1                |                             |   |
+| - pip                 | 21.0.1             |                             |   |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.14.3             |                             |   |
+| Rust                  | 1.51.0             |                             | upgrade |
+| tmux                  | 3.2                |                             | upgrade | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2771           |                             | upgrade |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
+
+### Version 2.0.1
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.0-c6145d0     |                             |   | 
+| CMake                 | 3.19.5             |                             | upgrade | 
+| cURL                  | 7.75.0             |                             |   | 
+| Docker Compose        | 1.28.4             |                             | upgrade | 
+| Docker Engine         | 20.10.3            |                             |   | 
+| Eclipse               | 2020-12-R          |                             |   | 
+| Elixir                | 1.11.3-otp-23      |                             |   |
+| Erlang/OTP            | 23.2.5             |                             | upgrade |
+| GCC & G++             | 10.2.0             |                             |   |
+| Git                   | 2.30.0             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16               |                             | upgrade |
+| Gradle                | 6.8.2              |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 15.0.2             | openjdk                     |   |
+| Kotlin                | 1.4.30             | release-302                 | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.15.5 [6.14.11] |                             | upgrade |
+| OpenSSL               | 1.1.1j             |                             | upgrade | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.2              |                             | upgrade |
+| - cx_Oracle           | 8.1                |                             |   |
+| - pip                 | 21.0.1             |                             |   |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.14.3             |                             |   |
+| Rust                  | 1.50.0             |                             | upgrade |
+| tmux                  | 3.1c               |                             | new | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2541           |                             | upgrade |
+| wget                  | 1.21.1             |                             | new | 
+| Yarn                  | 1.22.10            |                             | upgrade | 
+
+### Version 2.0.0
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             | new | 
+| asdf                  | v0.8.0-c6145d0     |                             | new | 
+| CMake                 | 3.19.4             |                             | new | 
+| cURL                  | 7.75.0             |                             | new | 
+| Docker Compose        | 1.28.2             |                             | upgrade | 
+| Docker Engine         | 20.10.3            |                             |   | 
+| Eclipse               | 2020-12-R          |                             |   | 
+| Elixir                | 1.11.3-otp-23      |                             | upgrade |
+| Erlang/OTP            | 23.2.3             | erts-11.1.7                 | upgrade |
+| GCC & G++             | 10.2.0             |                             | G++ new |
+| Git                   | 2.30.0             |                             | upgrade | 
+| GNU Autoconf          | 2.71               |                             | new | 
+| GNU Automake          | 1.16.3             |                             | new | 
+| GNU make              | 4.3                |                             | new | 
+| Go                    | 1.15.7             |                             |   | 
+| Gradle                | 6.8.1              |                             |   | 
+| htop                  | 3.0.5              |                             | new | 
+| Java                  | 15.0.2             | openjdk                     |   |
+| Kotlin                | 1.4.21             | release-351                 |   |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.15.4 [6.14.10] |                             | npm new |
+| OpenSSL               | 1.1.1i             |                             | upgrade | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.1              |                             |   |
+| - cx_Oracle           | 8.1                |                             |   |
+| - pip                 | 21.0.1             |                             |   |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.14.3             |                             |   |
+| Rust                  | 1.49.0             |                             |   |
+| Ubuntu                | 20.04.2 LTS        | focal                       | upgrade | 
+| Vim                   | 8.2 1-2453         |                             | upgrade |
+| Yarn                  | 1.22.5             |                             |   | 
+
+## <a name="creating"></a> 2. Creating a new Konnexions development container
+
+## 2.1 Getting started
 
     > REM Assumptions:
     > REM   - you want to map the container port 8443 to the host port 443
@@ -26,7 +240,7 @@ This image supports the use of a Docker container for the further development of
     > REM Entering a running container
     > docker exec -it my_kxn_dev bash
 
-## 1.2 Detailed Syntax
+## 2.2 Detailed Syntax
 
 A new container can be created with the `docker run` command.
 
@@ -63,9 +277,9 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
     `docker run -it --name my_kxn_dev -p 8000:8443 -v /my_repro:/my_repro konnexionsgmbh/kxn_dev:latest`
 
-## 2 Working with an existing Konnexions development container
+## <a name="working"></a> 3. Working with an existing Konnexions development container
 
-### 2.1 Starting a stopped container
+### 3.1 Starting a stopped container
 
 A previously stopped container can be started with the `docker start` command.
 
@@ -79,7 +293,7 @@ A previously stopped container can be started with the `docker start` command.
 
 Detailed documentation for the command `docker start` can be found [here](https://docs.docker.com/engine/reference/commandline/start/).
 
-### 2.2 Entering a running container
+### 3.2 Entering a running container
 
 A running container can be entered with the `docker exec` command.
 
@@ -94,9 +308,9 @@ A running container can be entered with the `docker exec` command.
 
 Detailed documentation for the command `docker exec` can be found [here](https://docs.docker.com/engine/reference/commandline/exec/).
 
-## 3 Best practices
+## <a name="best"></a> 4. Best practices
 
-### 3.1 Use of a root repository directory on the host computer
+### 4.1 Use of a root repository directory on the host computer
 
 If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single Konnexions development container. 
 
@@ -112,7 +326,7 @@ total 0
 drwxrwxrwx 1 root root 4096 May  2 14:05 dderl
 ```
 
-### 3.2 Use of private GitHub repositories inside the container
+### 4.2 Use of private GitHub repositories inside the container
 
 To access private repositories in GitHub, you must first create a new personal access token in GitHub and then add it to your git configuration inside the container.
 
@@ -260,9 +474,9 @@ Resolving deltas: 100% (33/33), done.
 
 - If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
-## 4 Working inside a running Konnexions development container
+## <a name="inside"></a> 5. Working inside a running Konnexions development container
 
-### 4.1 `dderl` development
+### 5.1 `dderl` development
 
 Inside the Docker container you can either clone a `dderl` repository or switch to an existing `dderl` repository. 
 If a Docker container with an Oracle database is located on the host computer it can be accessed by using the IP address of the host computer.
@@ -280,7 +494,7 @@ The following port numbers are exposed and can be mapped if necessary:
     8443
     9443    
 
-### 4.2 `ora_bench_dev` development
+### 5.2 `ora_bench_dev` development
 
 Inside the Docker container you can either clone a `ora_bench` repository or switch to an existing `ora_bench` repository. 
 
@@ -298,167 +512,3 @@ Any `ora_bench` script can be executed inside the Docker container, for example:
 - `src_elixir/deps`  
 - `src_elixir/mix.lock`  
 - `src_erlang/_build` 
-
-## 5 Installed core components
-
-With the following command you can check in detail which software versions are included in the Docker image:
-
-    apt list --installed
-
-### Version 2.0.3
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Alien                 | 8.95               |                             |   | 
-| asdf                  | v0.8.1-a1ef92a     |                             | upgrade | 
-| CMake                 | 3.20.2             |                             | upgrade | 
-| cURL                  | 7.76.1             |                             |   | 
-| Docker Compose        | 1.29.2             |                             | upgrade | 
-| Docker Engine         | 20.10.6            |                             |   | 
-| Eclipse               | 2021-03-R          |                             |   | 
-| Elixir                | 1.12.0-otp-23      |                             | upgrade |
-| Erlang/OTP            | 24.0.1             |                             | upgrade |
-| GCC & G++             | 10.2.0             |                             |   |
-| Git                   | 2.31.1             |                             |   | 
-| GNU Autoconf          | 2.71               |                             |   | 
-| GNU Automake          | 1.16.3             |                             |   | 
-| GNU make              | 4.3                |                             |   | 
-| Go                    | 1.16.4             |                             | upgrade |
-| Gradle                | 7.0.2              |                             | upgrade | 
-| htop                  | 3.0.5              |                             |   | 
-| Java                  | 16.0.1             | openjdk                     | upgrade |
-| Kotlin                | 1.5.0              |                             | upgrade |
-| LCOV                  | 1.14               |                             |   | 
-| nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.17.0 [6.14.13] |                             | upgrade |
-| OpenSSL               | 1.1.1k             |                             |   | 
-| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| Python                | 3.10.0b1           |                             | upgrade |
-| - cx_Oracle           | 8.2.0              |                             | upgrade |
-| - pip                 | 21.1.1             |                             | upgrade |
-| - pyyaml              | 5.4.1              |                             |   |
-| rebar3                | 3.15.1             |                             | upgrade |
-| Rust                  | 1.52.1             |                             | upgrade |
-| tmux                  | 3.2                |                             | upgrade | 
-| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2876           |                             | upgrade |
-| wget                  | 1.21.1             |                             |   | 
-| Yarn                  | 1.22.10            |                             |   | 
-
-### Version 2.0.2
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Alien                 | 8.95               |                             |   | 
-| asdf                  | v0.8.0-c6145d0     |                             |   | 
-| CMake                 | 3.20.1             |                             | upgrade | 
-| cURL                  | 7.76.1             |                             | upgrade | 
-| Docker Compose        | 1.29.1             |                             | upgrade | 
-| Docker Engine         | 20.10.6            |                             | upgrade | 
-| Eclipse               | 2021-03-R          |                             | upgrade | 
-| Elixir                | 1.11.4-otp-23      |                             | upgrade |
-| Erlang/OTP            | 23.3.1             |                             | upgrade |
-| GCC & G++             | 10.2.0             |                             |   |
-| Git                   | 2.31.1             |                             | upgrade | 
-| GNU Autoconf          | 2.71               |                             |   | 
-| GNU Automake          | 1.16.3             |                             |   | 
-| GNU make              | 4.3                |                             |   | 
-| Go                    | 1.16.3             |                             | upgrade |
-| Gradle                | 7.0                |                             | upgrade | 
-| htop                  | 3.0.5              |                             |   | 
-| Java                  | 16                 | openjdk                     | upgrade |
-| Kotlin                | 1.4.32             |                             | upgrade |
-| LCOV                  | 1.14               |                             |   | 
-| nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.16.1 [6.14.12] |                             | upgrade |
-| OpenSSL               | 1.1.1k             |                             | upgrade | 
-| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| Python                | 3.9.4              |                             | upgrade |
-| - cx_Oracle           | 8.1                |                             |   |
-| - pip                 | 21.0.1             |                             |   |
-| - pyyaml              | 5.4.1              |                             |   |
-| rebar3                | 3.14.3             |                             |   |
-| Rust                  | 1.51.0             |                             | upgrade |
-| tmux                  | 3.2                |                             | upgrade | 
-| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2771           |                             | upgrade |
-| wget                  | 1.21.1             |                             |   | 
-| Yarn                  | 1.22.10            |                             |   | 
-
-### Version 2.0.1
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Alien                 | 8.95               |                             |   | 
-| asdf                  | v0.8.0-c6145d0     |                             |   | 
-| CMake                 | 3.19.5             |                             | upgrade | 
-| cURL                  | 7.75.0             |                             |   | 
-| Docker Compose        | 1.28.4             |                             | upgrade | 
-| Docker Engine         | 20.10.3            |                             |   | 
-| Eclipse               | 2020-12-R          |                             |   | 
-| Elixir                | 1.11.3-otp-23      |                             |   |
-| Erlang/OTP            | 23.2.5             |                             | upgrade |
-| GCC & G++             | 10.2.0             |                             |   |
-| Git                   | 2.30.0             |                             |   | 
-| GNU Autoconf          | 2.71               |                             |   | 
-| GNU Automake          | 1.16.3             |                             |   | 
-| GNU make              | 4.3                |                             |   | 
-| Go                    | 1.16               |                             | upgrade |
-| Gradle                | 6.8.2              |                             | upgrade | 
-| htop                  | 3.0.5              |                             |   | 
-| Java                  | 15.0.2             | openjdk                     |   |
-| Kotlin                | 1.4.30             | release-302                 | upgrade |
-| LCOV                  | 1.14               |                             |   | 
-| nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.15.5 [6.14.11] |                             | upgrade |
-| OpenSSL               | 1.1.1j             |                             | upgrade | 
-| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| Python                | 3.9.2              |                             | upgrade |
-| - cx_Oracle           | 8.1                |                             |   |
-| - pip                 | 21.0.1             |                             |   |
-| - pyyaml              | 5.4.1              |                             |   |
-| rebar3                | 3.14.3             |                             |   |
-| Rust                  | 1.50.0             |                             | upgrade |
-| tmux                  | 3.1c               |                             | new | 
-| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2541           |                             | upgrade |
-| wget                  | 1.21.1             |                             | new | 
-| Yarn                  | 1.22.10            |                             | upgrade | 
-
-### Version 2.0.0
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Alien                 | 8.95               |                             | new | 
-| asdf                  | v0.8.0-c6145d0     |                             | new | 
-| CMake                 | 3.19.4             |                             | new | 
-| cURL                  | 7.75.0             |                             | new | 
-| Docker Compose        | 1.28.2             |                             | upgrade | 
-| Docker Engine         | 20.10.3            |                             |   | 
-| Eclipse               | 2020-12-R          |                             |   | 
-| Elixir                | 1.11.3-otp-23      |                             | upgrade |
-| Erlang/OTP            | 23.2.3             | erts-11.1.7                 | upgrade |
-| GCC & G++             | 10.2.0             |                             | G++ new |
-| Git                   | 2.30.0             |                             | upgrade | 
-| GNU Autoconf          | 2.71               |                             | new | 
-| GNU Automake          | 1.16.3             |                             | new | 
-| GNU make              | 4.3                |                             | new | 
-| Go                    | 1.15.7             |                             |   | 
-| Gradle                | 6.8.1              |                             |   | 
-| htop                  | 3.0.5              |                             | new | 
-| Java                  | 15.0.2             | openjdk                     |   |
-| Kotlin                | 1.4.21             | release-351                 |   |
-| LCOV                  | 1.14               |                             |   | 
-| nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.15.4 [6.14.10] |                             | npm new |
-| OpenSSL               | 1.1.1i             |                             | upgrade | 
-| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| Python                | 3.9.1              |                             |   |
-| - cx_Oracle           | 8.1                |                             |   |
-| - pip                 | 21.0.1             |                             |   |
-| - pyyaml              | 5.4.1              |                             |   |
-| rebar3                | 3.14.3             |                             |   |
-| Rust                  | 1.49.0             |                             |   |
-| Ubuntu                | 20.04.2 LTS        | focal                       | upgrade | 
-| Vim                   | 8.2 1-2453         |                             | upgrade |
-| Yarn                  | 1.22.5             |                             |   | 
