@@ -21,6 +21,7 @@ With the following command you can check in detail which software components in 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| cURL                  | 7.77.0             |                             |   | 
 | Erlang/OTP            | 24.0.2             |                             |   |
 | Git                   | 2.32.0             |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
