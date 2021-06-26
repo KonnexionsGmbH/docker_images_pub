@@ -1,14 +1,14 @@
-# **`DDErl`**: Development Image
+# DDErl Development Image
 
-This image supports the use of a Docker container for the further development of **`DDErl`** in an Ubuntu environment. 
+This image supports the use of a Docker container for the further development of **DDErl** in an Ubuntu environment. 
 
 ### Table of Contents
 
 **[1. Installed core components](#installed)**<br>
-**[2. Creating a new **`DDErl`** development container](#creating)**<br>
-**[3. Working with an existing **`DDErl`** development container](#working_with)**<br>
+**[2. Creating a new DDErl development container](#creating)**<br>
+**[3. Working with an existing DDErl development container](#working_with)**<br>
 **[4. Best practises](#best)**<br>
-**[5. Working inside a running **`DDErl`** development container](#working_inside)**<br>
+**[5. Working inside a running DDErl development container](#working_inside)**<br>
 
 ----
 
@@ -40,13 +40,13 @@ With the following command you can check in detail which software components in 
 | OpenSSL               | 1.1.1k             |                             |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                             |   | 
 | rebar3                | 3.16.1             |                             |   |
-| tmux                  | 3.2a                |                             |   | 
+| tmux                  | 3.2a               |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
 | Vim                   | 8.2.3043           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
-## <a name="creating"></a> 2. Creating a new **`DDErl`** development container
+## <a name="creating"></a> 2. Creating a new DDErl development container
 
 ## 2.1 Getting started
 
@@ -55,7 +55,7 @@ With the following command you can check in detail which software components in 
     > REM   - the name of the Docker container should be: my_dderl_dev
     > REM   - the path the host repository is: //C/projects/dderl
     > REM   - the directory name for this repository inside the container should be: dderl_dir
-    > REM   - you want to use the latest version of the **`DDErl`** development image
+    > REM   - you want to use the latest version of the **DDErl** development image
     > docker run -it -p 443:8443 \
                  --name my_dderl_dev \
                  -v //C/projects/dderl:/dderl_dir \
@@ -107,7 +107,7 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
     `docker run -it --name my_dderl_dev -p 8000:8443 -v /dderl:/dderl konnexionsgmbh/dderl_dev:latest`
 
-## <a name="working_with"></a> 3 Working with an existing **`DDErl`** development container
+## <a name="working_with"></a> 3 Working with an existing DDErl development container
 
 ### 3.1 Starting a stopped container
 
@@ -142,7 +142,7 @@ Detailed documentation for the command `docker exec` can be found [here](https:/
 
 ### 4.1 Use of a root repository directory on the host computer
 
-If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single **`DDErl`** development container. 
+If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single **DDErl** development container. 
 
 **Example:**
 
@@ -304,13 +304,13 @@ Resolving deltas: 100% (33/33), done.
 
 - If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
-## <a name="working_inside"></a> 5 Working inside a running **`DDErl`** development container
+## <a name="working_inside"></a> 5 Working inside a running DDErl development container
 
-### 5.1 **`DDErl`** development
+### 5.1 DDErl development
 
-Inside the Docker container you can either clone a **`DDErl`** repository or switch to an existing **`DDErl`** repository. 
+Inside the Docker container you can either clone a **DDErl** repository or switch to an existing **DDErl** repository. 
 If a Docker container with an Oracle database is located on the host computer it can be accessed by using the IP address of the host computer.
-Any **`DDErl`** script can be executed inside the Docker container, for example:
+Any **DDErl** script can be executed inside the Docker container, for example:
 
     rebar3 compile
     rebar3 as prod release
