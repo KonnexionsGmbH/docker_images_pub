@@ -24,10 +24,12 @@ With the following command you can check in detail which software components in 
 |---                    |---                 |---                          |---     |
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| CMake                 | 3.20.5             |                             |   | 
 | cURL                  | 7.77.0             |                             |   | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
-| Erlang/OTP            | 24.0.2             |                             |   |
+| dos2unix              | 7.4.2              |                             |   | 
+| Erlang/OTP            | 24.0.3             |                             |   |
 | GCC & G++             | 10.3.0             |                             |   |
 | Git                   | 2.32.0             |                             |   | 
 | GNU Autoconf          | 2.71               |                             |   | 
@@ -36,13 +38,14 @@ With the following command you can check in detail which software components in 
 | htop                  | 3.0.5              |                             |   | 
 | Java                  | 16.0.1             | openjdk                     |   |
 | LCOV                  | 1.14               |                             |   | 
-| Node.js [npm]         | v14.17.1 [6.14.13] |                             |   |
+| Node.js [npm]         | v14.17.2 [6.14.13] |                             |   |
+| ODBC                  | 2.3.7              |                             |   | 
 | OpenSSL               | 1.1.1k             |                             |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                             |   | 
 | rebar3                | 3.16.1             |                             |   |
 | tmux                  | 3.2a               |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.3043           |                             |   |
+| Vim                   | 8.2.3083           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
