@@ -22,17 +22,18 @@ With the following command you can check in detail which software components in 
 |---                    |---                 |---                          |---     |
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
 | cURL                  | 7.77.0             |                             |   | 
-| Erlang/OTP            | 24.0.2             |                             |   |
+| Erlang/OTP            | 24.0.3             |                             |   |
 | Git                   | 2.32.0             |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
 | LCOV                  | 1.14               |                             |   | 
 | nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.17.1 [6.14.13] |                             |   |
+| Node.js [npm]         | v14.17.2 [6.14.13] |                             |   |
 | OpenSSL               | 1.1.1k             |                             |   | 
+| Python2               | 2.7.18             |                             |   | 
 | rebar3                | 3.16.1             |                             |   |
 | tmux                  | 3.2a               |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.3017           |                             |   |
+| Vim                   | 8.2.3083           |                             |   |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
