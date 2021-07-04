@@ -8,7 +8,7 @@ This image supports the use of a Docker container for the further development of
 **[2. Creating a new Konnexions development container](#creating)**<br>
 **[3. Working with an existing Konnexions development container](#working)**<br>
 **[4. Best practices](#best)**<br>
-**[5. Working inside a running Konnexions development container](#inside)**<br>
+**[5. Development Project Specifics](#development)**<br>
 
 ----
 
@@ -17,6 +17,47 @@ This image supports the use of a Docker container for the further development of
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 2.0.5
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| CMake                 | 3.20.5             |                             | upgrade | 
+| cURL                  | 7.77.0             |                             |   | 
+| Docker Compose        | 1.29.2             |                             |   | 
+| Docker Engine         | 20.10.7            |                             |   | 
+| Eclipse               | 2021-06-R          |                             | upgrade | 
+| Elixir                | 1.12.2-otp-24      |                             | upgrade |
+| Erlang/OTP            | 24.0.3             |                             | upgrade |
+| GCC & G++             | 10.3.0             |                             | upgrade |
+| Git                   | 2.32.0             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.3             |                             |   |
+| Gradle                | 7.1.1              |                             | upgrade | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16.0.1             | openjdk                     |   |
+| Julia                 | 1.6.1              |                             | new |
+| Kotlin                | 1.5.20             |                             | upgrade |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.17.2 [6.14.13] |                             | upgrade |
+| OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.6              |                             | upgrade |
+| - cx_Oracle           | 8.2.1              |                             |   |
+| - pip                 | 21.1.3             |                             |   |
+| - pyyaml              | 5.4.1              |                             | upgrade |
+| rebar3                | 3.16.1             |                             |   |
+| Rust                  | 1.53.0             |                             | upgrade |
+| tmux                  | 3.2a               |                             |   | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.3083           |                             | upgrade |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
 
 ### Version 2.0.4
 
@@ -474,9 +515,9 @@ Resolving deltas: 100% (33/33), done.
 
 - If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
-## <a name="inside"></a> 5. Working inside a running Konnexions development container
+## <a name="development"></a> 5. Development Project Specifics
 
-### 5.1 `dderl` development
+### 5.1 DDErl
 
 Inside the Docker container you can either clone a `dderl` repository or switch to an existing `dderl` repository. 
 If a Docker container with an Oracle database is located on the host computer it can be accessed by using the IP address of the host computer.
@@ -494,7 +535,7 @@ The following port numbers are exposed and can be mapped if necessary:
     8443
     9443    
 
-### 5.2 `ora_bench_dev` development
+### 5.2 OraBench
 
 Inside the Docker container you can either clone a `ora_bench` repository or switch to an existing `ora_bench` repository. 
 
