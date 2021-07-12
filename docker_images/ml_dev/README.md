@@ -1,10 +1,279 @@
 # ml_dev - Machine Learning Development Image
 
-This image supports the use of a Docker container for the further development of Machine Learning repositories in an Ubuntu environment. 
+This image supports the use of a Docker container for the development of Machine Learning projects in an Ubuntu environment. 
 
-## 1. Creating a new Machine Learning development container
+### Table of Contents
 
-## 1.1 Getting started
+**[1. Installed core components](#installed)**<br>
+**[2. Creating a new Machine Learning development container](#creating)**<br>
+**[3. Working with an existing Machine Learning development container](#working)**<br>
+**[4. Best practices](#best)**<br>
+
+----
+
+## <a name="installed"></a> 1. Installed core components
+
+With the following command you can check in detail which software versions are included in the Docker image:
+
+    apt list --installed
+
+### Version 1.1.0
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              |                    |                             | removed |
+| asdf                  | v0.8.1-a1ef92a     |                             | new | 
+| cURL                  | 7.77.0             |                             | new | 
+| Docker Compose        | 1.29.2             |                             | upgrade | 
+| Docker Engine         | 20.10.7            |                             | upgrade | 
+| dos2unix              | 7.4.2              |                             | new | 
+| Eclipse               | 2021-06-R          |                             | upgrade | 
+| GCC & G++             | 10.3.0             |                             | new |
+| Git                   | 2.32.0             |                             | upgrade | 
+| Gradle                | 7.1.1              |                             | upgrade | 
+| htop                  | 3.0.5              |                             | new | 
+| ImageMagick           | 7.1.0-2            |                             | upgrade |
+| Java                  | 16.0.1             | openjdk                     | upgrade |
+| Julia                 | 1.6.1              |                             | new |
+| Python                | 3.9.6              |                             | upgrade |
+| - alpha_vantage       | 2.3.1              |                             | upgrade |
+| - fbprophet           |                    |                             | removed |
+| - fire                | 0.4.0              |                             | upgrade |
+| - Keras               | 2.4.3              |                             |   |
+| - matplotlib          | 3.4.2              |                             | upgrade |
+| - numpy               | 1.19.5             |                             | upgrade |
+| - pandas              | 1.3.0              |                             | upgrade |
+| - pip                 | 21.1.3             |                             | upgrade |
+| - prophet             | 1.0.1              |                             | new |
+| - pystan              | 3.2.0              |                             | new |
+| - PyYAML              | 5.4.1              |                             | upgrade |
+| - requests            | 2.25.1             |                             | upgrade |
+| - scikit-learn        | 0.24.2             |                             | upgrade |
+| - scipy               | 1.7.0              |                             | upgrade |
+| - seaborn             | 0.11.1             |                             | upgrade |
+| - statsmodels         | 0.12.2             |                             | upgrade |
+| - tensorflow          | 2.5.0              |                             | upgrade |
+| - Theano              | 1.0.5              |                             |   |
+| R                     | 4.1.0              |                             | upgrade |
+| - caret               | 6.0.88             |                             | upgrade |
+| - knitr               | 1.33               |                             | upgrade |
+| - rmarkdown           | 2.9                |                             | upgrade |
+| - tidymodels          | 0.1.3              |                             | upgrade |
+|   - rsample           | 0.1.0              |                             | upgrade |
+|   - parsnip           | 0.1.6              |                             | upgrade |
+|   - recipes           | 0.1.16             |                             | upgrade |
+|   - workflows         | 0.2.2              |                             | upgrade |
+|   - tune              | 0.1.5              |                             | upgrade |
+|   - yardstick         | 0.0.8              |                             | upgrade |
+|   - broom             | 0.7.8              |                             | upgrade |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.5              |                             | upgrade |
+|   - dplyr             | 1.0.7              |                             | upgrade |
+|   - tidyr             | 1.1.3              |                             | upgrade |
+|   - readr             | 1.4.0              |                             |   |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.1.2              |                             | upgrade |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.1              |                             | upgrade |
+| RStudio               | 1.4.1717           | for virtual machine only    | upgrade | 
+| Ubuntu                | 20.04.2 LTS        | focal                       | upgrade | 
+| Vim                   | 8.2.3083           |                             | upgrade | 
+| wget                  | 1.21.1             |                             |   | 
+
+----
+
+### Version 1.0.4
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.2             |                             | upgrade | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-37          |                             | upgrade |
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - pip                 | 20.2.4             |                             |   |
+| - alpha_vantage       | 2.2.0              |                             |   |
+| - fbprophet           | 0.7.1              |                             | new |
+| - fire                | 0.3.1              |                             | new |
+| - Keras               | 2.4.3              |                             | upgrade |
+| - matplotlib          | 3.3.3              |                             | new |
+| - numpy               | 1.19.4             |                             | new |
+| - pandas              | 1.1.4              |                             | new |
+| - PyYAML              | 5.3.1              |                             | new |
+| - requests            | n/a                |                             | new |
+| - scikit-learn        | 0.23.2             |                             | upgrade |
+| - scipy               | 1.5.4              |                             | upgrade |
+| - seaborn             | 0.11.0             |                             |   |
+| - statsmodels         | 0.12.1             |                             | upgrade |
+| - tensorflow          | 2.3.1              |                             |   |
+| - Theano              | 1.0.5              |                             | upgrade |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             |   |
+| - knitr               | 1.30               |                             |   |
+| - rmarkdown           | 2.5                |                             |   |
+| - tidymodels          | 0.1.1              |                             |   |
+|   - rsample           | 0.0.8              |                             |   |
+|   - parsnip           | 0.1.4              |                             |   |
+|   - recipes           | 0.1.15             |                             | upgrade |
+|   - workflows         | 0.2.1              |                             |   |
+|   - tune              | 0.1.1              |                             |   |
+|   - yardstick         | 0.0.7              |                             |   |
+|   - broom             | 0.7.2              |                             |   |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.2              |                             |   |
+|   - dplyr             | 1.0.2              |                             |   |
+|   - tidyr             | 1.1.2              |                             |   |
+|   - readr             | 1.4.0              |                             |   |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.0.4              |                             |   |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.0              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
+----
+
+### Version 1.0.3
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.0             |                             |   | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-34          |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - alpha_vantage       | 2.2.0              |                             |   |
+| - keras               | 2.4.0              |                             | new |
+| - pip                 | 20.2.4             |                             |   |
+| - scikit-learn        | 0.23               |                             | new |
+| - scipy               | 1.5.3              |                             | new |
+| - seaborn             | 0.11.0             |                             | new |
+| - statsmodels         | 0.12.0             |                             | new |
+| - tensorflow          | 2.3.1              |                             | new |
+| - theano              | 1.0.0              |                             | new |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             |   |
+| - knitr               | 1.30               |                             |   |
+| - rmarkdown           | 2.5                |                             |   |
+| - tidymodels          | 0.1.1              |                             |   |
+|   - rsample           | 0.0.8              |                             |   |
+|   - parsnip           | 0.1.4              |                             |   |
+|   - recipes           | 0.1.14             |                             |   |
+|   - workflows         | 0.2.1              |                             |   |
+|   - tune              | 0.1.1              |                             |   |
+|   - yardstick         | 0.0.7              |                             |   |
+|   - broom             | 0.7.2              |                             |   |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.2              |                             |   |
+|   - dplyr             | 1.0.2              |                             |   |
+|   - tidyr             | 1.1.2              |                             |   |
+|   - readr             | 1.4.0              |                             |   |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.0.4              |                             |   |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.0              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
+----
+
+### Version 1.0.2
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             |   | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.0             |                             |   | 
+| Gradle                | 6.7                |                             |   | 
+| ImageMagick           | 7.0.10-34          |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| - alpha_vantage       | 2.2.0              |                             | new |
+| - matplotlib          | 3.3.2              |                             | new |
+| - pandas              | 1.1.3              |                             | new |
+| R                     | 4.0.3              |                             |   |
+| - caret               | 6.0.86             |                             | new |
+| - knitr               | 1.30               |                             | new |
+| - rmarkdown           | 2.5                |                             | new |
+| - tidymodels          | 0.1.1              |                             | new |
+|   - rsample           | 0.0.8              |                             | new |
+|   - parsnip           | 0.1.4              |                             | new |
+|   - recipes           | 0.1.14             |                             | new |
+|   - workflows         | 0.2.1              |                             | new |
+|   - tune              | 0.1.1              |                             | new |
+|   - yardstick         | 0.0.7              |                             | new |
+|   - broom             | 0.7.2              |                             | new |
+|   - dials             | 0.0.9              |                             | new |
+| - tidyverse           |                    |                             | new |
+|   - ggplot2           | 3.3.2              |                             | new |
+|   - dplyr             | 1.0.2              |                             | new |
+|   - tidyr             | 1.1.2              |                             | new |
+|   - readr             | 1.4.0              |                             | new |
+|   - purrr             | 0.3.4              |                             | new |
+|   - tibble            | 3.0.4              |                             | new |
+|   - stringr           | 1.4.0              |                             | new |
+|   - forcats           | 0.5.0              |                             | new |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
+----
+
+### Version 1.0.1
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker Compose        | 1.27.4             |                             | upgrade | 
+| Docker Engine         | 19.03.13           |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.29.0             |                             | upgrade | 
+| Gradle                | 6.7                |                             | upgrade | 
+| ImageMagick           | 7.0.10-34          |                             | new | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| R                     | 4.0.3              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.1 LTS        | focal                       | upgrade | 
+| Vim                   | 8.1                |                             |   | 
+
+----
+
+### Version 1.0.0
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Anaconda              | 1.7.2              | 2020.07                     |   |
+| Docker                | 19.03.13           |                             |   | 
+| Docker Compose        | 1.27.1             |                             |   | 
+| Eclipse               | 2020-09            | for virtual machine only    |   | 
+| Git                   | 2.28.0             |                             |   | 
+| Gradle                | 6.6.1              |                             |   | 
+| Java (openjdk)        | 15                 | build 15+36-1562            |   |
+| Python                | 3.8.3              |                             |   |
+| R                     | 4.0.3              |                             |   |
+| RStudio               | 1.3.1093           | for virtual machine only    |   | 
+| Ubuntu                | 20.04              | focal                       |   | 
+| Vim                   | 8.1                |                             |   | 
+
+## <a name="creating"></a> 2. Creating a new Machine Learning development container
+
+## 2.1 Getting started
 
     > REM Assumptions:
     > REM   - the name of the Docker container should be: my_ml_dev
@@ -24,7 +293,7 @@ This image supports the use of a Docker container for the further development of
     > REM Entering a running container
     > docker exec -it my_ml_dev bash
 
-## 1.2 Detailed Syntax
+## 2.2 Detailed Syntax
 
 A new container can be created with the `docker run` command.
 
@@ -58,9 +327,9 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
     `docker run -it --name my_ml_dev -v /my_repro:/my_repro konnexionsgmbh/ml_dev:latest`
 
-## 2 Working with an existing Konnexions development container
+## <a name="working"></a> 3. Working with an existing Machine Learning development container
 
-### 2.1 Starting a stopped container
+### 3.1 Starting a stopped container
 
 A previously stopped container can be started with the `docker start` command.
 
@@ -74,7 +343,7 @@ A previously stopped container can be started with the `docker start` command.
 
 Detailed documentation for the command `docker start` can be found [here](https://docs.docker.com/engine/reference/commandline/start/).
 
-### 2.2 Entering a running container
+### 3.2 Entering a running container
 
 A running container can be entered with the `docker exec` command.
 
@@ -89,9 +358,9 @@ A running container can be entered with the `docker exec` command.
 
 Detailed documentation for the command `docker exec` can be found [here](https://docs.docker.com/engine/reference/commandline/exec/).
 
-## 3 Best practices
+## <a name="best"></a> 4. Best practices
 
-### 3.1 Use of a root repository directory on the host computer
+### 4.1 Use of a root repository directory on the host computer
 
 If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single Konnexions development container. 
 
@@ -106,7 +375,7 @@ root@35b9310932f1:/projects# ls -ll
 total 0
 ```
 
-### 3.2 Use of private GitHub repositories inside the container
+### 4.2 Use of private GitHub repositories inside the container
 
 To access private repositories in GitHub, you must first create a new personal access token in GitHub and then add it to your git configuration inside the container.
 
@@ -252,190 +521,4 @@ Receiving objects: 100% (78/78), 167.83 KiB | 895.00 KiB/s, done.
 Resolving deltas: 100% (33/33), done.
 ```
 
-- If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
-
-## 4 Installed core components
-
-With the following command you can check in detail which software versions are included in the Docker image:
-
-    apt list --installed
-
-### Version 1.0.4
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Anaconda              | 1.7.2              | 2020.07                     |   |
-| Docker Compose        | 1.27.4             |                             |   | 
-| Docker Engine         | 19.03.13           |                             |   | 
-| Eclipse               | 2020-09            | for virtual machine only    |   | 
-| Git                   | 2.29.2             |                             | upgrade | 
-| Gradle                | 6.7                |                             |   | 
-| ImageMagick           | 7.0.10-37          |                             | upgrade |
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| - pip                 | 20.2.4             |                             |   |
-| - alpha_vantage       | 2.2.0              |                             |   |
-| - fbprophet           | 0.7.1              |                             | new |
-| - fire                | 0.3.1              |                             | new |
-| - Keras               | 2.4.3              |                             | upgrade |
-| - matplotlib          | 3.3.3              |                             | new |
-| - numpy               | 1.19.4             |                             | new |
-| - pandas              | 1.1.4              |                             | new |
-| - PyYAML              | 5.3.1              |                             | new |
-| - requests            | n/a                |                             | new |
-| - scikit-learn        | 0.23.2             |                             | upgrade |
-| - scipy               | 1.5.4              |                             | upgrade |
-| - seaborn             | 0.11.0             |                             |   |
-| - statsmodels         | 0.12.1             |                             | upgrade |
-| - tensorflow          | 2.3.1              |                             |   |
-| - Theano              | 1.0.5              |                             | upgrade |
-| R                     | 4.0.3              |                             |   |
-| - caret               | 6.0.86             |                             |   |
-| - knitr               | 1.30               |                             |   |
-| - rmarkdown           | 2.5                |                             |   |
-| - tidymodels          | 0.1.1              |                             |   |
-|   - rsample           | 0.0.8              |                             |   |
-|   - parsnip           | 0.1.4              |                             |   |
-|   - recipes           | 0.1.15             |                             | upgrade |
-|   - workflows         | 0.2.1              |                             |   |
-|   - tune              | 0.1.1              |                             |   |
-|   - yardstick         | 0.0.7              |                             |   |
-|   - broom             | 0.7.2              |                             |   |
-|   - dials             | 0.0.9              |                             |   |
-| - tidyverse           |                    |                             |   |
-|   - ggplot2           | 3.3.2              |                             |   |
-|   - dplyr             | 1.0.2              |                             |   |
-|   - tidyr             | 1.1.2              |                             |   |
-|   - readr             | 1.4.0              |                             |   |
-|   - purrr             | 0.3.4              |                             |   |
-|   - tibble            | 3.0.4              |                             |   |
-|   - stringr           | 1.4.0              |                             |   |
-|   - forcats           | 0.5.0              |                             |   |
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
-| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
-| Vim                   | 8.1                |                             |   | 
-
-### Version 1.0.3
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Anaconda              | 1.7.2              | 2020.07                     |   |
-| Docker Compose        | 1.27.4             |                             |   | 
-| Docker Engine         | 19.03.13           |                             |   | 
-| Eclipse               | 2020-09            | for virtual machine only    |   | 
-| Git                   | 2.29.0             |                             |   | 
-| Gradle                | 6.7                |                             |   | 
-| ImageMagick           | 7.0.10-34          |                             |   | 
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| - alpha_vantage       | 2.2.0              |                             |   |
-| - keras               | 2.4.0              |                             | new |
-| - pip                 | 20.2.4             |                             |   |
-| - scikit-learn        | 0.23               |                             | new |
-| - scipy               | 1.5.3              |                             | new |
-| - seaborn             | 0.11.0             |                             | new |
-| - statsmodels         | 0.12.0             |                             | new |
-| - tensorflow          | 2.3.1              |                             | new |
-| - theano              | 1.0.0              |                             | new |
-| R                     | 4.0.3              |                             |   |
-| - caret               | 6.0.86             |                             |   |
-| - knitr               | 1.30               |                             |   |
-| - rmarkdown           | 2.5                |                             |   |
-| - tidymodels          | 0.1.1              |                             |   |
-|   - rsample           | 0.0.8              |                             |   |
-|   - parsnip           | 0.1.4              |                             |   |
-|   - recipes           | 0.1.14             |                             |   |
-|   - workflows         | 0.2.1              |                             |   |
-|   - tune              | 0.1.1              |                             |   |
-|   - yardstick         | 0.0.7              |                             |   |
-|   - broom             | 0.7.2              |                             |   |
-|   - dials             | 0.0.9              |                             |   |
-| - tidyverse           |                    |                             |   |
-|   - ggplot2           | 3.3.2              |                             |   |
-|   - dplyr             | 1.0.2              |                             |   |
-|   - tidyr             | 1.1.2              |                             |   |
-|   - readr             | 1.4.0              |                             |   |
-|   - purrr             | 0.3.4              |                             |   |
-|   - tibble            | 3.0.4              |                             |   |
-|   - stringr           | 1.4.0              |                             |   |
-|   - forcats           | 0.5.0              |                             |   |
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
-| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
-| Vim                   | 8.1                |                             |   | 
-
-### Version 1.0.2
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Anaconda              | 1.7.2              | 2020.07                     |   |
-| Docker Compose        | 1.27.4             |                             |   | 
-| Docker Engine         | 19.03.13           |                             |   | 
-| Eclipse               | 2020-09            | for virtual machine only    |   | 
-| Git                   | 2.29.0             |                             |   | 
-| Gradle                | 6.7                |                             |   | 
-| ImageMagick           | 7.0.10-34          |                             |   | 
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| - alpha_vantage       | 2.2.0              |                             | new |
-| - matplotlib          | 3.3.2              |                             | new |
-| - pandas              | 1.1.3              |                             | new |
-| R                     | 4.0.3              |                             |   |
-| - caret               | 6.0.86             |                             | new |
-| - knitr               | 1.30               |                             | new |
-| - rmarkdown           | 2.5                |                             | new |
-| - tidymodels          | 0.1.1              |                             | new |
-|   - rsample           | 0.0.8              |                             | new |
-|   - parsnip           | 0.1.4              |                             | new |
-|   - recipes           | 0.1.14             |                             | new |
-|   - workflows         | 0.2.1              |                             | new |
-|   - tune              | 0.1.1              |                             | new |
-|   - yardstick         | 0.0.7              |                             | new |
-|   - broom             | 0.7.2              |                             | new |
-|   - dials             | 0.0.9              |                             | new |
-| - tidyverse           |                    |                             | new |
-|   - ggplot2           | 3.3.2              |                             | new |
-|   - dplyr             | 1.0.2              |                             | new |
-|   - tidyr             | 1.1.2              |                             | new |
-|   - readr             | 1.4.0              |                             | new |
-|   - purrr             | 0.3.4              |                             | new |
-|   - tibble            | 3.0.4              |                             | new |
-|   - stringr           | 1.4.0              |                             | new |
-|   - forcats           | 0.5.0              |                             | new |
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
-| Ubuntu                | 20.04.1 LTS        | focal                       |   | 
-| Vim                   | 8.1                |                             |   | 
-
-### Version 1.0.1
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Anaconda              | 1.7.2              | 2020.07                     |   |
-| Docker Compose        | 1.27.4             |                             | upgrade | 
-| Docker Engine         | 19.03.13           |                             |   | 
-| Eclipse               | 2020-09            | for virtual machine only    |   | 
-| Git                   | 2.29.0             |                             | upgrade | 
-| Gradle                | 6.7                |                             | upgrade | 
-| ImageMagick           | 7.0.10-34          |                             | new | 
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| R                     | 4.0.3              |                             |   |
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
-| Ubuntu                | 20.04.1 LTS        | focal                       | upgrade | 
-| Vim                   | 8.1                |                             |   | 
-
-### Version 1.0.0
-
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Anaconda              | 1.7.2              | 2020.07                     |   |
-| Docker                | 19.03.13           |                             |   | 
-| Docker Compose        | 1.27.1             |                             |   | 
-| Eclipse               | 2020-09            | for virtual machine only    |   | 
-| Git                   | 2.28.0             |                             |   | 
-| Gradle                | 6.6.1              |                             |   | 
-| Java (openjdk)        | 15                 | build 15+36-1562            |   |
-| Python                | 3.8.3              |                             |   |
-| R                     | 4.0.3              |                             |   |
-| RStudio               | 1.3.1093           | for virtual machine only    |   | 
-| Ubuntu                | 20.04              | focal                       |   | 
-| Vim                   | 8.1                |                             |   | 
+- If we use the same path - where `git/config` and `git/credentials` exist - as in Step 4, `git` access (clone/push/pull) doesn't ask for username/password anymore.
