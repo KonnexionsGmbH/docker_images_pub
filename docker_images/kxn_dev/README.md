@@ -1,6 +1,6 @@
 # kxn_dev: Konnexions' Development Image
 
-This image supports the use of a Docker container for the further development of the Konnexions' projects in an Ubuntu environment. 
+This image supports the use of a Docker container for the development of the Konnexions' projects in an Ubuntu environment. 
 
 ### Table of Contents
 
@@ -17,6 +17,49 @@ This image supports the use of a Docker container for the further development of
 With the following command you can check in detail which software versions are included in the Docker image:
 
     apt list --installed
+
+### Version 2.0.6
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Alien                 | 8.95               |                             |   | 
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| CMake                 | 3.20.5             |                             |   | 
+| cURL                  | 7.77.0             |                             |   | 
+| Docker Compose        | 1.29.2             |                             |   | 
+| Docker Engine         | 20.10.7            |                             |   | 
+| Eclipse               | 2021-06-R          |                             |   | 
+| Elixir                | 1.12.2-otp-24      |                             |   |
+| Erlang/OTP            | 24.0.3             |                             |   |
+| GCC & G++             | 10.3.0             |                             |   |
+| Git                   | 2.32.0             |                             |   | 
+| GNU Autoconf          | 2.71               |                             |   | 
+| GNU Automake          | 1.16.3             |                             |   | 
+| GNU make              | 4.3                |                             |   | 
+| Go                    | 1.16.3             |                             |   |
+| Gradle                | 7.1.1              |                             |   | 
+| htop                  | 3.0.5              |                             |   | 
+| Java                  | 16.0.1             | openjdk                     |   |
+| Julia                 | 1.6.1              |                             |   |
+| Kotlin                | 1.5.20             |                             |   |
+| LCOV                  | 1.14               |                             |   | 
+| nginx                 | 1.18.0             |                             |   |
+| Node.js [npm]         | v14.17.2 [6.14.13] |                             |   |
+| OpenSSL               | 1.1.1k             |                             |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python                | 3.9.6              |                             |   |
+| - cx_Oracle           | 8.2.1              |                             |   |
+| - pip                 | 21.1.3             |                             |   |
+| - pyyaml              | 5.4.1              |                             |   |
+| rebar3                | 3.16.1             |                             |   |
+| Rust                  | 1.53.0             |                             |   |
+| tmux                  | 3.2a               |                             |   | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.3083           |                             |   |
+| wget                  | 1.21.1             |                             |   | 
+| Yarn                  | 1.22.10            |                             |   | 
+
+----
 
 ### Version 2.0.5
 
@@ -59,6 +102,8 @@ With the following command you can check in detail which software versions are i
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
+----
+
 ### Version 2.0.4
 
 | Component             | Version            | Remark                      | Status |
@@ -98,6 +143,8 @@ With the following command you can check in detail which software versions are i
 | Vim                   | 8.2.2984           |                             | upgrade |
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
+
+----
 
 ### Version 2.0.3
 
@@ -139,6 +186,8 @@ With the following command you can check in detail which software versions are i
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
+----
+
 ### Version 2.0.2
 
 | Component             | Version            | Remark                      | Status |
@@ -179,6 +228,8 @@ With the following command you can check in detail which software versions are i
 | wget                  | 1.21.1             |                             |   | 
 | Yarn                  | 1.22.10            |                             |   | 
 
+----
+
 ### Version 2.0.1
 
 | Component             | Version            | Remark                      | Status |
@@ -218,6 +269,8 @@ With the following command you can check in detail which software versions are i
 | Vim                   | 8.2.2541           |                             | upgrade |
 | wget                  | 1.21.1             |                             | new | 
 | Yarn                  | 1.22.10            |                             | upgrade | 
+
+----
 
 ### Version 2.0.0
 
@@ -513,7 +566,7 @@ Receiving objects: 100% (78/78), 167.83 KiB | 895.00 KiB/s, done.
 Resolving deltas: 100% (33/33), done.
 ```
 
-- If we use the same path - where `git/config` and `git/credentials` exist - as in Step 3, `git` access (clone/push/pull) doesn't ask for username/password anymore.
+- If we use the same path - where `git/config` and `git/credentials` exist - as in  Step 4, `git` access (clone/push/pull) doesn't ask for username/password anymore.
 
 ## <a name="development"></a> 5. Development Project Specifics
 

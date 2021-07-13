@@ -1,4 +1,4 @@
-# DBSeeder Development and Operational Image
+# DBSeeder: Development and Operational Image
 
 This image supports the use of a Docker container for the development and operation of DBSeeder in an Ubuntu environment.  
 
@@ -15,6 +15,20 @@ This image supports the use of a Docker container for the development and operat
 With the following command you can check in detail which software components in which versions are included in the Docker image:
 
     apt list --installed
+
+### Version 2.9.2
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| Docker Engine         | 20.10.7            |                             |   | 
+| Eclipse               | 2021-03-R          |                             |   | 
+| Git                   | 2.31.1             |                             |   | 
+| Gradle                | 7.0.2              |                             |   | 
+| Java                  | 15.0.2             | openjdk                     |   |
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2949           |                             |   |
+
+----
 
 ### Version 2.9.1
 
