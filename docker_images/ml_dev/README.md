@@ -44,8 +44,6 @@ With the following command you can check in detail which software versions are i
 | - numpy               | 1.19.5             |                             | upgrade |
 | - pandas              | 1.3.0              |                             | upgrade |
 | - pip                 | 21.1.3             |                             | upgrade |
-| - prophet             | 1.0.1              |                             | new |
-| - pystan              | 3.2.0              |                             | new |
 | - PyYAML              | 5.4.1              |                             | upgrade |
 | - requests            | 2.25.1             |                             | upgrade |
 | - scikit-learn        | 0.24.2             |                             | upgrade |
