@@ -26,7 +26,7 @@ With the following command you can check in detail which software versions are i
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
 | dos2unix              | 7.4.2              |                             |   | 
-| GCC & G++             | 10.3.0             |                             |   |
+| GCC                   | 10.3.0             |                             |   |
 | Git                   | 2.32.0             |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
 | Python                | 3.9.6              |                             |   |
