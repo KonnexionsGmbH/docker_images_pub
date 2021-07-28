@@ -16,17 +16,20 @@ With the following command you can check in detail which software components in 
 
     apt list --installed
 
-### Version 2.9.2
+### Version 3.0.0
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| cURL                  | 7.77.0             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
-| Eclipse               | 2021-03-R          |                             |   | 
-| Git                   | 2.31.1             |                             |   | 
-| Gradle                | 7.0.2              |                             |   | 
+| dos2unix              | 7.4.2              |                             |   | 
+| Eclipse               | 2021-06-R          |                             | upgrade | 
+| Git                   | 2.32.0             |                             | upgrade | 
+| Gradle                | 7.1.1              |                             | upgrade | 
 | Java                  | 15.0.2             | openjdk                     |   |
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2949           |                             |   |
+| Vim                   | 8.2.3232           |                             | upgrade |
 
 ----
 
