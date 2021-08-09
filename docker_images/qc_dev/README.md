@@ -17,6 +17,28 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.0.1
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| dos2unix              | 7.4.0              |                             |   | 
+| G++                   | 9.3.0              |                             |   |
+| GCC                   | 9.3.0              |                             |   |
+| Git                   | 2.25.1             |                             |   | 
+| GNU Autoconf          | 2.69               |                             |   | 
+| GNU Automake          | 1.16.1             |                             |   | 
+| GNU Make              | 4.2.1              |                             |   |
+| htop                  | 2.2.0              |                             |   | 
+| openssl               | 1.1.1f             |                             |   | 
+| Python                | 3.9.6              |                             |   |
+| - jupyterlab          | 3.1.4              | only with vm                |   |           
+| - notebook            | 6.4.2              | only with vm                |   |
+| - pip                 | 21.1.3             |                             |   |
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2269           |                             |   | 
+| wget                  | 1.20.3             |                             |   | 
+
 ### Version 1.0.0
 
 | Component             | Version            | Remark                      | Status |
