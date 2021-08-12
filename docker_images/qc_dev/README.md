@@ -30,6 +30,7 @@ With the following command you can check in detail which software versions are i
 | GNU Automake          | 1.16.1             |                             |   | 
 | GNU Make              | 4.2.1              |                             |   |
 | htop                  | 2.2.0              |                             |   | 
+| LCOV                  | 1.14               |                             |   | 
 | openssl               | 1.1.1f             |                             |   | 
 | Python                | 3.9.6              |                             |   |
 | - jupyterlab          | 3.1.4              | only with vm                |   |           
