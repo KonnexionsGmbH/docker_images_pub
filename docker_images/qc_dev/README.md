@@ -45,7 +45,7 @@ With the following command you can check in detail which software versions are i
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
-| cURL                  | 7.77.0             |                             |   | 
+| curl                  | 7.77.0             |                             |   | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
 | dos2unix              | 7.4.2              |                             |   | 
