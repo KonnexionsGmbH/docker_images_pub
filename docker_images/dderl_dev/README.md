@@ -24,30 +24,29 @@ With the following command you can check in detail which software components in 
 |---                    |---                 |---                          |---     |
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
-| CMake                 | 3.20.5             |                             |   | 
-| cURL                  | 7.77.0             |                             |   | 
+| curl                  | 7.68.0             |                             |   | 
 | Docker Compose        | 1.29.2             |                             |   | 
-| Docker Engine         | 20.10.7            |                             |   | 
-| dos2unix              | 7.4.2              |                             |   | 
-| Erlang/OTP            | 24.0.3             |                             |   |
-| GCC & G++             | 10.3.0             |                             |   |
-| Git                   | 2.32.0             |                             |   | 
-| GNU Autoconf          | 2.71               |                             |   | 
-| GNU Automake          | 1.16.3             |                             |   | 
-| GNU make              | 4.3                |                             |   | 
+| Docker Desktop        | 20.10.8            | Docker Image & VM           |   | 
+| dos2unix              | 7.4.0              |                             |   | 
+| Erlang/OTP            | 24.0.5             |                             |   |
+| G++ & GCC             | 10.3.0             |                             |   |
+| Git                   | 2.25.1             |                             |   | 
+| GNU Autoconf          | 2.69               |                             |   | 
+| GNU Automake          | 1.16.1             |                             |   | 
+| GNU make              | 4.2.1              |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
-| Java                  | 16.0.1             | openjdk                     |   |
+| Java                  | 11.0.11            | openjdk                     |   |
 | LCOV                  | 1.14               |                             |   | 
-| Node.js [npm]         | v14.17.2 [6.14.13] |                             |   |
+| Node.js [npm]         | v14.17.4 [6.14.14] |                             |   |
 | ODBC                  | 2.3.7              |                             |   | 
 | OpenSSL               | 1.1.1k             |                             |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                             |   | 
+| Python3               | 3.8.10             |                             |   |
 | rebar3                | 3.16.1             |                             |   |
 | tmux                  | 3.2a               |                             |   | 
 | Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.3083           |                             |   |
-| wget                  | 1.21.1             |                             |   | 
-| Yarn                  | 1.22.10            |                             |   | 
+| wget                  | 1.20.3             |                             |   | 
+| Yarn                  | n/a                | asdf plugin is faulty       |   | 
 
 ## <a name="creating"></a> 2. Creating a new DDErl development container
 
