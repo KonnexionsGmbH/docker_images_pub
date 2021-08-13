@@ -23,8 +23,7 @@ With the following command you can check in detail which software versions are i
 |---                    |---                 |---                          |---     |
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
 | dos2unix              | 7.4.0              |                             |   | 
-| G++                   | 9.3.0              |                             |   |
-| GCC                   | 9.3.0              |                             |   |
+| G++ & GCC             | 9.3.0              |                             |   |
 | Git                   | 2.25.1             |                             |   | 
 | GNU Autoconf          | 2.69               |                             |   | 
 | GNU Automake          | 1.16.1             |                             |   | 
