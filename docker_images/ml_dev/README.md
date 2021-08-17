@@ -17,13 +17,80 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.1.1
+
+| Component             | Version            | Remark                      | Status |
+|---                    |---                 |---                          |---     |
+| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| curl                  | 7.68.0             |                             | base version | 
+| Docker Compose        | 1.29.2             |                             |   | 
+| Docker Engine         | 20.10.8            |                             | upgrade | 
+| dos2unix              | 7.4.0              |                             | base version | 
+| Eclipse               | 2021-06-R          |                             |   | 
+| GCC & G++             | 10.3.0             |                             |   |
+| Git                   | 2.32.0             |                             |   | 
+| GNU Autoconf          | 2.69               |                             | base version | 
+| GNU Automake          | 1.16.1             |                             | base version | 
+| GNU Make              | 4.2.1              |                             | base version | 
+| Gradle                | 7.1.1              |                             |   | 
+| htop                  | 3.0.5              |                             |   | 
+| ImageMagick           | 7.1.0-4            |                             | upgrade |
+| Java                  | 16.0.2             | openjdk                     | upgrade |
+| Julia                 | 1.6.2              |                             | upgrade |
+| LCOV                  | 1.14               |                             | base version |
+| OpenSSL               | 1.1.1.f            |                             | base version |
+| Python                | 3.9.6              |                             |   |
+| - alpha_vantage       | 2.3.1              |                             |   |
+| - fire                | 0.4.0              |                             |   |
+| - Keras               | 2.6.0              |                             | upgrade |
+| - matplotlib          | 3.4.3              |                             | upgrade |
+| - numpy               | 1.19.5             |                             |   |
+| - pandas              | 1.3.1              |                             | upgrade |
+| - pip                 | 21.2.4             |                             | upgrade |
+| - PyYAML              | 5.4.1              |                             |   |
+| - requests            | 2.26.0             |                             | upgrade |
+| - scikit-learn        | 0.24.2             |                             |   |
+| - scipy               | 1.7.1              |                             | upgrade |
+| - seaborn             | 0.11.1             |                             |   |
+| - statsmodels         | 0.12.2             |                             |   |
+| - tensorflow          | 2.6.0              |                             | upgrade |
+| - Theano              | 1.0.5              |                             |   |
+| R                     | 4.1.1              |                             | upgrade |
+| - caret               | 6.0.88             |                             |   |
+| - knitr               | 1.33               |                             |   |
+| - rmarkdown           | 2.10               |                             | upgrade |
+| - tidymodels          | 0.1.3              |                             |   |
+|   - rsample           | 0.1.0              |                             |   |
+|   - parsnip           | 0.1.7              |                             | upgrade |
+|   - recipes           | 0.1.16             |                             |   |
+|   - workflows         | 0.2.3              |                             | upgrade |
+|   - tune              | 0.1.6              |                             | upgrade |
+|   - yardstick         | 0.0.8              |                             |   |
+|   - broom             | 0.7.9              |                             | upgrade |
+|   - dials             | 0.0.9              |                             |   |
+| - tidyverse           |                    |                             |   |
+|   - ggplot2           | 3.3.5              |                             |   |
+|   - dplyr             | 1.0.7              |                             |   |
+|   - tidyr             | 1.1.3              |                             |   |
+|   - readr             | 2.0.1              |                             | upgrade |
+|   - purrr             | 0.3.4              |                             |   |
+|   - tibble            | 3.1.3              |                             | upgrade |
+|   - stringr           | 1.4.0              |                             |   |
+|   - forcats           | 0.5.1              |                             |   |
+| RStudio               | 1.4.1717           | for virtual machine only    |   | 
+| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
+| Vim                   | 8.2.2269           |                             | base version | 
+| wget                  | 1.20.1             |                             | base version | 
+
+----
+
 ### Version 1.1.0
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | Anaconda              |                    |                             | removed |
 | asdf                  | v0.8.1-a1ef92a     |                             | new | 
-| cURL                  | 7.77.0             |                             | new | 
+| curl                  | 7.77.0             |                             | new | 
 | Docker Compose        | 1.29.2             |                             | upgrade | 
 | Docker Engine         | 20.10.7            |                             | upgrade | 
 | dos2unix              | 7.4.2              |                             | new | 
