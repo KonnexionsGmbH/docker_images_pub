@@ -32,7 +32,7 @@ With the following command you can check in detail which software versions are i
 | GNU Autoconf          | 2.69               |                             | base version | 
 | GNU Automake          | 1.16.1             |                             | base version | 
 | GNU Make              | 4.2.1              |                             | base version | 
-| Gradle                | 7.1.1              |                             |   | 
+| Gradle                | 7.2                |                             |   | 
 | htop                  | 3.0.5              |                             |   | 
 | ImageMagick           | 7.1.0-4            |                             | upgrade |
 | Java                  | 16.0.2             | openjdk                     | upgrade |
