@@ -73,7 +73,7 @@ With the following command you can check in detail which software components in 
     > REM Entering a running container
     > docker exec -it my_dderl_dev bash
 
-## 2.2 Detailed Syntax
+## 2.2 Detailed syntax
 
 A new container can be created with the `docker run` command.
 
