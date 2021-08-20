@@ -36,7 +36,7 @@ With the following command you can check in detail which software versions are i
 | Python                | 3.8.10             |                             | base version |
 | Ubuntu                | 20.04.2 LTS        | focal                       | base version | 
 | Vim                   | 8.2.2269           |                             | base version | 
-| wget                  | 1.20.1             |                             | base version | 
+| wget                  | 1.20.3             |                             | base version | 
 
 ## <a name="creating"></a> 2. Creating a new DBSeeder development container
 
