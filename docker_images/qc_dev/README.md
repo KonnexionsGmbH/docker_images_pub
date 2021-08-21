@@ -19,25 +19,25 @@ With the following command you can check in detail which software versions are i
 
 ### Version 1.0.1
 
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| asdf                  | v0.8.1-a1ef92a     |                             |   | 
-| dos2unix              | 7.4.0              |                             |   | 
-| G++ & GCC             | 9.3.0              |                             |   |
-| Git                   | 2.25.1             |                             |   | 
-| GNU Autoconf          | 2.69               |                             |   | 
-| GNU Automake          | 1.16.1             |                             |   | 
-| GNU Make              | 4.2.1              |                             |   |
-| htop                  | 2.2.0              |                             |   | 
-| LCOV                  | 1.14               |                             |   | 
-| openssl               | 1.1.1f             |                             |   | 
-| Python                | 3.9.6              |                             |   |
-| - jupyterlab          | 3.1.4              | only with vm                |   |           
-| - notebook            | 6.4.2              | only with vm                |   |
-| - pip                 | 21.1.3             |                             |   |
-| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.2269           |                             |   | 
-| wget                  | 1.20.3             |                             |   | 
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| asdf                  | v0.8.1-fe5b71d     | base version                     |   | 
+| dos2unix              | 7.4.0              | base version                     |   | 
+| G++ & GCC             | 9.3.0              | base version                     |   |
+| Git                   | 2.25.1             | base version                     |   | 
+| GNU Autoconf          | 2.69               | base version                     |   | 
+| GNU Automake          | 1.16.1             | base version                     |   | 
+| GNU Make              | 4.2.1              | base version                     |   |
+| htop                  | 2.2.0              | base version                     |   | 
+| LCOV                  | 1.14               | base version                     |   | 
+| openssl               | 1.1.1f             | base version                     |   | 
+| Python                | 3.9.6              |                                  |   |
+| - jupyterlab          | 3.1.4              | base version [only with vm]      |   |           
+| - notebook            | 6.4.2              | base version [only with vm]      |   |
+| - pip                 | 21.1.3             | base version                     |   |
+| Ubuntu                | 20.04.2 LTS        | base version [focal]             |   | 
+| Vim                   | 8.2.2269           | base version                     |   | 
+| wget                  | 1.20.3             | base version                     |   | 
 
 ### Version 1.0.0
 
@@ -79,7 +79,7 @@ With the following command you can check in detail which software versions are i
     > REM Entering a running container
     > docker exec -it my_qc_dev bash
 
-## 2.2 Detailed Syntax
+## 2.2 Detailed syntax
 
 A new container can be created with the `docker run` command.
 
