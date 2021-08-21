@@ -23,7 +23,7 @@ With the following command you can check in detail which software components in 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
 | Alien                 | 8.95               |                             | base version | 
-| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| asdf                  | v0.8.1-95f2cdf     |                             |   | 
 | curl                  | 7.68.0             |                             | base version | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Desktop        | 20.10.8            | Docker Image & VM           | base version | 
@@ -44,7 +44,7 @@ With the following command you can check in detail which software components in 
 | Python3               | 3.8.10             |                             | base version |
 | rebar3                | 3.16.1             |                             |   |
 | tmux                  | 3.2a               |                             |   | 
-| Ubuntu                | 20.04.2 LTS        | focal                       | base version | 
+| Ubuntu                | 20.04.3 LTS        | focal                       | base version | 
 | Vim                   | 8.2.2269           |                             | base version | 
 | wget                  | 1.20.3             |                             | base version | 
 | Yarn                  | n/a                | asdf plugin is faulty       |   | 
