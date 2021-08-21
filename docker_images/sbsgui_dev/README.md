@@ -18,30 +18,30 @@ With the following command you can check in detail which software components in 
 
 ### Version 1.0.0
 
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| asdf                  | v0.8.1-a1ef92a     |                             | base version | 
-| curl                  | 7.68.0             |                             | base version | 
-| dos2unix              | 7.4.0              |                             | base version | 
-| Erlang/OTP            | 24.0.5             |                             |   |
-| G++ & GCC             | 9.3.0              |                             | base version |
-| Git                   | 2.25.1             |                             | base version | 
-| GNU Autoconf          | 2.69               |                             | base version | 
-| GNU Automake          | 1.16.1             |                             | base version | 
-| GNU make              | 4.2.1              |                             | base version | 
-| htop                  | 3.0.5              |                             |   | 
-| Java                  | 11.0.11            | openjdk                     | base version |
-| LCOV                  | 1.14               |                             | base version | 
-| Node.js [npm]         | v14.17.5 [6.14.14] |                             |   |
-| ODBC                  | 2.3.6              |                             | base version | 
-| OpenSSL               | 1.1.1k             |                             |   | 
-| Python3               | 3.8.10             |                             | base version |
-| rebar3                | 3.16.1             |                             |   |
-| tmux                  | 3.2a               |                             |   | 
-| Ubuntu                | 20.04.2 LTS        | focal                       | base version | 
-| Vim                   | 8.2.2269           |                             | base version | 
-| wget                  | 1.20.3             |                             | base version | 
-| Yarn                  | n/a                | asdf plugin is faulty       |   | 
+| Component             | Version            | Remark                                  | Status |
+|---                    |---                 |---                                      |---     |
+| asdf                  | v0.8.1-95f2cdf     | base version                            |   | 
+| curl                  | 7.68.0             | base version                            |   | 
+| dos2unix              | 7.4.0              | base version                            |   | 
+| Erlang/OTP            | 24.0.5             |                                         |   |
+| G++ & GCC             | 9.3.0              | base version                            |   |
+| Git                   | 2.25.1             | base version                            |   | 
+| GNU Autoconf          | 2.69               | base version                            |   | 
+| GNU Automake          | 1.16.1             | base version                            |   | 
+| GNU make              | 4.2.1              | base version                            |   | 
+| htop                  | 3.0.5              |                                         |   | 
+| Java                  | 11.0.11            | base version [openjdk]                  |   |
+| LCOV                  | 1.14               | base version                            |   | 
+| Node.js [npm]         | v14.17.5 [6.14.14] |                                         |   |
+| ODBC                  | 2.3.6              | base version                            |   | 
+| OpenSSL               | 1.1.1k             |                                         |   | 
+| Python3               | 3.8.10             | base version                            |   |
+| rebar3                | 3.16.1             |                                         |   |
+| tmux                  | 3.2a               |                                         |   | 
+| Ubuntu                | 20.04.3 LTS        | base version [focal]                    |   | 
+| Vim                   | 8.2.2269           | base version                            |   | 
+| wget                  | 1.20.3             | base version                            |   | 
+| Yarn                  | n/a                | asdf plugin is faulty                   |   | 
 
 ----
 
