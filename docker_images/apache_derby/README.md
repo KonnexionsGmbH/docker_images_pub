@@ -25,7 +25,7 @@ These images support the operational use of Apache Derby Docker containers.
     > REM Entering a running container
     > docker exec -it my_derby_db bash
 
-## 1.2 Detailed Syntax
+## 1.2 Detailed syntax
 
 A new container can be created with the `docker run` command.
 
