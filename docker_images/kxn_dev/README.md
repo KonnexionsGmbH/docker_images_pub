@@ -18,46 +18,51 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
-### Version 2.0.6
+### Version 2.1.0
 
-| Component             | Version            | Remark                      | Status |
-|---                    |---                 |---                          |---     |
-| Alien                 | 8.95               |                             |   | 
-| asdf                  | v0.8.1-a1ef92a     |                             |   | 
-| CMake                 | 3.20.5             |                             |   | 
-| cURL                  | 7.77.0             |                             |   | 
-| Docker Compose        | 1.29.2             |                             |   | 
-| Docker Engine         | 20.10.7            |                             |   | 
-| Eclipse               | 2021-06-R          |                             |   | 
-| Elixir                | 1.12.2-otp-24      |                             |   |
-| Erlang/OTP            | 24.0.3             |                             |   |
-| GCC & G++             | 10.3.0             |                             |   |
-| Git                   | 2.32.0             |                             |   | 
-| GNU Autoconf          | 2.71               |                             |   | 
-| GNU Automake          | 1.16.3             |                             |   | 
-| GNU make              | 4.3                |                             |   | 
-| Go                    | 1.16.3             |                             |   |
-| Gradle                | 7.1.1              |                             |   | 
-| htop                  | 3.0.5              |                             |   | 
-| Java                  | 16.0.1             | openjdk                     |   |
-| Julia                 | 1.6.1              |                             |   |
-| Kotlin                | 1.5.20             |                             |   |
-| LCOV                  | 1.14               |                             |   | 
-| nginx                 | 1.18.0             |                             |   |
-| Node.js [npm]         | v14.17.2 [6.14.13] |                             |   |
-| OpenSSL               | 1.1.1k             |                             |   | 
-| Oracle Instant Client | 21.1.0.0.0         |                             |   | 
-| Python                | 3.9.6              |                             |   |
-| - cx_Oracle           | 8.2.1              |                             |   |
-| - pip                 | 21.1.3             |                             |   |
-| - pyyaml              | 5.4.1              |                             |   |
-| rebar3                | 3.16.1             |                             |   |
-| Rust                  | 1.53.0             |                             |   |
-| tmux                  | 3.2a               |                             |   | 
-| Ubuntu                | 20.04.2 LTS        | focal                       |   | 
-| Vim                   | 8.2.3083           |                             |   |
-| wget                  | 1.21.1             |                             |   | 
-| Yarn                  | 1.22.10            |                             |   | 
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| Alien                 | 8.95               | base version                     |   | 
+| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
+| CMake                 | 3.21.1             |                                  | upgrade | 
+| curl                  | 7.78.0             |                                  | upgrade | 
+| Docker Compose        | 1.29.2             |                                  |   | 
+| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.2              |                                  |   | 
+| Eclipse               | 2021-06-R          |                                  |   | 
+| Elixir                | 1.12.2-otp-24      |                                  |   |
+| Erlang/OTP            | 24.0.5             |                                  | upgrade |
+| GCC & G++             | 10.3.0             |                                  |   |
+| Git                   | 2.33.0             |                                  | upgrade | 
+| GNU Autoconf          | 2.71               |                                  |   | 
+| GNU Automake          | 1.16.4             |                                  | upgrade | 
+| GNU make              | 4.3                |                                  |   | 
+| Go                    | 1.16.7             |                                  | upgrade |
+| Gradle                | 7.2                |                                  | upgrade | 
+| htop                  | 3.0.5              |                                  |   | 
+| ImageMagick           | 7.1.0-4            |                                  | new | 
+| Java                  | 16.0.2             | openjdk                          | upgrade |
+| Julia                 | 1.6.2              |                                  | upgrade |
+| Kotlin                | 1.5.21             |                                  | upgrade |
+| LCOV                  | 1.14               | base version                     |   | 
+| nginx                 | 1.18.0             | base version                     |   |
+| Node.js [npm]         | v14.17.5 [6.14.14] |                                  | upgrade |
+| ODBC                  | 2.3.6              | base version                     | new | 
+| OpenSSL               | 1.1.1k             |                                  |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
+| Python3               | 3.9.6              |                                  |   |
+| - cx_Oracle           | 8.2.1              | base version                     |   |
+| - pip                 | 21.2.4             | base version                     | upgrade |
+| - pyyaml              | 5.4.1              | base version                     |   |
+| R                     | 4.1.1              |                                  | new |
+| rebar3                | 3.16.1             |                                  |   |
+| RStudio               | 1.4.1717           | for virtual machine only         |   | 
+| Rust                  | 1.54.0             |                                  | upgrade |
+| tmux                  | 3.2a               |                                  |   | 
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             | upgrade | 
+| Vim                   | 8.2.3336           |                                  | upgrade |
+| wget                  | 1.21.1             |                                  |   | 
+| Yarn                  | n/a                | asdf plugin is faulty            |   | 
 
 ----
 
@@ -68,7 +73,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
 | CMake                 | 3.20.5             |                             | upgrade | 
-| cURL                  | 7.77.0             |                             |   | 
+| curl                  | 7.77.0             |                             |   | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             |   | 
 | Eclipse               | 2021-06-R          |                             | upgrade | 
@@ -111,7 +116,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.1-a1ef92a     |                             |   | 
 | CMake                 | 3.20.3             |                             | upgrade | 
-| cURL                  | 7.77.0             |                             | upgrade | 
+| curl                  | 7.77.0             |                             | upgrade | 
 | Docker Compose        | 1.29.2             |                             |   | 
 | Docker Engine         | 20.10.7            |                             | upgrade | 
 | Eclipse               | 2021-03-R          |                             |   | 
@@ -153,7 +158,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.1-a1ef92a     |                             | upgrade | 
 | CMake                 | 3.20.2             |                             | upgrade | 
-| cURL                  | 7.76.1             |                             |   | 
+| curl                  | 7.76.1             |                             |   | 
 | Docker Compose        | 1.29.2             |                             | upgrade | 
 | Docker Engine         | 20.10.6            |                             |   | 
 | Eclipse               | 2021-03-R          |                             |   | 
@@ -195,7 +200,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.0-c6145d0     |                             |   | 
 | CMake                 | 3.20.1             |                             | upgrade | 
-| cURL                  | 7.76.1             |                             | upgrade | 
+| curl                  | 7.76.1             |                             | upgrade | 
 | Docker Compose        | 1.29.1             |                             | upgrade | 
 | Docker Engine         | 20.10.6            |                             | upgrade | 
 | Eclipse               | 2021-03-R          |                             | upgrade | 
@@ -237,7 +242,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             |   | 
 | asdf                  | v0.8.0-c6145d0     |                             |   | 
 | CMake                 | 3.19.5             |                             | upgrade | 
-| cURL                  | 7.75.0             |                             |   | 
+| curl                  | 7.75.0             |                             |   | 
 | Docker Compose        | 1.28.4             |                             | upgrade | 
 | Docker Engine         | 20.10.3            |                             |   | 
 | Eclipse               | 2020-12-R          |                             |   | 
@@ -279,7 +284,7 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95               |                             | new | 
 | asdf                  | v0.8.0-c6145d0     |                             | new | 
 | CMake                 | 3.19.4             |                             | new | 
-| cURL                  | 7.75.0             |                             | new | 
+| curl                  | 7.75.0             |                             | new | 
 | Docker Compose        | 1.28.2             |                             | upgrade | 
 | Docker Engine         | 20.10.3            |                             |   | 
 | Eclipse               | 2020-12-R          |                             |   | 
@@ -334,7 +339,7 @@ With the following command you can check in detail which software versions are i
     > REM Entering a running container
     > docker exec -it my_kxn_dev bash
 
-## 2.2 Detailed Syntax
+## 2.2 Detailed syntax
 
 A new container can be created with the `docker run` command.
 
