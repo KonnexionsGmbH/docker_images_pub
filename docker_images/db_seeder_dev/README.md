@@ -21,7 +21,7 @@ With the following command you can check in detail which software versions are i
 
 | Component             | Version            | Remark                      | Status |
 |---                    |---                 |---                          |---     |
-| asdf                  | v0.8.1-a1ef92a     |                             |   | 
+| asdf                  | v0.8.1-95f2cdf     |                             |   | 
 | curl                  | 7.68.0             |                             | base version | 
 | Docker Engine         | 20.10.8            |                             | base version | 
 | dos2unix              | 7.4.0              |                             | base version | 
@@ -34,7 +34,7 @@ With the following command you can check in detail which software versions are i
 | LCOV                  | 1.14               |                             | base version |
 | OpenSSL               | 1.1.1.f            |                             | base version |
 | Python                | 3.8.10             |                             | base version |
-| Ubuntu                | 20.04.2 LTS        | focal                       | base version | 
+| Ubuntu                | 20.04.3 LTS        | focal                       | base version | 
 | Vim                   | 8.2.2269           |                             | base version | 
 | wget                  | 1.20.3             |                             | base version | 
 
