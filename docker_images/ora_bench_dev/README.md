@@ -25,6 +25,7 @@ With the following command you can check in detail which software versions are i
 | asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
 | CMake                 | 3.21.1             |                                  |   | 
 | curl                  | 7.68.0             | base version                     |   | 
+| DBeaver               | 21.1.5             | for virtual machine only         |   | 
 | Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
 | dos2unix              | 7.4.0              | base version                     |   | 
 | Eclipse               | 2021-06-R          |                                  |   | 

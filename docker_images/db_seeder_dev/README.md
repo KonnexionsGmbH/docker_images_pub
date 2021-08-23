@@ -23,6 +23,7 @@ With the following command you can check in detail which software versions are i
 |---                    |---                 |---                               |---     |
 | asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
 | curl                  | 7.68.0             | base version                     |   | 
+| DBeaver               | 21.1.5             | for virtual machine only         |   | 
 | Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
 | dos2unix              | 7.4.0              | base version                     |   | 
 | Eclipse               | 2021-06-R          |                                  |   | 
@@ -33,6 +34,7 @@ With the following command you can check in detail which software versions are i
 | Java                  | 16.0.2             | openjdk                          |   |
 | LCOV                  | 1.14               | base version                     |   |
 | OpenSSL               | 1.1.1.f            | base version                     |   |
+| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
 | Python                | 3.8.10             | base version                     |   |
 | Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
 | Vim                   | 8.2.2269           | base version                     |   | 
