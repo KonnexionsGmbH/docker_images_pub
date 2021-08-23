@@ -21,7 +21,7 @@ With the following command you can check in detail which software versions are i
 
 | Component             | Version            | Remark                           | Status |
 |---                    |---                 |---                               |---     |
-| asdf                  | v0.8.1-95f2cdf     |                                  |   | 
+| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
 | curl                  | 7.68.0             | base version                     |   | 
 | Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
 | dos2unix              | 7.4.0              | base version                     |   | 
