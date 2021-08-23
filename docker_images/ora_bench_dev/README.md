@@ -46,7 +46,7 @@ With the following command you can check in detail which software versions are i
 | OpenSSL               | 1.1.1f             | base version                     |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
 | Python3               | 3.9.6              |                                  |   |
-| - cx_Oracle           | 8.2.1              | base version                     |   |
+| - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.2.4             | base version                     |   |
 | - PyYAML              | 5.4.1              | base version                     |   |
 | rebar3                | 3.16.1             |                                  |   |
