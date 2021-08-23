@@ -47,11 +47,11 @@ With the following command you can check in detail which software versions are i
 | LCOV                  | 1.14               | base version                     |   | 
 | nginx                 | 1.18.0             | base version                     |   |
 | Node.js [npm]         | v14.17.5 [6.14.14] |                                  | upgrade |
-| ODBC                  | 2.3.6              | base version                     | new | 
+| ODBC                  | 2.3.7              | base version                     | new | 
 | OpenSSL               | 1.1.1k             |                                  |   | 
 | Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
 | Python3               | 3.9.6              |                                  |   |
-| - cx_Oracle           | 8.2.1              | base version                     |   |
+| - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.2.4             | base version                     | upgrade |
 | - pyyaml              | 5.4.1              | base version                     |   |
 | R                     | 4.1.1              |                                  | new |
