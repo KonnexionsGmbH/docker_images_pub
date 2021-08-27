@@ -23,7 +23,7 @@ With the following command you can check in detail which software versions are i
 |---                    |---                 |---                               |---     |
 | Alien                 | 8.95               | base version                     |   | 
 | asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
-| CMake                 | 3.21.1             |                                  |   | 
+| CMake                 | 3.21.2             |                                  |   | 
 | curl                  | 7.68.0             | base version                     |   | 
 | DBeaver               | 21.1.5             | for virtual machine only         |   | 
 | Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
@@ -36,16 +36,16 @@ With the following command you can check in detail which software versions are i
 | GNU Autoconf          | 2.69               | base version                     |   | 
 | GNU Automake          | 1.16.1             | base version                     |   | 
 | GNU make              | 4.2.1              | base version                     |   | 
-| Go                    | 1.16.7             |                                  |   |
+| Go                    | 1.17               |                                  |   |
 | Gradle                | 7.2                |                                  |   | 
 | htop                  | 3.0.5              |                                  |   | 
 | Java                  | 16.0.2             | openjdk                          |   |
 | Julia                 | 1.6.2              |                                  |   |
-| Kotlin                | 1.5.21             |                                  |   |
+| Kotlin                | 1.5.30             |                                  |   |
 | LCOV                  | 1.14               | base version                     |   | 
 | ODBC                  | 2.3.7              | base version                     |   | 
 | OpenSSL               | 1.1.1f             | base version                     |   | 
-| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
+| Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
 | Python3               | 3.9.6              |                                  |   |
 | - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.2.4             | base version                     |   |
