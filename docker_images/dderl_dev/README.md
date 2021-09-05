@@ -23,12 +23,13 @@ With the following command you can check in detail which software components in 
 | Component             | Version            | Remark                           | Status |
 |---                    |---                 |---                               |---     |
 | Alien                 | 8.95               | base version                     |   | 
-| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
+| asdf                  | v0.8.1-30d27cb     | base version                     |   | 
 | curl                  | 7.68.0             | base version                     |   | 
 | Docker Compose        | 1.29.2             |                                  |   | 
 | Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
 | dos2unix              | 7.4.0              | base version                     |   | 
-| Erlang/OTP            | 24.0.5             |                                  |   |
+| Elixir                | 1.12.3-otp-24      |                                  |   |
+| Erlang/OTP            | 24.0.6             |                                  |   |
 | G++ & GCC             | 10.3.0             |                                  |   |
 | Git                   | 2.25.1             | base version                     |   | 
 | GNU Autoconf          | 2.69               | base version                     |   | 
@@ -37,10 +38,10 @@ With the following command you can check in detail which software components in 
 | htop                  | 3.0.5              |                                  |   | 
 | Java                  | 11.0.11            | base version [openjdk]           |   |
 | LCOV                  | 1.14               | base version                     |   | 
-| Node.js [npm]         | v14.17.5 [6.14.14] |                                  |   |
+| Node.js [npm]         | v14.17.6 [6.14.15] |                                  |   |
 | ODBC                  | 2.3.7              | base version                     |   | 
-| OpenSSL               | 1.1.1k             |                                  |   | 
-| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
+| OpenSSL               | 1.1.1l             |                                  |   | 
+| Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
 | Python3               | 3.8.10             | base version                     |   |
 | rebar3                | 3.16.1             |                                  |   |
 | tmux                  | 3.2a               |                                  |   | 
