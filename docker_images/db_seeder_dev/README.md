@@ -19,26 +19,28 @@ With the following command you can check in detail which software versions are i
 
 ### Version 3.0.2
 
-| Component             | Version            | Remark                           | Status |
-|---                    |---                 |---                               |---     |
-| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
-| curl                  | 7.68.0             | base version                     |   | 
-| DBeaver               | 21.1.5             | for virtual machine only         |   | 
-| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
-| dos2unix              | 7.4.0              | base version                     |   | 
-| Eclipse               | 2021-06-R          |                                  |   | 
-| GCC & G++             | 9.3.0              | base version                     |   |
-| Git                   | 2.25.1             | base version                     |   | 
-| GNU Make              | 4.2.1              | base version                     |   | 
-| Gradle                | 7.2                |                                  |   | 
-| Java                  | 16.0.2             | openjdk                          |   |
-| LCOV                  | 1.14               | base version                     |   |
-| OpenSSL               | 1.1.1.f            | base version                     |   |
-| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
-| Python                | 3.8.10             | base version                     |   |
-| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
-| Vim                   | 8.2.2269           | base version                     |   | 
-| wget                  | 1.20.3             | base version                     |   | 
+| Component             | Version               | Remark                           | Status |
+|---                    |---                    |---                               |---     |
+| asdf                  | v0.8.1-30d27cb        | base version                     |   | 
+| curl                  | 7.68.0                | base version                     |   | 
+| DBeaver               | 21.2.0                | for virtual machine only         |   | 
+| Docker Desktop        | 20.10.8               | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.0                 | base version                     |   | 
+| Eclipse               | 4.20.0.I20210611-1600 |                                  |   | 
+| GCC & G++             | 9.3.0                 | base version                     |   |
+| Git                   | 2.25.1                | base version                     |   | 
+| GNU Autoconf          | 2.69                  | base version                     |   | 
+| GNU Automake          | 1.16.1                | base version                     |   | 
+| GNU Make              | 4.2.1                 | base version                     |   | 
+| Gradle                | 7.2                   |                                  |   | 
+| Java                  | 16.0.2                | openjdk                          |   |
+| LCOV                  | 1.14                  | base version                     |   |
+| OpenSSL               | 1.1.1.f               | base version                     |   |
+| Oracle Instant Client | 21.3.0.0.0            |                                  |   | 
+| Python                | 3.8.10                | base version                     |   |
+| Ubuntu                | 20.04.3 LTS           | base version [focal]             |   | 
+| Vim                   | 8.2.2269              | base version                     |   | 
+| wget                  | 1.20.3                | base version                     |   | 
 
 ## <a name="creating"></a> 2. Creating a new DBSeeder development container
 
