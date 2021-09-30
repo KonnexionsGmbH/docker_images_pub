@@ -18,6 +18,56 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 2.1.1
+
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| Alien                 | 8.95               | base version                     |   | 
+| asdf                  | v0.8.1-cb79c69     | base version                     |   | 
+| CMake                 | 3.21.3             |                                  | upgrade | 
+| curl                  | 7.79.1             |                                  | upgrade | 
+| DBeaver               | 21.2.1             | for virtual machine only         | new | 
+| Docker Compose        | 1.29.2             |                                  |   | 
+| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.2              |                                  |   | 
+| Eclipse               | 2021-09-R          |                                  | upgrade | 
+| Elixir                | 1.12.3-otp-24      |                                  | upgrade |
+| Erlang/OTP            | 24.1               |                                  | upgrade |
+| GCC & G++             | 10.3.0             |                                  |   |
+| Git                   | 2.33.0             |                                  |   | 
+| GNU Autoconf          | 2.71               |                                  |   | 
+| GNU Automake          | 1.16.4             |                                  |   | 
+| GNU make              | 4.3                |                                  |   | 
+| Go                    | 1.17.1             |                                  | upgrade |
+| Gradle                | 7.2                |                                  |   | 
+| htop                  | 3.1.0              |                                  | upgrade | 
+| ImageMagick           | 7.1.0-8            |                                  | upgrade | 
+| Java                  | 17                 | openjdk                          | upgrade |
+| Julia                 | 1.6.3              |                                  | upgrade |
+| Kotlin                | 1.5.31             |                                  | upgrade |
+| LCOV                  | 1.14               | base version                     |   | 
+| nginx                 | 1.18.0             | base version                     |   |
+| Node.js [npm]         | v14.18.0 [6.14.15] |                                  | upgrade |
+| ODBC                  | 2.3.7              | base version                     |   | 
+| OpenSSL               | 1.1.1l             |                                  | upgrade | 
+| Oracle Instant Client | 21.3.0.0.0         |                                  | upgrade | 
+| Python3               | 3.9.7              |                                  | upgrade |
+| - cx-Oracle           | 8.2.1              | base version                     |   |
+| - pip                 | 21.2.4             | base version                     |   |
+| - pyyaml              | 5.4.1              | base version                     |   |
+| R                     | 4.1.1              |                                  |   |
+| rebar3                | 3.16.1             |                                  |   |
+| RStudio               | 2021.09.0+351      | for virtual machine only         | upgrade | 
+| Rust                  | 1.55.0             |                                  | upgrade |
+| tmux                  | 3.2a               |                                  |   | 
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
+| Vim                   | 8.2.3458           |                                  | upgrade |
+| wget                  | 1.21.2             |                                  | upgrade | 
+| wget2                 | 2.0.0              |                                  | new | 
+| Yarn                  | 1.22.15            |                                  | upgrade | 
+
+----
+
 ### Version 2.1.0
 
 | Component             | Version            | Remark                           | Status |
