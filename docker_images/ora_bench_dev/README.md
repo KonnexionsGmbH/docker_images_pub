@@ -58,6 +58,47 @@ With the following command you can check in detail which software versions are i
 | wget                  | 1.20.3             | base version                     |   | 
 | wget2                 | 1.99.1             | base version                     |   | 
 
+----
+
+### Version 1.0.0
+
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| Alien                 | 8.95               | base version                     |   | 
+| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
+| CMake                 | 3.21.1             |                                  |   | 
+| curl                  | 7.68.0             | base version                     |   | 
+| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.0              | base version                     |   | 
+| Eclipse               | 2021-06-R          |                                  |   | 
+| Elixir                | 1.12.2-otp-24      |                                  |   |
+| Erlang/OTP            | 24.0.5             |                                  |   |
+| GCC & G++             | 10.3.0             |                                  |   |
+| Git                   | 2.25.1             | base version                     |   | 
+| GNU Autoconf          | 2.69               | base version                     |   | 
+| GNU Automake          | 1.16.1             | base version                     |   | 
+| GNU make              | 4.2.1              | base version                     |   | 
+| Go                    | 1.16.7             |                                  |   |
+| Gradle                | 7.2                |                                  |   | 
+| htop                  | 3.0.5              |                                  |   | 
+| Java                  | 16.0.2             | openjdk                          |   |
+| Kotlin                | 1.5.21             |                                  |   |
+| LCOV                  | 1.14               | base version                     |   | 
+| ODBC                  | 2.3.7              | base version                     |   | 
+| OpenSSL               | 1.1.1f             | base version                     |   | 
+| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
+| Python3               | 3.9.6              |                                  |   |
+| - cx_Oracle           | 8.2.1              | base version                     |   |
+| - pip                 | 21.2.4             | base version                     |   |
+| - PyYAML              | 5.4.1              | base version                     |   |
+| rebar3                | 3.16.1             |                                  |   |
+| Rust                  | 1.54.0             |                                  |   |
+| tmux                  | 3.2a               |                                  |   | 
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
+| Vim                   | 8.2.2269           | base version                     |   |
+| wget                  | 1.20.3             | base version                     |   | 
+
+
 ## <a name="creating"></a> 2. Creating a new OraBench development container
 
 ## 2.1 Getting started
