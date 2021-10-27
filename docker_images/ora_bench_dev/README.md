@@ -1,6 +1,6 @@
 # ora_bench_dev: OraBench Development Image
 
-This image supports the use of a Docker container for the development of the OraBench project in an Ubuntu environment. 
+This image supports the use of a Docker container for the development of the OraBench project in an Ubuntu environment.
 
 ### Table of Contents
 
@@ -17,87 +17,89 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.2.0
+
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| Alien                 | 8.95               | base version                     |   |
+| asdf                  | v0.8.1-d566a36     | base version                     |   |
+| CMake                 | 3.21.4             |                                  | upgrade |
+| curl                  | 7.68.0             | base version                     |   |
+| DBeaver               | 21.2.3             | for virtual machine only         | upgrade |
+| Docker Desktop        | 20.10.10           | base version [Docker Image & VM] | upgrade |
+| dos2unix              | 7.4.0              | base version                     |   |
+| Eclipse               | 2021-09-R          |                                  |   |
+| Elixir                | 1.12.3-otp-24      |                                  |   |
+| Erlang/OTP            | 24.1.3             |                                  | upgrade |
+| GCC & G++             | 10.3.0             |                                  |   |
+| Git                   | 2.25.1             | base version                     |   |
+| GNU Autoconf          | 2.69               | base version                     |   |
+| GNU Automake          | 1.16.1             | base version                     |   |
+| GNU make              | 4.2.1              | base version                     |   |
+| Go                    | 1.17.2             |                                  |   |
+| Gradle                | 7.2                |                                  |   |
+| htop                  | 3.1.1              |                                  | upgrade |
+| Java                  | 17.0.1             | openjdk                          | upgrade |
+| Julia                 | 1.6.3              |                                  |   |
+| Kotlin                | 1.5.31             |                                  |   |
+| LCOV                  | 1.14               | base version                     |   |
+| ODBC                  | 2.3.7              | base version                     |   |
+| OpenSSL               | 1.1.1f             | base version                     |   |
+| Oracle Instant Client | 21.3.0.0.0         |                                  |   |
+| Python3               | 3.10.0             |                                  |   |
+| - cx-Oracle           | 8.2.1              | base version                     |   |
+| - pip                 | 21.3.1             | base version                     | upgrade |
+| - PyYAML              | 5.4.1              | base version                     |   |
+| rebar3                | 3.16.1             |                                  |   |
+| Rust                  | 1.56.0             |                                  | upgrade |
+| tmux                  | 3.2a               |                                  |   |
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   |
+| Vim                   | 8.1.2269           | base version                     |   |
+| wget                  | 1.20.3             | base version                     |   |
+| wget2                 | 1.99.1             | base version                     |   |
+
+----
+
 ### Version 1.1.0
 
 | Component             | Version            | Remark                           | Status |
 |---                    |---                 |---                               |---     |
-| Alien                 | 8.95               | base version                     |   | 
-| asdf                  | v0.8.1-847ec73     | base version                     |   | 
-| CMake                 | 3.21.3             |                                  | upgrade | 
-| curl                  | 7.68.0             | base version                     |   | 
-| DBeaver               | 21.2.2             | for virtual machine only         | upgrade | 
-| Docker Desktop        | 20.10.9            | base version [Docker Image & VM] | upgrade | 
-| dos2unix              | 7.4.0              | base version                     |   | 
-| Eclipse               | 2021-09-R          |                                  | upgrade | 
+| Alien                 | 8.95               | base version                     |   |
+| asdf                  | v0.8.1-847ec73     | base version                     |   |
+| CMake                 | 3.21.3             |                                  | upgrade |
+| curl                  | 7.68.0             | base version                     |   |
+| DBeaver               | 21.2.2             | for virtual machine only         | upgrade |
+| Docker Desktop        | 20.10.9            | base version [Docker Image & VM] | upgrade |
+| dos2unix              | 7.4.0              | base version                     |   |
+| Eclipse               | 2021-09-R          |                                  | upgrade |
 | Elixir                | 1.12.3-otp-24      |                                  | upgrade |
 | Erlang/OTP            | 24.1.2             |                                  | upgrade |
 | GCC & G++             | 10.3.0             |                                  |   |
-| Git                   | 2.25.1             | base version                     |   | 
-| GNU Autoconf          | 2.69               | base version                     |   | 
-| GNU Automake          | 1.16.1             | base version                     |   | 
-| GNU make              | 4.2.1              | base version                     |   | 
+| Git                   | 2.25.1             | base version                     |   |
+| GNU Autoconf          | 2.69               | base version                     |   |
+| GNU Automake          | 1.16.1             | base version                     |   |
+| GNU make              | 4.2.1              | base version                     |   |
 | Go                    | 1.17.2             |                                  | upgrade |
-| Gradle                | 7.2                |                                  |   | 
-| htop                  | 3.1.0              |                                  | upgrade | 
+| Gradle                | 7.2                |                                  |   |
+| htop                  | 3.1.0              |                                  | upgrade |
 | Java                  | 17                 | openjdk                          | upgrade |
 | Julia                 | 1.6.3              |                                  | new |
 | Kotlin                | 1.5.31             |                                  | upgrade |
-| LCOV                  | 1.14               | base version                     |   | 
-| ODBC                  | 2.3.7              | base version                     |   | 
-| OpenSSL               | 1.1.1f             | base version                     |   | 
-| Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
+| LCOV                  | 1.14               | base version                     |   |
+| ODBC                  | 2.3.7              | base version                     |   |
+| OpenSSL               | 1.1.1f             | base version                     |   |
+| Oracle Instant Client | 21.3.0.0.0         |                                  |   |
 | Python3               | 3.10.0             |                                  | upgrade |
 | - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.2.4             | base version                     |   |
 | - PyYAML              | 5.4.1              | base version                     |   |
 | rebar3                | 3.16.1             |                                  |   |
 | Rust                  | 1.55.0             |                                  | upgrade |
-| tmux                  | 3.2a               |                                  |   | 
-| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
+| tmux                  | 3.2a               |                                  |   |
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   |
 | Vim                   | 8.1.2269           | base version                     |   |
-| wget                  | 1.20.3             | base version                     |   | 
-| wget2                 | 1.99.1             | base version                     |   | 
-
-----
-
-### Version 1.0.0
-
-| Component             | Version            | Remark                           | Status |
-|---                    |---                 |---                               |---     |
-| Alien                 | 8.95               | base version                     |   | 
-| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
-| CMake                 | 3.21.1             |                                  |   | 
-| curl                  | 7.68.0             | base version                     |   | 
-| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
-| dos2unix              | 7.4.0              | base version                     |   | 
-| Eclipse               | 2021-06-R          |                                  |   | 
-| Elixir                | 1.12.2-otp-24      |                                  |   |
-| Erlang/OTP            | 24.0.5             |                                  |   |
-| GCC & G++             | 10.3.0             |                                  |   |
-| Git                   | 2.25.1             | base version                     |   | 
-| GNU Autoconf          | 2.69               | base version                     |   | 
-| GNU Automake          | 1.16.1             | base version                     |   | 
-| GNU make              | 4.2.1              | base version                     |   | 
-| Go                    | 1.16.7             |                                  |   |
-| Gradle                | 7.2                |                                  |   | 
-| htop                  | 3.0.5              |                                  |   | 
-| Java                  | 16.0.2             | openjdk                          |   |
-| Kotlin                | 1.5.21             |                                  |   |
-| LCOV                  | 1.14               | base version                     |   | 
-| ODBC                  | 2.3.7              | base version                     |   | 
-| OpenSSL               | 1.1.1f             | base version                     |   | 
-| Oracle Instant Client | 21.1.0.0.0         |                                  |   | 
-| Python3               | 3.9.6              |                                  |   |
-| - cx_Oracle           | 8.2.1              | base version                     |   |
-| - pip                 | 21.2.4             | base version                     |   |
-| - PyYAML              | 5.4.1              | base version                     |   |
-| rebar3                | 3.16.1             |                                  |   |
-| Rust                  | 1.54.0             |                                  |   |
-| tmux                  | 3.2a               |                                  |   | 
-| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
-| Vim                   | 8.2.2269           | base version                     |   |
-| wget                  | 1.20.3             | base version                     |   | 
-
+| wget                  | 1.20.3             | base version                     |   |
+| wget2                 | 1.99.1             | base version                     |   |
 
 ## <a name="creating"></a> 2. Creating a new OraBench development container
 
@@ -127,7 +129,7 @@ With the following command you can check in detail which software versions are i
 
 A new container can be created with the `docker run` command.
 
-##### Syntax:
+##### Syntax
 
     docker run -it 
                [-p <port>:8443] \
@@ -135,18 +137,18 @@ A new container can be created with the `docker run` command.
                [-v <directory_repository>:/dderl] \
                konnexionsgmbh/ora_bench_dev[:<version>] 
                [<cmd>]
- 
-##### Parameters:
 
-- **port** - an optional listener port             
-- **container_name** - an optional container identification 
-- **directory_repository** - an optional host repository directory - the default value is expecting the repository inside the container 
+##### Parameters
+
+- **port** - an optional listener port
+- **container_name** - an optional container identification
+- **directory_repository** - an optional host repository directory - the default value is expecting the repository inside the container
 - **version** - an optional version number of the image or the constant `latest`
 - **cmd** - an optional command to be executed in the container, default is `bash` for running the `bash` shell
 
 Detailed documentation for the command `docker run` can be found [here](https://docs.docker.com/engine/reference/run/).
 
-##### Examples:
+##### Examples
 
 1. Creating a new Docker container named `my_ora_bench_dev` using a repository inside the Docker container:  
 
@@ -166,13 +168,13 @@ Detailed documentation for the command `docker run` can be found [here](https://
 
 A previously stopped container can be started with the `docker start` command.
 
-##### Syntax:
+##### Syntax
 
     docker start <container_name>
 
-##### Parameter:
+##### Parameter
 
-- **container_name** - the mandatory container identification, that is an UUID long identifier, an UUID short identifier or a previously given name 
+- **container_name** - the mandatory container identification, that is an UUID long identifier, an UUID short identifier or a previously given name
 
 Detailed documentation for the command `docker start` can be found [here](https://docs.docker.com/engine/reference/commandline/start/).
 
@@ -180,13 +182,13 @@ Detailed documentation for the command `docker start` can be found [here](https:
 
 A running container can be entered with the `docker exec` command.
 
-##### Syntax:
+##### Syntax
 
     docker exec -it <container_name> <cmd>
 
-##### Parameter:
+##### Parameter
 
-- **container_name** - the mandatory container identification, that is an UUID long identifier, an UUID short identifier or a previously given name 
+- **container_name** - the mandatory container identification, that is an UUID long identifier, an UUID short identifier or a previously given name
 - **cmd** - the command to be executed in the container, e.g. `bash` for running the `bash` shell
 
 Detailed documentation for the command `docker exec` can be found [here](https://docs.docker.com/engine/reference/commandline/exec/).
@@ -195,7 +197,7 @@ Detailed documentation for the command `docker exec` can be found [here](https:/
 
 ### 4.1 Use of a root repository directory on the host computer
 
-If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single OraBench development container. 
+If all relevant repositories are located within a common parent directory, then development work in all these repositories can be done within a single OraBench development container.
 
 **Example:**
 
@@ -215,7 +217,7 @@ To access private repositories in GitHub, you must first create a new personal a
 
 #### 1. Create a new personal access token in GitHub
 
-- With the following URL you can create the access token: https://github.com/settings/tokens
+- With the following URL you can create the access token: <https://github.com/settings/tokens>
 
 ![](.README_images/Personal_Access_Token_01.png)
 
@@ -223,7 +225,7 @@ To access private repositories in GitHub, you must first create a new personal a
 
 ![](.README_images/Personal_Access_Token_02.png)
 
-- Name the new token, select the scopes and press the button `Generate token` 
+- Name the new token, select the scopes and press the button `Generate token`
 
 ![](.README_images/Personal_Access_Token_03.png)
 
@@ -297,7 +299,7 @@ root@332206c300f1:~# cat /projects/git/credentials
 https://John Doe:abc033c3d4d5220e66d63e60a0c5b2497a2dca9f@github.com
 ```
 
-#### 7. Verification after a restart of the Docker container 
+#### 7. Verification after a restart of the Docker container
 
 ```
 C:\Temp\my_projects\dderl>docker start ora_bench_dev
@@ -310,10 +312,10 @@ file:/projects/git/config       user.name=John Doe
 file:/projects/git/config       user.email=john.doe@company.com
 ```
 
-#### 8. Verification after the removal of the Docker container 
+#### 8. Verification after the removal of the Docker container
 
 - Deleting the Docker container and image
- 
+
 ```
 C:\Temp\my_projects\dderl>docker stop ora_bench_dev
 ora_bench_dev
