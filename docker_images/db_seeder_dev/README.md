@@ -17,6 +17,34 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 3.0.4
+
+| Component             | Version               | Remark                           | Status |
+|---                    |---                    |---                               |---     |
+| Alien                 | 8.95                  | base version                     |   |
+| asdf                  | v0.8.1-d566a36        | base version                     |   | 
+| curl                  | 7.68.0                | base version                     |   | 
+| DBeaver               | 21.2.3                | for virtual machine only         | upgrade | 
+| Docker Desktop        | 20.10.10              | base version [Docker Image & VM] | upgrade | 
+| dos2unix              | 7.4.0                 | base version                     |   | 
+| Eclipse               | 4.21.0.I20210906-0500 |                                  | upgrade | 
+| GCC & G++             | 9.3.0                 | base version                     |   |
+| Git                   | 2.25.1                | base version                     |   | 
+| GNU Autoconf          | 2.69                  | base version                     |   | 
+| GNU Automake          | 1.16.1                | base version                     |   | 
+| GNU Make              | 4.2.1                 | base version                     |   | 
+| Gradle                | 7.2                   |                                  |   | 
+| Java                  | 17.0.1                | openjdk                          | upgrade |
+| LCOV                  | 1.14                  | base version                     |   |
+| OpenSSL               | 1.1.1.f               | base version                     |   |
+| Oracle Instant Client | 21.3.0.0.0            |                                  |   | 
+| Python                | 3.8.10                | base version                     |   |
+| Ubuntu                | 20.04.3 LTS           | base version [focal]             |   | 
+| Vim                   | 8.2.2269              | base version                     |   | 
+| wget                  | 1.20.3                | base version                     |   | 
+
+----
+
 ### Version 3.0.2
 
 | Component             | Version               | Remark                           | Status |
