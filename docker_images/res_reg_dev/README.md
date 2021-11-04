@@ -31,7 +31,7 @@ With the following command you can check in detail which software versions are i
 | GNU make              | 4.2.1              | base version                     |   | 
 | Node.js [npm]         | v16.13.0 [8.1.0]   |                                  |   |
 | OpenSSL               | 1.1.1f             | base version                     |   | 
-| Plone                 | 5.2.5              | Docker container & local         |   | 
+| Plone                 | 5.2.5              | Docker container [VM] & local    |   | 
 | procps-ng             | 3,3,16             | base version                     |   | 
 | Python3               | 3.9.0              |                                  |   |
 | - pip                 | 21.3.1             | base version                     |   |
