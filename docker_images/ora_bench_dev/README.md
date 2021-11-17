@@ -30,16 +30,21 @@ With the following command you can check in detail which software versions are i
 | dos2unix              | 7.4.0              | base version                     |   |
 | Eclipse               | 2021-09-R          |                                  |   |
 | Elixir                | 1.12.3-otp-24      |                                  |   |
+| - oranif              | 0.2.3              |                                  |   |
 | Erlang/OTP            | 24.1.5             |                                  | upgrade |
+| - oranif              | see Elixir         |                                  |   |
 | GCC & G++             | 10.3.0             |                                  |   |
+| - ODPI-C              | 4.3                |                                  | upgrade |
 | Git                   | 2.25.1             | base version                     |   |
 | GNU Autoconf          | 2.69               | base version                     |   |
 | GNU Automake          | 1.16.1             | base version                     |   |
 | GNU make              | 4.2.1              | base version                     |   |
 | Go                    | 1.17.3             |                                  | upgrade |
+| - godror              | v0.28.1            |                                  | upgrade |
 | Gradle                | 7.3                |                                  | upgrade |
 | htop                  | 3.1.1              |                                  |   |
 | Java                  | 17.0.1             | openjdk                          |   |
+| - JDBC                | 21.3.0.0           |                                  |   |
 | Julia                 | 1.6.3              |                                  |   |
 | - JDBC.jl             | v0.5.0             |                                  |   |
 | - Oracle.jl           | v0.3.1             |                                  |   |
