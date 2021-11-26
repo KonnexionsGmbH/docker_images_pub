@@ -22,16 +22,16 @@ With the following command you can check in detail which software versions are i
 | Component             | Version            | Remark                           | Status |
 |---                    |---                 |---                               |---     |
 | Alien                 | 8.95               | base version                     |   |
-| asdf                  | v0.8.1-4b93bc8     | base version                     |   |
-| CMake                 | 3.21.4             |                                  |   |
+| asdf                  | v0.8.1-cc7778a     | base version                     |   |
+| CMake                 | 3.22.0             |                                  |   |
 | curl                  | 7.68.0             | base version                     |   |
 | DBeaver               | 21.2.5             | for virtual machine only         | upgrade |
-| Docker Desktop        | 20.10.10           | base version [Docker Image & VM] |   |
+| Docker Desktop        | 20.10.11           | base version [Docker Image & VM] |   |
 | dos2unix              | 7.4.0              | base version                     |   |
 | Eclipse               | 2021-09-R          |                                  |   |
 | Elixir                | 1.12.3-otp-24      |                                  |   |
 | - oranif              | 0.2.3              |                                  |   |
-| Erlang/OTP            | 24.1.5             |                                  | upgrade |
+| Erlang/OTP            | 24.1.7             |                                  | upgrade |
 | - oranif              | see Elixir         |                                  |   |
 | GCC & G++             | 10.3.0             |                                  |   |
 | - ODPI-C              | 4.3                |                                  | upgrade |
@@ -45,7 +45,7 @@ With the following command you can check in detail which software versions are i
 | htop                  | 3.1.1              |                                  |   |
 | Java                  | 17.0.1             | openjdk                          |   |
 | - JDBC                | 21.3.0.0           |                                  |   |
-| Julia                 | 1.6.3              |                                  |   |
+| Julia                 | 1.6.4              |                                  |   |
 | - JDBC.jl             | v0.5.0             |                                  |   |
 | - Oracle.jl           | v0.3.1             |                                  |   |
 | Kotlin                | 1.6.0              |                                  | upgrade |
