@@ -17,6 +17,74 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+### Version 1.1.2
+
+| Component             | Version            | Remark                           | Status |
+|---                    |---                 |---                               |---     |
+| asdf                  | v0.8.1-95f2cdf     | base version                     |   | 
+| curl                  | 7.68.0             | base version                     |   | 
+| Docker Compose        | 1.29.2             |                                  |   | 
+| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.0              | base version                     |   | 
+| Eclipse               | 2021-06-R          |                                  |   | 
+| GCC & G++             | 10.3.0             |                                  |   |
+| Git                   | 2.33.0             |                                  |   | 
+| GNU Autoconf          | 2.69               | base version                     |   | 
+| GNU Automake          | 1.16.1             | base version                     |   | 
+| GNU Make              | 4.2.1              | base version                     |   | 
+| Gradle                | 7.2                |                                  |   | 
+| htop                  | 3.0.5              |                                  |   | 
+| ImageMagick           | 7.1.0-4            |                                  |   |
+| Java                  | 16.0.2             | openjdk                          |   |
+| Julia                 | 1.6.2              |                                  |   |
+| LCOV                  | 1.14               | base version                     |   |
+| OpenSSL               | 1.1.1.f            | base version                     |   |
+| Python                | 3.9.6              |                                  |   |
+| - pip                 | 21.2.4             | base version                     |   |
+| - alpha_vantage       | 2.3.1              | base version                     |   |
+| - fire                | 0.4.0              | base version                     |   |
+| - Keras               | 2.6.0              | base version                     |   |
+| - matplotlib          | 3.4.3              | base version                     |   |
+| - numpy               | 1.19.5             | base version                     |   |
+| - pandas              | 1.3.1              | base version                     |   |
+| - PyYAML              | 5.4.1              | base version                     |   |
+| - requests            | 2.26.0             | base version                     |   |
+| - scikit-learn        | 0.24.2             | base version                     |   |
+| - scipy               | 1.7.1              | base version                     |   |
+| - seaborn             | 0.11.1             | base version                     |   |
+| - statsmodels         | 0.12.2             | base version                     |   |
+| - tensorflow          | 2.6.0              | base version                     |   |
+| - Theano              | 1.0.5              | base version                     |   |
+| R                     | 4.1.1              |                                  |   |
+| - caret               | 6.0.88             | base version                     |   |
+| - knitr               | 1.33               | base version                     |   |
+| - rmarkdown           | 2.10               | base version                     |   |
+| - tidymodels          | 0.1.3              | base version                     |   |
+|   - rsample           | 0.1.0              | base version                     |   |
+|   - parsnip           | 0.1.7              | base version                     |   |
+|   - recipes           | 0.1.16             | base version                     |   |
+|   - workflows         | 0.2.3              | base version                     |   |
+|   - tune              | 0.1.6              | base version                     |   |
+|   - yardstick         | 0.0.8              | base version                     |   |
+|   - broom             | 0.7.9              | base version                     |   |
+|   - dials             | 0.0.9              | base version                     |   |
+| - tidyverse           |                    |                                  |   |
+|   - ggplot2           | 3.3.5              | base version                     |   |
+|   - dplyr             | 1.0.7              | base version                     |   |
+|   - tidyr             | 1.1.3              | base version                     |   |
+|   - readr             | 2.0.1              | base version                     |   |
+|   - purrr             | 0.3.4              | base version                     |   |
+|   - tibble            | 3.1.3              | base version                     |   |
+|   - stringr           | 1.4.0              | base version                     |   |
+|   - forcats           | 0.5.1              | base version                     |   |
+| RStudio               | 1.4.1717           | for virtual machine only         |   | 
+| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
+| Vim                   | 8.2.2269           | base version                     |   | 
+| wget                  | 1.20.3             | base version                     |   | 
+| Yarn                  | n/a                | asdf plugin is faulty            |   | 
+
+----
+
 ### Version 1.1.1
 
 | Component             | Version            | Remark                           | Status |
