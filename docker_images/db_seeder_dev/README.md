@@ -24,10 +24,10 @@ With the following command you can check in detail which software versions are i
 | Alien                 | 8.95                  | base version                     |   |
 | asdf                  | v0.9.0-aafe1e5        | base version                     | upgrade | 
 | curl                  | 7.68.0                | base version                     |   | 
-| DBeaver               | 21.2.3                | for virtual machine only         |   | 
+| DBeaver               | 21.3.1                | for virtual machine only         | upgrade | 
 | Docker Desktop        | 20.10.12              | base version [Docker Image & VM] | upgrade | 
 | dos2unix              | 7.4.0                 | base version                     |   | 
-| Eclipse               | 4.21.0.I20210906-0500 |                                  |   | 
+| Eclipse               | 4.22.0.I20211124-1800 |                                  | upgrade | 
 | GCC & G++             | 9.3.0                 | base version                     |   |
 | Git                   | 2.25.1                | base version                     |   | 
 | GNU Autoconf          | 2.69                  | base version                     |   | 
