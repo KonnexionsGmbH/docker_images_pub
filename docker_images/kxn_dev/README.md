@@ -52,7 +52,7 @@ With the following command you can check in detail which software versions are i
 | ODBC                  | 2.3.7              | base version                     |   | 
 | OpenSSL               | 1.1.1l             |                                  |   | 
 | Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
-| procps-ng             | 3,3,16             | base version                     |   | 
+| procps-ng             | 3.3.16             | base version                     |   | 
 | Python3               | 3.10.0             |                                  |   |
 | - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.3.1             | base version                     |   |
@@ -104,7 +104,7 @@ With the following command you can check in detail which software versions are i
 | ODBC                  | 2.3.7              | base version                     |   | 
 | OpenSSL               | 1.1.1l             |                                  |   | 
 | Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
-| procps-ng             | 3,3,16             | base version                     | new | 
+| procps-ng             | 3.3.16             | base version                     | new | 
 | Python3               | 3.10.0             |                                  | upgrade |
 | - cx-Oracle           | 8.2.1              | base version                     |   |
 | - pip                 | 21.3.1             | base version                     | upgrade |

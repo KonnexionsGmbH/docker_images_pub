@@ -22,10 +22,10 @@ With the following command you can check in detail which software versions are i
 | Component             | Version               | Remark                           | Status |
 |---                    |---                    |---                               |---     |
 | Alien                 | 8.95                  | base version                     |   |
-| asdf                  | v0.8.1-d566a36        | base version                     |   | 
+| asdf                  | v0.9.0-aafe1e5        | base version                     | upgrade | 
 | curl                  | 7.68.0                | base version                     |   | 
 | DBeaver               | 21.2.3                | for virtual machine only         |   | 
-| Docker Desktop        | 20.10.10              | base version [Docker Image & VM] |   | 
+| Docker Desktop        | 20.10.12              | base version [Docker Image & VM] | upgrade | 
 | dos2unix              | 7.4.0                 | base version                     |   | 
 | Eclipse               | 4.21.0.I20210906-0500 |                                  |   | 
 | GCC & G++             | 9.3.0                 | base version                     |   |
@@ -33,14 +33,15 @@ With the following command you can check in detail which software versions are i
 | GNU Autoconf          | 2.69                  | base version                     |   | 
 | GNU Automake          | 1.16.1                | base version                     |   | 
 | GNU Make              | 4.2.1                 | base version                     |   | 
-| Gradle                | 7.2                   |                                  |   | 
+| Gradle                | 7.3.1                 |                                  | upgrade | 
 | Java                  | 17.0.1                | openjdk                          |   |
 | LCOV                  | 1.14                  | base version                     |   |
 | OpenSSL               | 1.1.1.f               | base version                     |   |
-| Oracle Instant Client | 21.3.0.0.0            |                                  |   | 
+| Oracle Instant Client | 21.4.0.0.0            |                                  | upgrade | 
+| procps-ng             | 3.3.16                | base version                     |   | 
 | Python                | 3.8.10                | base version                     |   |
 | Ubuntu                | 20.04.3 LTS           | base version [focal]             |   | 
-| Vim                   | 8.2.2269              | base version                     |   | 
+| Vim                   | 8.1.2269              | base version                     |   | 
 | wget                  | 1.20.3                | base version                     |   | 
 
 ----
@@ -66,9 +67,10 @@ With the following command you can check in detail which software versions are i
 | LCOV                  | 1.14                  | base version                     |   |
 | OpenSSL               | 1.1.1.f               | base version                     |   |
 | Oracle Instant Client | 21.3.0.0.0            |                                  |   | 
+| procps-ng             | 3.3.16                | base version                     |   | 
 | Python                | 3.8.10                | base version                     |   |
 | Ubuntu                | 20.04.3 LTS           | base version [focal]             |   | 
-| Vim                   | 8.2.2269              | base version                     |   | 
+| Vim                   | 8.1.2269              | base version                     |   | 
 | wget                  | 1.20.3                | base version                     |   | 
 
 ----
@@ -93,9 +95,10 @@ With the following command you can check in detail which software versions are i
 | LCOV                  | 1.14                  | base version                     |   |
 | OpenSSL               | 1.1.1.f               | base version                     |   |
 | Oracle Instant Client | 21.3.0.0.0            |                                  |   | 
+| procps-ng             | 3.3.16                | base version                     |   | 
 | Python                | 3.8.10                | base version                     |   |
 | Ubuntu                | 20.04.3 LTS           | base version [focal]             |   | 
-| Vim                   | 8.2.2269              | base version                     |   | 
+| Vim                   | 8.1.2269              | base version                     |   | 
 | wget                  | 1.20.3                | base version                     |   | 
 
 ## <a name="creating"></a> 2. Creating a new DBSeeder development container
