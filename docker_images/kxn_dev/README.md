@@ -23,47 +23,48 @@ With the following command you can check in detail which software versions are i
 | Component             | Version            | Remark                           | Status |
 |---                    |---                 |---                               |---     |
 | Alien                 | 8.95               | base version                     |   | 
-| asdf                  | v0.8.1-d566a36     | base version                     |   | 
-| CMake                 | 3.21.3             |                                  |   | 
+| Ansible               | 2.10.16            |                                  | new | 
+| asdf                  | v0.9.0-aafe1e5     | base version                     | upgrade | 
+| CMake                 | 3.22.1             |                                  | upgrade | 
 | curl                  | 7.79.1             |                                  |   | 
-| DBeaver               | 21.2.3             | for virtual machine only         |   | 
+| DBeaver               | 21.3.1             | for virtual machine only         | upgrade | 
 | Docker Compose        | 1.29.2             |                                  |   | 
-| Docker Desktop        | 20.10.9            | base version [Docker Image & VM] |   | 
+| Docker Desktop        | 20.10.12           | base version [Docker Image & VM] | upgrade | 
 | dos2unix              | 7.4.2              |                                  |   | 
-| Eclipse               | 2021-09-R          |                                  |   | 
-| Elixir                | 1.12.3-otp-24      |                                  |   |
-| Erlang/OTP            | 24.1.2             |                                  |   |
+| Eclipse               | 2021-12-R          | 4.22.0.I20211124-1800            | upgrade | 
+| Elixir                | 1.13.0-otp-24      |                                  | upgrade |
+| Erlang/OTP            | 24.1.7             |                                  | upgrade |
 | GCC & G++             | 10.3.0             |                                  |   |
-| Git                   | 2.33.1             |                                  |   | 
+| Git                   | 2.34.1             |                                  | upgrade | 
 | GNU Autoconf          | 2.71               |                                  |   | 
 | GNU Automake          | 1.16.5             |                                  |   | 
 | GNU make              | 4.3                |                                  |   | 
-| Go                    | 1.17.2             |                                  |   |
-| Gradle                | 7.2                |                                  |   | 
-| htop                  | 3.1.1              |                                  |   | 
-| ImageMagick           | 7.1.0-11           |                                  |   | 
-| Java                  | 17                 | openjdk                          |   |
-| Julia                 | 1.6.3              |                                  |   |
-| Kotlin                | 1.5.31             |                                  |   |
+| Go                    | 1.17.5             |                                  | upgrade |
+| Gradle                | 7.3.1              |                                  | upgrade | 
+| htop                  | 3.1.2              |                                  | upgrade | 
+| ImageMagick           | 7.1.0-17           |                                  | upgrade | 
+| Java                  | 17.0.1             | openjdk                          | upgrade |
+| Julia                 | 1.7.0              |                                  | upgrade |
+| Kotlin                | 1.6.0              |                                  | upgrade |
 | LCOV                  | 1.14               | base version                     |   | 
 | nginx                 | 1.18.0             | base version                     |   |
 | Nim                   | 1.6.0              |                                  |   |
-| Node.js [npm]         | v14.18.1 [6.14.15] |                                  |   |
+| Node.js [npm]         | v16.3.1 [8.1.2]    |                                  | upgrade |
 | ODBC                  | 2.3.7              | base version                     |   | 
 | OpenSSL               | 1.1.1l             |                                  |   | 
-| Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
+| Oracle Instant Client | 21.4.0.0.0         |                                  | upgrade | 
 | procps-ng             | 3.3.16             | base version                     |   | 
-| Python3               | 3.10.0             |                                  |   |
-| - cx-Oracle           | 8.2.1              | base version                     |   |
+| Python3               | 3.10.1             |                                  | upgrade |
+| - cx-Oracle           | 8.3.0              | base version                     | upgrade |
 | - pip                 | 21.3.1             | base version                     |   |
 | - pyyaml              | 6.0                | base version                     |   |
-| R                     | 4.1.1              |                                  |   |
-| rebar3                | 3.16.1             |                                  |   |
+| R                     | 4.1.2              |                                  | upgrade |
+| rebar3                | 3.17.0             |                                  | upgrade |
 | RStudio               | 2021.09.0+351      | for virtual machine only         |   | 
-| Rust                  | 1.56.0             |                                  |   |
+| Rust                  | 1.57.0             |                                  | upgrade |
 | tmux                  | 3.2a               |                                  |   | 
 | Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
-| Vim                   | 8.2.3562           |                                  |   |
+| Vim                   | 8.1.3737           |                                  | upgrade |
 | wget                  | 1.21.2             |                                  |   | 
 | wget2                 | 2.0.0              |                                  |   | 
 | Yarn                  | 1.22.17            |                                  |   | 
