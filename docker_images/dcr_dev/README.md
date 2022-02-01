@@ -17,7 +17,7 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
-### Version 1.0.0
+### Version 0.5.0
 
 | Component      | Version        | Remark                           | Status |
 |----------------|----------------|----------------------------------|---     |
