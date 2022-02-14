@@ -19,53 +19,43 @@ With the following command you can check in detail which software versions are i
 
 ### Version 1.3.0
 
-| Component             | Version            | Remark                           | Status |
-|---                    |---                 |---                               |---     |
-| Alien                 | 8.95               | base version                     |   |
-| asdf                  | v0.8.1-cc7778a     | base version                     |   |
-| CMake                 | 3.22.0             |                                  |   |
-| curl                  | 7.68.0             | base version                     |   |
-| DBeaver               | 21.2.5             | for virtual machine only         | upgrade |
-| Docker Desktop        | 20.10.11           | base version [Docker Image & VM] | upgrade |
-| dos2unix              | 7.4.0              | base version                     |   |
-| Eclipse               | 2021-09-R          |                                  |   |
-| Elixir                | 1.12.3-otp-24      |                                  |   |
-| - oranif              | 0.2.3              |                                  |   |
-| Erlang/OTP            | 24.1.7             |                                  | upgrade |
-| - oranif              | see Elixir         |                                  |   |
-| GCC & G++             | 10.3.0             |                                  |   |
-| - ODPI-C              | 4.3                |                                  | upgrade |
-| Git                   | 2.25.1             | base version                     |   |
-| GNU Autoconf          | 2.69               | base version                     |   |
-| GNU Automake          | 1.16.1             | base version                     |   |
-| GNU make              | 4.2.1              | base version                     |   |
-| Go                    | 1.17.3             |                                  | upgrade |
-| - godror              | v0.28.1            |                                  | upgrade |
-| Gradle                | 7.3                |                                  | upgrade |
-| htop                  | 3.1.1              |                                  |   |
-| Java                  | 17.0.1             | openjdk                          |   |
-| - JDBC                | 21.3.0.0           |                                  |   |
-| Julia                 | 1.6.4              |                                  | upgrade |
-| - JDBC.jl             | v0.5.0             |                                  |   |
-| - Oracle.jl           | v0.3.1             |                                  |   |
-| Kotlin                | 1.6.0              |                                  | upgrade |
-| - JDBC                | see Java           |                                  |   |
-| LCOV                  | 1.14               | base version                     |   |
-| Nim                   | 1.6.0              |                                  | new |
-| ODBC                  | 2.3.7              | base version                     |   |
-| OpenSSL               | 1.1.1f             | base version                     |   |
-| Oracle Instant Client | 21.4.0.0.0         |                                  | upgrade |
-| Python3               | 3.10.0             |                                  |   |
-| - cx-Oracle           | 8.3.0              | base version                     |   |
-| - pip                 | 21.3.1             | base version                     |   |
-| rebar3                | 3.16.1             |                                  |   |
-| Rust                  | 1.56.1             |                                  | upgrade |
-| - oracle              | 0.5.3              |                                  |   |
-| tmux                  | 3.2a               |                                  |   |
-| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   |
-| Vim                   | 8.1.2269           | base version                     |   |
-| wget                  | 1.20.3             | base version                     |   |
-| wget2                 | 1.99.1             | base version                     |   |
+| Component             | Version        | Remark                           | Status  |
+|-----------------------|----------------|---                               |---------|
+| Alien                 | 8.95           | base version                     |         |
+| asdf                  | v0.8.1-824550e | base version                     |         |
+| CMake                 | 3.22.0         |                                  |         |
+| curl                  | 7.68.0         | base version                     |         |
+| DBeaver               | 21.3.4         | for virtual machine only         | upgrade |
+| Docker Desktop        | 20.10.12       | base version [Docker Image & VM] | upgrade |
+| dos2unix              | 7.4.0          | base version                     |         |
+| Eclipse               | 2021-12-R      |                                  | upgrade |
+| Elixir                | 1.13.3-otp-24  |                                  | upgrade |
+| Erlang/OTP            | 24.2.1         |                                  | upgrade |
+| GCC & G++             | 10.3.0         |                                  |         |
+| Git                   | 2.25.1         | base version                     |         |
+| GNU Autoconf          | 2.69           | base version                     |         |
+| GNU Automake          | 1.16.1         | base version                     |         |
+| GNU make              | 4.2.1          | base version                     |         |
+| Go                    | 1.17.7         |                                  | upgrade |
+| Gradle                | 7.4            |                                  | upgrade |
+| htop                  | 3.1.1          |                                  |         |
+| Java                  | 17.0.2         | openjdk                          | upgrade |
+| Julia                 | 1.7.1          |                                  | upgrade |
+| Kotlin                | 1.6.10         |                                  | upgrade |
+| LCOV                  | 1.14           | base version                     |         |
+| Nim                   | 1.6.4          |                                  | new     |
+| ODBC                  | 2.3.7          | base version                     |         |
+| OpenSSL               | 1.1.1f         | base version                     |         |
+| Oracle Instant Client | 21.5.0.0.0     |                                  | upgrade |
+| Python3               | 3.10.2         |                                  | upgrade |
+| - pip                 | 22.0.3         | base version                     | upgrade |
+| rebar3                | 3.18.0         |                                  | upgrade |
+| Rust                  | 1.58.1         |                                  | upgrade |
+| tmux                  | 3.2a           |                                  |         |
+| Ubuntu                | 20.04.3 LTS    | base version [focal]             |         |
+| Vim                   | 8.1.2269       | base version                     |         |
+| wget                  | 1.20.3         | base version                     |         |
+| wget2                 | 1.99.1         | base version                     |         |
 
 ----
 
