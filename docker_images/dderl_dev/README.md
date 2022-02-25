@@ -20,36 +20,35 @@ With the following command you can check in detail which software components in 
 
 ### Version 4.0.0
 
-| Component             | Version            | Remark                           | Status |
-|---                    |---                 |---                               |---     |
-| Alien                 | 8.95               | base version                     |   | 
-| asdf                  | v0.8.1-7e1f2a0     | base version                     |   | 
-| curl                  | 7.68.0             | base version                     |   | 
-| Docker Compose        | 1.29.2             |                                  |   | 
-| Docker Desktop        | 20.10.8            | base version [Docker Image & VM] |   | 
-| dos2unix              | 7.4.0              | base version                     |   | 
-| Elixir                | 1.12.3-otp-24      |                                  |   |
-| Erlang/OTP            | 24.1               |                                  |   |
-| G++ & GCC             | 10.3.0             |                                  |   |
-| Git                   | 2.25.1             | base version                     |   | 
-| GNU Autoconf          | 2.69               | base version                     |   | 
-| GNU Automake          | 1.16.1             | base version                     |   | 
-| GNU make              | 4.2.1              | base version                     |   | 
-| htop                  | 3.1.0              |                                  |   | 
-| Java                  | 11.0.11            | base version [openjdk]           |   |
-| LCOV                  | 1.14               | base version                     |   | 
-| Node.js [npm]         | v14.17.6 [6.14.15] |                                  |   |
-| ODBC                  | 2.3.7              | base version                     |   | 
-| OpenSSL               | 1.1.1l             |                                  |   | 
-| Oracle Instant Client | 21.3.0.0.0         |                                  |   | 
-| procps                | 3.3.16             | base version                     |   | 
-| Python3               | 3.8.10             | base version                     |   |
-| rebar3                | 3.16.1             |                                  |   |
-| tmux                  | 3.2a               |                                  |   | 
-| Ubuntu                | 20.04.3 LTS        | base version [focal]             |   | 
-| Vim                   | 8.2.2269           | base version                     |   | 
-| wget                  | 1.20.3             | base version                     |   | 
-| Yarn                  | n/a                | asdf plugin is faulty            |   | 
+| Component             | Version          | Remark                           | Status |
+|---                    |------------------|----------------------------------|---     |
+| Alien                 | 8.95             | base version                     |   | 
+| asdf                  | v0.9.0-e0d27e6   | base version                     |   | 
+| curl                  | 7.68.0           | base version                     |   | 
+| Docker Compose        | 1.29.2           |                                  |   | 
+| Docker Desktop        | 20.10.12         | base version [Docker Image & VM] |   | 
+| dos2unix              | 7.4.0            | base version                     |   | 
+| Elixir                | 1.13.3-otp-24    |                                  |   |
+| Erlang/OTP            | 24.2.2           |                                  |   |
+| G++ & GCC             | 10.3.0           |                                  |   |
+| Git                   | 2.25.1           | base version                     |   | 
+| GNU Autoconf          | 2.69             | base version                     |   | 
+| GNU Automake          | 1.16.1           | base version                     |   | 
+| GNU make              | 4.2.1            | base version                     |   | 
+| htop                  | 3.1.2            |                                  |   | 
+| Java                  | 11.0.13          | base version [openjdk]           |   |
+| LCOV                  | 1.14             | base version                     |   | 
+| Node.js [npm]         | v16.14.0 [8.3.1] |                                  |   |
+| ODBC                  | 2.3.7            | base version                     |   | 
+| OpenSSL               | 1.1.10           |                                  |   | 
+| Oracle Instant Client | 21.5.0.0.0       |                                  |   | 
+| procps                | 3.3.16           | base version                     |   | 
+| rebar3                | 3.18.0           |                                  |   |
+| tmux                  | 3.2a             |                                  |   | 
+| Ubuntu                | 20.04.4 LTS      | base version [focal]             |   | 
+| Vim                   | 8.2.2269         | base version                     |   | 
+| wget                  | 1.21.2           |                                  |   | 
+| Yarn                  | 1.22.17          |                                  |   | 
 
 ## <a name="creating"></a> 2. Creating a new DDErl development container
 
