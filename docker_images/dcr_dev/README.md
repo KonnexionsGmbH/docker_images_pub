@@ -19,6 +19,38 @@ With the following command you can check in detail which software versions are i
 
 ---
 
+### Version 0.9.1
+
+| Component         | Version                | Remark                           | Status  |
+|-------------------|------------------------|----------------------------------|---------|
+| asdf              | v0.10.0-a9caa5b        | base version                     | upgrade | 
+| curl              | 7.68.0                 | base version                     |         | 
+| DBeaver           | 22.0.4                 | for virtual machine only         | upgrade | 
+| Docker Desktop    | 20.10.14               | base version [Docker Image & VM] |         | 
+| dos2unix          | 7.4.0                  | base version                     |         | 
+| GCC & G++         | 9.4.0                  | base version                     |         |
+| Git               | 2.25.1                 | base version                     |         | 
+| GNU Autoconf      | 2.69                   | base version                     |         | 
+| GNU Automake      | 1.16.1                 | base version                     |         | 
+| GNU make          | 4.2.1                  | base version                     |         | 
+| htop              | 3.2.0                  |                                  | upgrade | 
+| OpenSSL           | 1.1.1f                 | base version                     |         | 
+| Pandoc            | 2.18                   |                                  |         | 
+| PDFlib TET        | 5.3                    |                                  |         | 
+| Poppler           | 0.86.1                 | base version                     |         | 
+| procps-ng         | 3.3.16                 | base version                     |         | 
+| Python3           | 3.10.4                 |                                  |         |
+| Python3 - pip     | 20.04.4                | base version                     |         |
+| Tesseract OCR     | 5.1.0                  | base version                     |
+| TeX Live          | 2019                   | base version                     |         | 
+| TeX Live - pdfTeX | 3.14159265-2.6-1.40.20 | base version                     |         | 
+| tmux              | 3.2a                   |                                  |         | 
+| Ubuntu            | 20.04.4 LTS            | base version [focal]             |         | 
+| Vim               | 8.1.3741               | base version                     | upgrade |
+| wget              | 1.20.3                 | base version                     |         | 
+
+---
+
 ### Version 0.9.0
 
 | Component         | Version                | Remark                           | Status  |
