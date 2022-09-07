@@ -17,6 +17,38 @@ With the following command you can check in detail which software versions are i
 
     apt list --installed
 
+
+---
+
+### Version 0.9.4
+
+| Component         | Version         | Remark                           | Status  |
+|-------------------|-----------------|----------------------------------|---------|
+| asdf              | v0.10.2         | base version                     |         | 
+| CMake             | 3.22.1          | base version                     | new     | 
+| curl              | 7.81.0          | base version                     | upgrade | 
+| DBeaver           | 22.2.0          | for virtual machine only         | upgrade | 
+| Docker Desktop    | 20.10.17        | base version [Docker Image & VM] |         | 
+| dos2unix          | 7.4.2           | base version                     | upgrade | 
+| GCC & G++         | 11.2.0          | base version                     | upgrade |
+| Git               | 2.34.1          | base version                     | upgrade | 
+| GNU Autoconf      | 2.71            | base version                     | upgrade | 
+| GNU Automake      | 1.16.5          | base version                     | upgrade | 
+| GNU make          | 4.3             | base version                     | upgrade | 
+| htop              | 3.2.1           |                                  |         | 
+| OpenSSL           | 1.1.1o          |                                  | upgrade | 
+| Pandoc            | 2.19.2          |                                  | upgrade | 
+| PDFlib TET        | 5.3             |                                  |         | 
+| Poppler           | 22.02.0         |                                  | upgrade | 
+| procps-ng         | 3.3.17          | base version                     | upgrade | 
+| Python3           | 3.10.7          |                                  | upgrade |
+| Tesseract OCR     | 5.2.0-22-g0daf1 | base version                     | upgrade |
+| TeX Live          | 2022            | base version                     |         | 
+| tmux              | 3.3a            |                                  |         | 
+| Ubuntu            | 22.04.1 LTS     | base version [jammy]             | upgrade | 
+| Vim               | 8.2.3995        | base version                     | upgrade |
+| wget              | 1.21.2          | base version                     | upgrade | 
+
 ---
 
 ### Version 0.9.4

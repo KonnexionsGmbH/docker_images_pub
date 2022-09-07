@@ -20,28 +20,27 @@ With the following command you can check in detail which software versions are i
 
 ### Version 0.9.7
 
-| Component         | Version         | Remark       | Status |
-|-------------------|-----------------|--------------|--------|
-| asdf              | v0.10.2-b8f6218 | base version |        | 
-| CMake             | 3.22.1          | base version |        | 
-| curl              | 7.81.0          | base version |        | 
-| GCC & G++         | 11.2.0          | base version |        |
-| Git               | 2.37.3          | base version |        | 
-| GNU Autoconf      | 2.71            | base version |        | 
-| GNU Automake      | 1.16.5          | base version |        | 
-| GNU make          | 4.3             | base version |        | 
-| OpenSSL           | 1.1.1o          |              |        | 
-| Pandoc            | 2.19.2          |              |        | 
-| PDFlib TET        | 5.3             |              |        | 
-| Poppler           | 22.02.0         |              |        | 
-| procps-ng         | 3.3.17          | base version |        | 
-| Python3           | 3.10.6          |              |        |
-| Python3 - pip     | 22.2.2          | base version |        |
-| Tesseract OCR     | 5.2.0-22-g0daf1 | base version |        |
-| TeX Live          | 2022            | base version |        | 
-| Ubuntu            | 22.04.1 LTS     | [jammy]      |        | 
-| Vim               | 8.2.2825        |              |        |
-| wget              | 1.21.2          | base version |        | 
+| Component     | Version         | Remark               | Status |
+|---------------|-----------------|----------------------|--------|
+| asdf          | v0.10.2         | base version         |        | 
+| CMake         | 3.22.1          | base version         |        | 
+| curl          | 7.81.0          | base version         |        | 
+| GCC & G++     | 11.2.0          | base version         |        |
+| Git           | 2.34.1          | base version         |        | 
+| GNU Autoconf  | 2.71            | base version         |        | 
+| GNU Automake  | 1.16.5          | base version         |        | 
+| GNU make      | 4.3             | base version         |        | 
+| OpenSSL       | 1.1.1o          |                      |        | 
+| Pandoc        | 2.19.2          |                      |        | 
+| PDFlib TET    | 5.3             |                      |        | 
+| Poppler       | 22.02.0         |                      |        | 
+| procps-ng     | 3.3.17          | base version         |        | 
+| Python3       | 3.10.7          |                      |        |
+| Tesseract OCR | 5.2.0-22-g0daf1 | base version         |        |
+| TeX Live      | 2022            | base version         |        | 
+| Ubuntu        | 22.04.1 LTS     | base version [jammy] |        | 
+| Vim           | 8.2.3995        | base version         |        |
+| wget          | 1.21.2          | base version         |        | 
 
 ----
 
